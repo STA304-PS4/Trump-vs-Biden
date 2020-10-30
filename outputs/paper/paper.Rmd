@@ -1,0 +1,134 @@
+---
+title: "TBD"
+subtitle: "TBD"
+author: "TBD"
+thanks: "Code and data are available at: LINK."
+date: "`r format(Sys.time(), '%d %B %Y')`"
+abstract: |
+  | First sentence. Second sentence. Third sentence. Fourth sentence. 
+output:
+  bookdown::pdf_document2:
+toc: FALSE
+bibliography: references.bib
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+library(tidyverse)
+library(palmerpenguins)
+```
+
+# Introduction
+
+Here's a dumb example of how to use some references: In paper we run our analysis in `R` [@citeR]. We also use the `tidyverse` which was written by @thereferencecanbewhatever If we were interested in baseball data then @citeLahman could be useful.
+
+
+# Data
+
+Our data is of penguins (Figure \@ref(fig:bills)).
+
+```{r bills, fig.cap="Bills of penguins", echo = FALSE}
+ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4"),
+                    guide = FALSE) +
+  theme_minimal() +
+  facet_wrap(~species, ncol = 1) +
+  coord_flip()
+```
+
+Talk more about it.
+
+Also bills and their average (Figure \@ref(fig:billssssss)). (Notice how you can change the height and width so they don't take the whole page?)
+
+```{r billssssss, fig.cap="More bills of penguins", echo = FALSE, fig.width=8, fig.height=4}
+
+# This needs to be about the random data tha tI sasmpled?
+ggplot(penguins, aes(x = island, fill = species)) +
+  geom_bar(alpha = 0.8) +
+  scale_fill_manual(values = c("darkorange","purple","cyan4"),
+                    guide = FALSE) +
+  theme_minimal() +
+  facet_wrap(~species, ncol = 1) +
+  coord_flip()
+```
+
+Talk way more about it. 
+
+
+
+# Model
+
+The model we use to predict the result of the election is MRP, multilevel regression with post-stratification. Logistic regression allows us the simplicity of analyzing the categorical response variable while incorporating both numerical and categorical explanatory variables; while combined with post-stratification it yields a prediction result closer to the population parameter.
+
+We are interested in how variables such as age, education, race, family income, and geographic region affect citizens’ voting intentions. The response variable that we are interested in is the chances of a citizen voting for Trump in the coming presidential election. It is a categorical variable with two levels: 1 represents intending to vote for Donald Trump, and 2 means planning to vote for Joe Biden.
+
+First, we train a multilevel logistic regression model using raw data from DATA towards the variable of interest using our x explanatory variables. We then apply this model to our post-stratification data set to get the estimates. 
+
+Logistic regression estimates $\beta_0...\beta_k$ in equation \@ref(eq:logistic)
+
+\begin{equation}
+log(\frac{p}{1-p})=\beta_0+\beta_1x_1+...+\beta_kx_k (\#eq:logistic)
+\end{equation}
+
+where p is the probability of event A that we are interested in, $\beta_0$is the intercept, $x_1...x_K$ are our variables of interest and $\beta_1...\beta_k$ are parameters for each of these variables. Based on the result, we are able to estimate p for a particular case given all the variables.
+
+In our case, we want to estimate $\beta_{age},\beta_{education},\beta_{race},\beta_{income},\beta_{state}$ in \@ref(eq:logvar).
+
+\begin{equation}
+log(\frac{p}{1-p})=\beta_0+\beta_{age}x_{age}
++\beta_{education}x_{education}+\beta_{race}x_{race}
++\beta_{income}x_{income}+\beta_{state}x_{state}(\#eq:logvar)
+\end{equation}
+
+where p is the probability that the respondent votes for Trump, $\beta_0$ is the intercept, $\beta_{age}$ is the parameter for age, $\beta_{education}$ is the parameter for education level, $\beta_{race}$ is the parameter for race, $\beta_{income}$ is the parameter for income, and $\beta_{state}$ is the parameter for the state the respondent is in. 
+
+The logic behind post-stratification is that we divide the sample data into strata based on a few attributes such as state, income, education level. Then we come up with a weight for each stratum to adjust its influence towards our prediction. Namely, if a stratum is over-represented, we want to reduce its impact on the result; if a stratum is under-represented, we want to increase its influence.
+We need a post-stratification dataset that is large enough to do this. In this report, we use the ACS(reason). 
+
+The post-stratification estimate is defined by $\hat{y}_{PS} = \frac{\sum{N_j\hat{y}_j}}{\sum{N_j}}$ where $\hat{y}_j$ is the estimate of y in cell j, and $N_j$ is the size of the j-th cell in the population. 
+
+Notably, the multilevel regression before post-stratification produces a proportion for the post-stratification based on regression, instead of merely averaging the sample in each stratum. 
+
+We fit two nested multilevel logistic regressions for estimating candidate support in each cell.
+
+*Formula of the first model
+
+That is the probability that a respondent has the intention to vote for either Trump or Biden. 
+
+And the second model predicts:
+
+**Formula of the second model
+
+That is the probability that a respondent has the intention to vote for Trump, given that he/she either has the intention to vote for Trump or Biden.
+
+Together, mod1 and mod2 form a Bayesian model to predict whether Donald Trump will win the election. 
+
+# Results
+
+# Discussion
+
+## First discussion point
+
+If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+
+## Second discussion point
+
+## Third discussion point
+
+## Weaknesses and next steps
+
+Weaknesses and next steps should also be included.
+
+\newpage
+
+# Appendix {-}
+
+\newpage
+
+
+# References
+
+
