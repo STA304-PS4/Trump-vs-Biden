@@ -38,7 +38,7 @@ reduced_data <-
          state,
          congress_district,
          age)
-
+ 
 ps3_data <- 
   raw_data %>% 
   select(age,
@@ -49,3 +49,5 @@ ps3_data <-
 # Maybe make some age-groups?
 # Maybe check the values?
 # Is vote a binary? If not, what are you going to do?
+
+
