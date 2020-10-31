@@ -33,6 +33,7 @@ tbdata <-
 
 write_csv(ps3_data, "outputs/clean-survey.csv")
 
+
 #### What else???? ####
 # Maybe make some age-groups?
 # Maybe check the values?
