@@ -1,25 +1,26 @@
 #### Preamble ####
-# Purpose: Prepare and clean the survey data downloaded from [...UPDATE ME!!!!!]
+# Purpose: The purpose of this code is to prepare and clean the Nationscape Data Set downloaded from the Democracy Fund Voter Study Group. Because we aren't looking at each and every one of the more than 200 variables included in the dataset, we want to clean the dataset so that it only includes variables that we are interested in. To address this issue, we only included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those who are willing to vote for Donald Trump or Joe Biden.
 # Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
-# Data: 2 October 2020
+# Data: 2 November 2020
 # Contact: arjun.dhatt@mail.utoronto.ca 
 # License: MIT
 # Pre-requisites: 
-# - Need to have downloaded the data from X and save the folder that you're 
-# interested in to inputs/data 
-# - Don't forget to gitignore it!
-
-
+ ## 1. Go to: https://www.voterstudygroup.org/publication/nationscape-data-set
+ ## 2. Look for the ‘Download the Full Data Set’ heading and enter your information and submit your request. After a short period of time, you will have received an email containing links to the dataset. 
+ ## 3. Click on the link included in the email. Under the header ‘Download Resources’, download the .dta. files. This will be a zip file, therefore you will have to unzip it.
+ ## 4. After unzipping the file, open ‘phase_2_v20200814’ -> ‘ns20200625’ -> ’01-data_cleaning-survey.R’. We open the folder pertaining to ‘ns20200625’ because we want data from June 25th, 2020. 
+ ## 5. We want to then open ’01-data_cleaning-survey.R’ in R that way we can filter the dataset to our needs. 
+ ## 6. You may need to adjust the file paths depending on your system. 
 
 #### Workspace setup ####
 library(haven)
 library(tidyverse)
-# Read in the raw data (You might need to change this if you use a different dataset)
+# Read in the raw data 
 raw_data <- read_dta("inputs/ns20200625/ns20200625.dta")
-# Add the labels
+# Add labels
 raw_data <- labelled::to_factor(raw_data)
-# Just keep some variables
 
+# Keeping important variables
 tbdata <- 
   raw_data %>% 
   select(age,
@@ -37,12 +38,10 @@ write_csv(ps3_data, "outputs/clean-survey.csv")
 #### What else???? ####
 # Maybe make some age-groups?
 # Maybe check the values?
-<<<<<<< HEAD:outputs/Data Cleaning.csv
 # Is vote a binary? If not, what are you going to do?
 
-=======
+
 # The vote is not a binary variable, it contains 758 "Don't Know", 2626 "Donald Trump", 3075 "Joe Biden" and 20 NAs. 
 # We resolved this by deleting the "Don't know" and NA responses, since it was a relatively small (12%) part of our
 # data set.
->>>>>>> 601c4189ad0cf63aacc0d2a1df8faaeab0aceeb9:scripts/01-data-cleaning-survey.R
 
