@@ -12,7 +12,6 @@
  ## 5. We want to then open ’01-data_cleaning-survey.R’ in R that way we can filter the dataset to our needs. 
  ## 6. You may need to adjust the file paths depending on your system. 
 
-
 #### Workspace setup ####
 library(haven)
 library(tidyverse)
