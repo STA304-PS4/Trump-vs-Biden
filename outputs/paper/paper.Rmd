@@ -105,6 +105,8 @@ Together, mod1 and mod2 form a Bayesian model to predict whether Donald Trump wi
 
 # Results
 
+
+
 # Discussion
 
 ## First discussion point
@@ -117,7 +119,7 @@ If my paper were 10 pages, then should be be at least 2.5 pages. The discussion 
 
 ## Weaknesses and next steps
 
-Weaknesses and next steps should also be included.
+### 1: Nested Bayesian Model /,
 
 \newpage
 
