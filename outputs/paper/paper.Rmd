@@ -24,7 +24,6 @@ library(palmerpenguins)
 
 Here's a dumb example of how to use some references: In paper we run our analysis in `R` [@citeR]. We also use the `tidyverse` which was written by @thereferencecanbewhatever If we were interested in baseball data then @citeLahman could be useful.
 
-
 # Data
 
 Our data is of penguins (Figure \@ref(fig:bills)).
@@ -56,8 +55,6 @@ ggplot(penguins, aes(x = island, fill = species)) +
 ```
 
 Talk way more about it. 
-
-
 
 # Model
 
