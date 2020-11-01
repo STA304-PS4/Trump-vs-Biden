@@ -29,7 +29,7 @@ tbdata <-
          ) %>% 
  mutate(binary = case_when(
    trump_biden == "Donald Trump" ~ 1,
-   trump_biden == "Joe Biden" ~ 2
+   trump_biden == "Joe Biden" ~ 0
  )) %>% 
   filter(!is.na(binary))
 
