@@ -23,6 +23,53 @@ library(tidyverse)
 
 # Data
 
+In this analysis, we collected data from the Nationscape dataset — a collaboration between the Democracy Fund Voter Study Group and UCLA Political Scientists. The Nationscape dataset that we will be analyzing was collected from June 25th, 2020 to July 1st, 2020. Using the data from Nationscape, we would like the predict the overall popular vote of the 2020 American presidential election using multilevel regression with post-stratification.  
+
+The samples are provided by Lucid, “a market research platform that provides access to authentic, targeted audiences”. In order to ensure that an appropriate sample is selected, samples are selected based on a set of demographic quotas based on a multitude of factors such as age, gender, ethnicity, etc. Respondents of the survey are sent directly to an online survey (conducted in English) operated by the Nationscape team and forced to complete an attention check to ensure the answers they provide are meaningful. Lastly, the data is weighted to be representative of the American population using factors such as — gender, four major census regions, race, etc. 
+
+The population in this dataset is all voting residents in the USA that are eligible to vote. This does not include a large population of those that reside in the US such as non-citizens or those who are incarcerated, but this is representative of a real election. The population frame is all voting residents in USA that have access to a computer in order to complete the online survey. As mentioned before, the survey is taken online, therefore it excludes those without access to a device that can take the online survey. The sample in this case is all respondents who complete this survey online. 
+
+The data is collected using a convenience sample selected based on a set of demographic criteria. Because convenience sampling was used over random sampling, this can result in some biases in our dataset. 
+
+The respondents of the survey are found through Lucid, which “runs an online exchange for survey respondents”. The respondents from the survey on Lucid are sent to the online Nationscape survey where they are prompted to complete the survey. Respondents who complete the survey not choose not to disclose their household income; this results in a large number of non-respondents because they may not be comfortable providing sensitive information. In an effort to account for the respondents who choose not to provide income, non-respondents are not weighed for income.  
+
+The variables that we used in our dataset are as follow: 
+-	age
+     o	“What is your age”
+     o	It provides an integer value greater than or equal to 18
+-	education
+     o	“What is the highest level of education you have completed?” 
+     o	An extensive list of options are provided
+-	Hispanic
+     o	“Are you of Hispanic, Latino, or Spanish origin?” 
+     o	An extensive list of options are provided 
+-	household_income
+     o	“What is your current annual household income before taxes? 
+     o	Provides an extensive list of options beginning with $5,000 increments and then increases to $25,000 increments
+     o	This is the variable in our dataset that many people did not feel comfortable answering and was left as N/A. When        cleaning the dataset, we removed all responses that left this answer as N/A  
+-	race_ethnicity
+     o	“What is your race”
+     o	An extensive list of options are provided. 
+-	extra_covid_worn_mask
+     o	“Have you done any of the following in the past week? - Worn a mask when going out in public” 
+     o	Yes or No options are available for the respondent to fill out 
+-	state
+     o	“Respondent’s state, as a two-character postal abbreviation. Calculated based on entered ZIP code.” 
+     o	Manually filled out by respondent 
+-	trump_biden
+     o	“If the general election for president of the United States was a contest between Joe Biden and Donald Trump, who        would you support? “ 
+     o	Options are either ‘Joe Biden’, ‘Donald Trump’, or ‘Don’t Know’ 
+
+We also created another variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. 
+
+Key features of data? 
+
+The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the united states (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
+
+Another weakness of the data comes from the fact that we use convenience-based sampling which inherently contains bias. Because the sampling method is based on convenience, we may be unlucky when sampling and get a sample group that inaccurately represents the population of the US making our results meaningless. 
+
+Lastly another weakness of our dataset is due to the fact that the survey data we are analyzing is collected from June 25th, 2020 to July 1st, 2020. Between July and November (the month of the election), many voters may not have an informed vote and their opinions may still be swayed after watching crucial debates and hearing what the leaders have to say; our data doesn’t take into consideration the people whose votes may change in the most crucial months of the election. A solution to this weakness can be to analyze data that may have occurred closer to the actual election so that the participants have an informed vote. 
+
 
 # Model
 
