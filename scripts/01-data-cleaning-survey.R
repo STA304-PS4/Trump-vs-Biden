@@ -14,13 +14,13 @@
 # License: MIT
 # Pre-requisites: 
  ## 1. Go to: https://www.voterstudygroup.org/publication/nationscape-data-set
- ## 2. Look for the ‘Download the Full Data Set’ heading and enter your information and submit your request. 
+ ## 2. Look for the 'Download the Full Data Set' heading and enter your information and submit your request. 
  ## After a short period of time, you will have received an email containing links to the dataset. 
- ## 3. Click on the link included in the email. Under the header ‘Download Resources’, download the .dta. 
+ ## 3. Click on the link included in the email. Under the header 'Download Resources', download the .dta. 
  ## files. This will be a zip file, therefore you will have to unzip it.
- ## 4. After unzipping the file, open ‘phase_2_v20200814’ -> ‘ns20200625’ -> ’01-data_cleaning-survey.R’. 
- ## We open the folder pertaining to ‘ns20200625’ because we want data from June 25th, 2020. 
- ## 5. We want to then open ’01-data_cleaning-survey.R’ in R that way we can filter the dataset to our needs. 
+ ## 4. After unzipping the file, open 'phase_2_v20200814' -> 'ns20200625' -> '01-data_cleaning-survey.R'. 
+ ## We open the folder pertaining to 'ns20200625' because we want data from June 25th, 2020. 
+ ## 5. We want to then open '01-data_cleaning-survey.R' in R that way we can filter the dataset to our needs. 
  ## 6. You may need to adjust the file paths depending on your system. 
 
 
