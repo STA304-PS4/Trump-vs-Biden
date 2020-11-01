@@ -1,6 +1,5 @@
 #### Preamble ####
-# Purpose: The purpose of this code is to prepare and clean the Nationscape Data Set downloaded from the Democracy Fund Voter Study Group. Because we aren't looking at each and every one of the more than 200 variables included in the dataset, we want to clean the dataset so that it only includes variables that we are interested in. To address this issue, we only included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those willing to vote for Donald Trump or Joe Biden. A problem we encountered with the raw dataset was that a lot of the values were shown as N/A; to address this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row in the dataset, every column has a meaningful value.
-# Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
+# Purpose: The purpose of this code is to prepare and clean the Nationscape Data Set downloaded from the Democracy Fund Voter Study Group. Because we aren't looking at each and every one of the more than 200 variables included in the dataset, we want to clean the dataset so that it only includes variables that we are interested in. To address this issue, we only included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those willing to vote for Donald Trump or Joe Biden. We also added another variable that was not originally included in the dataset to make vote a binary variable. A problem we encountered with the raw dataset was that a lot of the values were shown as N/A; to address this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row in the dataset, every column has a meaningful value.# Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
 # Data: 2 November 2020
 # Contact: arjun.dhatt@mail.utoronto.ca 
 # License: MIT
@@ -15,12 +14,14 @@
 #### Workspace setup ####
 library(haven)
 library(tidyverse)
+
 # Read in the raw data 
 raw_data <- read_dta("inputs/ns20200625/ns20200625.dta")
+
 # Add labels
 raw_data <- labelled::to_factor(raw_data)
 
-# Keeping important variables
+# Alter the dataset so that it only contains the variables that we are looking at. Also, add another variable that outputs a 1 if a participant chooses to vote for Donald Trump in the 2020 election and outputs a 2 if the participant chooses to vote for Joe Biden.
 tbdata <- 
   raw_data %>% 
   select(age,
@@ -32,8 +33,8 @@ tbdata <-
  )) %>% 
   filter(!is.na(binary))
 
-# Removing all NA values 
-tbdata <- na.omit(tbdata)
+# The purpose of this line of code is to remove all NA values
+# Some people may have not been comfortable sharing sensitive information such as income, so they may have refused to answer some questions. In order to avoid a distorted representation of our data, we removed all rows that contained an NA value. tbdata <- na.omit(tbdata)
 
 write_csv(tbdata, "outputs/clean-survey.csv")
 
