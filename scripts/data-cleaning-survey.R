@@ -33,9 +33,9 @@ tbdata <-
   filter(!is.na(binary))
 
 # Removing all NA values 
-tbdatax <- na.omit(tbdata)
+tbdata <- na.omit(tbdata)
 
-write_csv(tbdatax, "outputs/clean-survey.csv")
+write_csv(tbdata, "outputs/clean-survey.csv")
 
 
 #### What else???? ####
