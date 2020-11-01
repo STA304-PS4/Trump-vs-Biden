@@ -1,8 +1,8 @@
 ---
 title: "TBD"
 subtitle: "TBD"
-author: "TBD"
-thanks: "Code and data are available at: LINK."
+author: "Arjun Dhatt, Benjamin Draskovic, Yiqu Ding, Gantavya Gupta"
+thanks: "Code and data are available at: https://github.com/STA304-PS4/Trump-vs-Biden."
 date: "`r format(Sys.time(), '%d %B %Y')`"
 abstract: |
   | First sentence. Second sentence. Third sentence. Fourth sentence. 
@@ -14,7 +14,7 @@ bibliography: references.bib
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
 ```
 
@@ -70,7 +70,7 @@ We find the mask parameter interesting, firstly because US is the country with t
 
 # Results
 
-```{r}
+```{r, eval=FALSE}
 fit <- stan_glmer(#try using glmer()
   binary ~ factor(male) + factor(male) * factor(age) +
     (1 | state) + (1 | age) + (1 | eth) + (1 | income),
@@ -79,7 +79,7 @@ fit <- stan_glmer(#try using glmer()
 )
 ```
 
-```{r}
+```{r, eval=FALSE}
 # to get the estimated proportions and associated 95% PIs by state
 res_state <- fit %>%
   add_predicted_draws(newdata=state_prop %>% 
@@ -95,7 +95,7 @@ res_state <- fit %>%
             upper = quantile(kept_name_predict, 0.975))
 ```
 
-```{r}
+```{r, eval=FALSE}
 # graph by state
 res_state %>% 
   arrange(-mean) %>% 
