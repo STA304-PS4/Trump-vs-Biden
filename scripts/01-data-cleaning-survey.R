@@ -33,7 +33,9 @@ tbdata <-
  )) %>% 
   filter(!is.na(binary))
 
-write_csv(ps3_data, "outputs/clean-survey.csv")
+tbdata <- na.omit(tbdata)
+
+write_csv(tbdata, "outputs/clean-survey.csv")
 
 
 #### What else???? ####

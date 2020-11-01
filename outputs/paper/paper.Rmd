@@ -142,7 +142,9 @@ If my paper were 10 pages, then should be be at least 2.5 pages. The discussion 
 
 ## Weaknesses and next steps
 
-### 1: Nested Bayesian Model /,
+### 1: Nested Bayesian Model
+
+### 2: Pre-analysis
 
 \newpage
 
