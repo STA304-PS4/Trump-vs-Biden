@@ -50,9 +50,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 66,"Completed some college, but no degree",Not Hispanic,"$80,000 to $84,999",White,Yes,NC,Joe Biden,0
 40,Other post high school vocational training,Not Hispanic,"$35,000 to $39,999",White,Yes,TX,Donald Trump,1
 23,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,CA,Donald Trump,1
-31,Masters degree,Not Hispanic,"$75,000 to $79,999",Asian (Vietnamese),Yes,VA,Donald Trump,1
+31,Masters degree,Not Hispanic,"$75,000 to $79,999",Asian,Yes,VA,Donald Trump,1
 69,Masters degree,Not Hispanic,"$95,000 to $99,999",White,Yes,OH,Donald Trump,1
-31,"Completed some graduate, but no degree",Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,CA,Joe Biden,0
+31,"Completed some graduate, but no degree",Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Joe Biden,0
 51,Masters degree,Not Hispanic,"$85,000 to $89,999",White,Yes,IL,Joe Biden,0
 78,"Completed some graduate, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,NC,Donald Trump,1
 58,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,Yes,MI,Joe Biden,0
@@ -78,13 +78,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,Other post high school vocational training,Not Hispanic,"$55,000 to $59,999",White,Yes,OH,Joe Biden,0
 30,High school graduate,Not Hispanic,"$45,000 to $49,999",White,No,IL,Donald Trump,1
 66,High school graduate,Not Hispanic,"$90,000 to $94,999",White,Yes,MA,Joe Biden,0
-40,Masters degree,Not Hispanic,"$80,000 to $84,999",Asian (Chinese),Yes,MO,Joe Biden,0
+40,Masters degree,Not Hispanic,"$80,000 to $84,999",Asian,Yes,MO,Joe Biden,0
 49,Masters degree,Not Hispanic,"$60,000 to $64,999",White,Yes,CO,Joe Biden,0
 57,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,IL,Donald Trump,1
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$90,000 to $94,999",White,Yes,NC,Donald Trump,1
 68,Masters degree,Not Hispanic,"$70,000 to $74,999",White,Yes,NY,Joe Biden,0
 58,High school graduate,Not Hispanic,"$60,000 to $64,999",White,Yes,IN,Donald Trump,1
-33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian (Chinese),Yes,CA,Joe Biden,0
+33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian,Yes,CA,Joe Biden,0
 26,"Completed some college, but no degree",Not Hispanic,"$250,000 and above",White,Yes,FL,Donald Trump,1
 76,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999",White,Yes,PA,Donald Trump,1
 38,Other post high school vocational training,Not Hispanic,"$25,000 to $29,999",White,Yes,SC,Donald Trump,1
@@ -102,12 +102,12 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Joe Biden,0
 42,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,FL,Donald Trump,1
 26,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,FL,Joe Biden,0
-45,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Asian (Chinese),Yes,NY,Joe Biden,0
+45,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Asian,Yes,NY,Joe Biden,0
 57,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,Yes,GA,Donald Trump,1
 55,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,Yes,IL,Donald Trump,1
 70,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,Yes,NM,Joe Biden,0
 55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,TN,Joe Biden,0
-46,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Asian (Chinese),Yes,CA,Joe Biden,0
+46,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Asian,Yes,CA,Joe Biden,0
 32,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999",White,Yes,NC,Donald Trump,1
 66,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,VA,Donald Trump,1
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,MN,Donald Trump,1
@@ -124,9 +124,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 65,Associate Degree,Not Hispanic,"$50,000 to $54,999",White,Yes,AZ,Joe Biden,0
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,NJ,Donald Trump,1
 67,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,CO,Joe Biden,0
-55,Masters degree,Not Hispanic,"$40,000 to $44,999",Asian (Korean),Yes,PA,Joe Biden,0
+55,Masters degree,Not Hispanic,"$40,000 to $44,999",Asian,Yes,PA,Joe Biden,0
 48,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,OH,Joe Biden,0
-68,Associate Degree,Not Hispanic,"$25,000 to $29,999",Asian (Japanese),Yes,HI,Joe Biden,0
+68,Associate Degree,Not Hispanic,"$25,000 to $29,999",Asian,Yes,HI,Joe Biden,0
 57,Masters degree,Not Hispanic,"$95,000 to $99,999",White,Yes,CT,Joe Biden,0
 32,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,FL,Joe Biden,0
 65,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,No,WI,Joe Biden,0
@@ -137,7 +137,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 66,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,PA,Joe Biden,0
 38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,CA,Joe Biden,0
 69,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,CA,Joe Biden,0
-81,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",Asian (Chinese),Yes,CA,Donald Trump,1
+81,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",Asian,Yes,CA,Donald Trump,1
 65,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,No,TN,Donald Trump,1
 62,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,NC,Joe Biden,0
 21,High school graduate,Not Hispanic,"$15,000 to $19,999",White,Yes,PA,Donald Trump,1
@@ -147,7 +147,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 27,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,PA,Joe Biden,0
 58,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",White,Yes,TN,Donald Trump,1
 60,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,IL,Joe Biden,0
-29,Masters degree,Not Hispanic,"$70,000 to $74,999",Asian (Asian Indian),Yes,OR,Joe Biden,0
+29,Masters degree,Not Hispanic,"$70,000 to $74,999",Asian,Yes,OR,Joe Biden,0
 28,"Completed some college, but no degree",Mexican,"$55,000 to $59,999",Some other race,Yes,CA,Joe Biden,0
 40,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,CT,Joe Biden,0
 61,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,Yes,WI,Joe Biden,0
@@ -182,7 +182,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 18,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,FL,Joe Biden,0
 56,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,NE,Donald Trump,1
 51,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999",White,No,MI,Donald Trump,1
-24,Completed some high school,Not Hispanic,"$50,000 to $54,999",Asian (Asian Indian),Yes,UT,Donald Trump,1
+24,Completed some high school,Not Hispanic,"$50,000 to $54,999",Asian,Yes,UT,Donald Trump,1
 68,"Completed some graduate, but no degree",Not Hispanic,"$125,000 to $149,999",White,Yes,FL,Donald Trump,1
 28,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,OR,Joe Biden,0
 62,Associate Degree,Not Hispanic,"$70,000 to $74,999",White,Yes,AZ,Joe Biden,0
@@ -195,7 +195,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 31,Doctorate degree,Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,TX,Donald Trump,1
 74,High school graduate,Not Hispanic,"$30,000 to $34,999",White,Yes,NY,Joe Biden,0
 33,High school graduate,Not Hispanic,"$15,000 to $19,999",White,Yes,CO,Donald Trump,1
-37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian (Japanese),Yes,HI,Joe Biden,0
+37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian,Yes,HI,Joe Biden,0
 55,Completed some high school,Not Hispanic,"$60,000 to $64,999",White,Yes,CA,Donald Trump,1
 23,Doctorate degree,Not Hispanic,"$40,000 to $44,999",White,Yes,CA,Donald Trump,1
 63,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,CA,Joe Biden,0
@@ -215,7 +215,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 32,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,MN,Donald Trump,1
 54,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,MO,Donald Trump,1
 24,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,KS,Donald Trump,1
-19,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian (Filipino),Yes,WA,Donald Trump,1
+19,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian,Yes,WA,Donald Trump,1
 42,Masters degree,Mexican,"$80,000 to $84,999",Some other race,Yes,CA,Joe Biden,0
 18,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
 56,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,PA,Donald Trump,1
@@ -237,7 +237,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,VA,Donald Trump,1
 24,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,LA,Joe Biden,0
 45,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,MI,Joe Biden,0
-19,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",Asian (Other),Yes,PA,Joe Biden,0
+19,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",Asian,Yes,PA,Joe Biden,0
 65,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
 61,High school graduate,Not Hispanic,"$20,000 to $24,999",White,No,AZ,Donald Trump,1
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,KY,Donald Trump,1
@@ -250,9 +250,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 29,Completed some high school,Not Hispanic,"$35,000 to $39,999","Black, or African American",Yes,MD,Joe Biden,0
 68,Associate Degree,Not Hispanic,"$50,000 to $54,999",White,Yes,CA,Joe Biden,0
 54,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Joe Biden,0
-31,Masters degree,Not Hispanic,"$250,000 and above",Asian (Chinese),Yes,NJ,Joe Biden,0
+31,Masters degree,Not Hispanic,"$250,000 and above",Asian,Yes,NJ,Joe Biden,0
 43,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,Yes,FL,Joe Biden,0
-42,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Filipino),No,TX,Donald Trump,1
+42,Completed some high school,Not Hispanic,"Less than $14,999",Asian,No,TX,Donald Trump,1
 64,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,OH,Joe Biden,0
 41,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,WI,Donald Trump,1
 19,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,FL,Joe Biden,0
@@ -290,7 +290,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 20,High school graduate,Not Hispanic,"Less than $14,999",White,No,MN,Donald Trump,1
 18,High school graduate,Not Hispanic,"$200,000 to $249,999",White,Yes,CO,Joe Biden,0
 20,Masters degree,Mexican,"$60,000 to $64,999",White,Yes,WA,Joe Biden,0
-52,Associate Degree,Not Hispanic,"$75,000 to $79,999",Asian (Chinese),Yes,NJ,Joe Biden,0
+52,Associate Degree,Not Hispanic,"$75,000 to $79,999",Asian,Yes,NJ,Joe Biden,0
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999","Black, or African American",Yes,WI,Joe Biden,0
 29,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,OH,Donald Trump,1
 66,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,PA,Donald Trump,1
@@ -310,7 +310,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 75,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,Yes,WA,Joe Biden,0
 18,"Completed some college, but no degree",Mexican,"$20,000 to $24,999",White,Yes,CA,Joe Biden,0
 35,"College Degree (such as B.A., B.S.)",Other Hispanic,"$60,000 to $64,999",White,Yes,FL,Joe Biden,0
-32,Completed some high school,Not Hispanic,"$65,000 to $69,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+32,Completed some high school,Not Hispanic,"$65,000 to $69,999",Asian,Yes,CA,Joe Biden,0
 45,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Donald Trump,1
 53,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,No,AZ,Donald Trump,1
 40,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Donald Trump,1
@@ -325,7 +325,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 27,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,CA,Donald Trump,1
 65,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,MD,Donald Trump,1
 51,"Completed some college, but no degree",Mexican,"$35,000 to $39,999",White,Yes,KY,Donald Trump,1
-45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian (Filipino),Yes,CA,Joe Biden,0
+45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian,Yes,CA,Joe Biden,0
 20,Associate Degree,Colombian,"Less than $14,999",White,Yes,NY,Joe Biden,0
 32,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",White,Yes,CA,Donald Trump,1
 42,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,NC,Joe Biden,0
@@ -352,7 +352,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 35,Masters degree,Not Hispanic,"$250,000 and above",White,Yes,NC,Donald Trump,1
 25,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,IL,Joe Biden,0
 47,Other post high school vocational training,Argentinian,"$45,000 to $49,999",White,No,CA,Donald Trump,1
-35,Completed some high school,Not Hispanic,"$25,000 to $29,999",Pacific Islander (Native Hawaiian),Yes,HI,Joe Biden,0
+35,Completed some high school,Not Hispanic,"$25,000 to $29,999",Pacific Islander,Yes,HI,Joe Biden,0
 32,"Completed some college, but no degree",Mexican,"$45,000 to $49,999",Some other race,Yes,CA,Joe Biden,0
 35,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
 40,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,CA,Donald Trump,1
@@ -414,7 +414,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",White,No,NC,Donald Trump,1
 41,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,FL,Joe Biden,0
 34,"College Degree (such as B.A., B.S.)",Venezuelan,"$125,000 to $149,999",White,Yes,TX,Donald Trump,1
-50,Doctorate degree,Not Hispanic,"$50,000 to $54,999",Asian (Chinese),Yes,MA,Donald Trump,1
+50,Doctorate degree,Not Hispanic,"$50,000 to $54,999",Asian,Yes,MA,Donald Trump,1
 69,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,GA,Donald Trump,1
 39,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
 45,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,KY,Donald Trump,1
@@ -435,7 +435,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 28,High school graduate,Not Hispanic,"$50,000 to $54,999",White,Yes,NV,Joe Biden,0
 62,"Completed some college, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,CA,Joe Biden,0
 45,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,No,IA,Donald Trump,1
-39,Masters degree,Not Hispanic,"$50,000 to $54,999",Asian (Korean),Yes,NJ,Joe Biden,0
+39,Masters degree,Not Hispanic,"$50,000 to $54,999",Asian,Yes,NJ,Joe Biden,0
 39,Other post high school vocational training,Not Hispanic,"Less than $14,999",White,No,UT,Donald Trump,1
 29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,CA,Joe Biden,0
 68,Associate Degree,Not Hispanic,"$40,000 to $44,999","Black, or African American",Yes,CT,Joe Biden,0
@@ -452,7 +452,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 34,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,TX,Donald Trump,1
 45,"College Degree (such as B.A., B.S.)",Colombian,"$80,000 to $84,999",White,Yes,CA,Donald Trump,1
 26,"College Degree (such as B.A., B.S.)",Mexican,"$30,000 to $34,999",White,Yes,OR,Joe Biden,0
-30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,NJ,Donald Trump,1
+30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,NJ,Donald Trump,1
 31,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,IA,Donald Trump,1
 29,"College Degree (such as B.A., B.S.)",Mexican,"$75,000 to $79,999",Some other race,Yes,CA,Joe Biden,0
 42,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,CA,Joe Biden,0
@@ -477,18 +477,18 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",White,No,MN,Donald Trump,1
 22,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999","Black, or African American",Yes,KS,Joe Biden,0
 40,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,MD,Donald Trump,1
-34,"Completed some graduate, but no degree",Not Hispanic,"$45,000 to $49,999",Asian (Filipino),Yes,AL,Joe Biden,0
+34,"Completed some graduate, but no degree",Not Hispanic,"$45,000 to $49,999",Asian,Yes,AL,Joe Biden,0
 49,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,MN,Joe Biden,0
 43,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,CA,Joe Biden,0
 50,Other post high school vocational training,Mexican,"$45,000 to $49,999",White,Yes,TX,Joe Biden,0
 60,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,MD,Joe Biden,0
 37,Completed some high school,Not Hispanic,"$30,000 to $34,999",White,Yes,AL,Donald Trump,1
 63,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,FL,Joe Biden,0
-23,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+23,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian,Yes,CA,Joe Biden,0
 30,"College Degree (such as B.A., B.S.)",Mexican,"$50,000 to $54,999",Some other race,Yes,TX,Joe Biden,0
 28,Masters degree,Not Hispanic,"$70,000 to $74,999",White,Yes,AR,Donald Trump,1
 18,High school graduate,Mexican,"$100,000 to $124,999",American Indian or Alaska Native,Yes,IL,Joe Biden,0
-18,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,CA,Joe Biden,0
+18,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,IL,Donald Trump,1
 20,High school graduate,Mexican,"Less than $14,999",Some other race,Yes,NJ,Joe Biden,0
 18,High school graduate,Mexican,"Less than $14,999","Black, or African American",No,NV,Joe Biden,0
@@ -542,7 +542,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 30,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,TN,Joe Biden,0
 54,Other post high school vocational training,Mexican,"$100,000 to $124,999",Some other race,Yes,PA,Donald Trump,1
 19,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,TX,Donald Trump,1
-53,"Completed some college, but no degree",Not Hispanic,"$150,000 to $174,999",Asian (Asian Indian),Yes,VA,Joe Biden,0
+53,"Completed some college, but no degree",Not Hispanic,"$150,000 to $174,999",Asian,Yes,VA,Joe Biden,0
 54,"Completed some college, but no degree",Mexican,"$65,000 to $69,999",White,Yes,CA,Donald Trump,1
 22,Completed some high school,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,GA,Joe Biden,0
 42,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,KY,Donald Trump,1
@@ -556,7 +556,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,Other post high school vocational training,Not Hispanic,"$65,000 to $69,999",White,Yes,MA,Donald Trump,1
 26,Middle School - Grades 4 - 8,Not Hispanic,"Less than $14,999",White,Yes,FL,Donald Trump,1
 36,High school graduate,Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Joe Biden,0
-24,Masters degree,Not Hispanic,"$250,000 and above",Asian (Japanese),Yes,FL,Joe Biden,0
+24,Masters degree,Not Hispanic,"$250,000 and above",Asian,Yes,FL,Joe Biden,0
 31,Associate Degree,Mexican,"$25,000 to $29,999",White,Yes,TX,Donald Trump,1
 41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
 38,High school graduate,Not Hispanic,"$50,000 to $54,999",White,No,OR,Joe Biden,0
@@ -572,7 +572,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 39,Completed some high school,Not Hispanic,"$55,000 to $59,999",White,No,NY,Joe Biden,0
 63,Other post high school vocational training,Not Hispanic,"$70,000 to $74,999",White,Yes,IL,Joe Biden,0
 47,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,Yes,TN,Donald Trump,1
-55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Filipino),Yes,MD,Joe Biden,0
+55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,MD,Joe Biden,0
 46,High school graduate,Not Hispanic,"$15,000 to $19,999",American Indian or Alaska Native,Yes,NY,Joe Biden,0
 33,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999","Black, or African American",Yes,MI,Joe Biden,0
 29,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,NH,Joe Biden,0
@@ -590,8 +590,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 60,Masters degree,Not Hispanic,"$70,000 to $74,999",White,Yes,KY,Donald Trump,1
 23,Completed some high school,Not Hispanic,"Less than $14,999",White,No,WV,Donald Trump,1
 44,Associate Degree,Mexican,"$60,000 to $64,999",White,Yes,CA,Donald Trump,1
-38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,CA,Joe Biden,0
-28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",Asian (Asian Indian),Yes,NY,Joe Biden,0
+38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
+28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",Asian,Yes,NY,Joe Biden,0
 37,Other post high school vocational training,Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,OH,Donald Trump,1
 56,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,NY,Donald Trump,1
 36,Other post high school vocational training,Colombian,"$45,000 to $49,999",White,Yes,TX,Donald Trump,1
@@ -626,7 +626,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,Completed some high school,Not Hispanic,"$45,000 to $49,999",White,Yes,PA,Joe Biden,0
 46,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,VA,Donald Trump,1
 91,Completed some high school,Mexican,"$15,000 to $19,999",White,Yes,TX,Donald Trump,1
-18,Completed some high school,Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,WA,Joe Biden,0
+18,Completed some high school,Not Hispanic,"$125,000 to $149,999",Asian,Yes,WA,Joe Biden,0
 35,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,AL,Donald Trump,1
 39,Middle School - Grades 4 - 8,Mexican,"$25,000 to $29,999",Some other race,Yes,FL,Donald Trump,1
 40,3rd Grade or less,Not Hispanic,"Less than $14,999",White,Yes,DE,Joe Biden,0
@@ -649,7 +649,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 57,Associate Degree,Not Hispanic,"$35,000 to $39,999",White,Yes,LA,Donald Trump,1
 63,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,Yes,NY,Joe Biden,0
 43,"Completed some college, but no degree",Other Hispanic,"$60,000 to $64,999",Some other race,Yes,NY,Joe Biden,0
-34,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,GA,Joe Biden,0
+34,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian,Yes,GA,Joe Biden,0
 29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,NY,Joe Biden,0
 20,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,VT,Joe Biden,0
 24,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,PA,Joe Biden,0
@@ -683,7 +683,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 19,High school graduate,Mexican,"$25,000 to $29,999",White,Yes,CA,Joe Biden,0
 60,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,CA,Joe Biden,0
 71,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,NY,Donald Trump,1
-55,"College Degree (such as B.A., B.S.)",Mexican,"$20,000 to $24,999",Asian (Filipino),Yes,NJ,Joe Biden,0
+55,"College Degree (such as B.A., B.S.)",Mexican,"$20,000 to $24,999",Asian,Yes,NJ,Joe Biden,0
 59,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,No,TX,Donald Trump,1
 31,"College Degree (such as B.A., B.S.)",Cuban,"$100,000 to $124,999",White,Yes,NJ,Donald Trump,1
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,NC,Joe Biden,0
@@ -700,7 +700,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 32,Masters degree,Not Hispanic,"$95,000 to $99,999",White,Yes,OH,Joe Biden,0
 63,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,NY,Joe Biden,0
 38,"Completed some college, but no degree",Other Hispanic,"$100,000 to $124,999","Black, or African American",Yes,VA,Joe Biden,0
-27,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",Asian (Asian Indian),Yes,IL,Joe Biden,0
+27,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",Asian,Yes,IL,Joe Biden,0
 34,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,PA,Joe Biden,0
 30,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,UT,Donald Trump,1
 70,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,GA,Joe Biden,0
@@ -712,9 +712,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,TN,Donald Trump,1
 39,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,AZ,Donald Trump,1
 30,High school graduate,Cuban,"$65,000 to $69,999",White,Yes,FL,Joe Biden,0
-75,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",Pacific Islander (Native Hawaiian),Yes,HI,Joe Biden,0
+75,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",Pacific Islander,Yes,HI,Joe Biden,0
 33,High school graduate,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
-20,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Asian (Asian Indian),Yes,AZ,Joe Biden,0
+20,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Asian,Yes,AZ,Joe Biden,0
 32,Masters degree,Not Hispanic,"$95,000 to $99,999",White,Yes,NY,Joe Biden,0
 34,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,NJ,Joe Biden,0
 66,High school graduate,Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,AR,Joe Biden,0
@@ -725,7 +725,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 33,"Completed some graduate, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,CA,Donald Trump,1
 52,Masters degree,Not Hispanic,"$60,000 to $64,999",White,Yes,UT,Donald Trump,1
 42,Associate Degree,Not Hispanic,"$60,000 to $64,999",White,Yes,UT,Joe Biden,0
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian (Filipino),Yes,UT,Donald Trump,1
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian,Yes,UT,Donald Trump,1
 76,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,MN,Joe Biden,0
 54,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,KY,Donald Trump,1
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",White,No,NV,Donald Trump,1
@@ -771,9 +771,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 19,3rd Grade or less,Not Hispanic,"Less than $14,999",White,Yes,CA,Donald Trump,1
 51,Other post high school vocational training,Not Hispanic,"$70,000 to $74,999",White,Yes,AR,Donald Trump,1
 39,High school graduate,Mexican,"$20,000 to $24,999",White,Yes,CA,Donald Trump,1
-28,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
-23,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
-52,High school graduate,Not Hispanic,"$35,000 to $39,999",Asian (Japanese),Yes,WA,Joe Biden,0
+28,Completed some high school,Not Hispanic,"Less than $14,999",Asian,Yes,CA,Joe Biden,0
+23,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
+52,High school graduate,Not Hispanic,"$35,000 to $39,999",Asian,Yes,WA,Joe Biden,0
 59,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,MI,Joe Biden,0
 38,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,KY,Donald Trump,1
 22,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,Yes,CO,Joe Biden,0
@@ -781,16 +781,16 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 42,Completed some high school,Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,MS,Joe Biden,0
 39,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,LA,Joe Biden,0
 59,Masters degree,Mexican,"$150,000 to $174,999",White,Yes,CA,Joe Biden,0
-20,Middle School - Grades 4 - 8,Not Hispanic,"$95,000 to $99,999",Asian (Asian Indian),Yes,IL,Donald Trump,1
+20,Middle School - Grades 4 - 8,Not Hispanic,"$95,000 to $99,999",Asian,Yes,IL,Donald Trump,1
 34,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,No,MO,Joe Biden,0
 33,"Completed some college, but no degree",Other Hispanic,"$20,000 to $24,999",White,Yes,NY,Joe Biden,0
 29,Completed some high school,Not Hispanic,"$30,000 to $34,999",White,Yes,PA,Donald Trump,1
-67,"Completed some college, but no degree",Not Hispanic,"$95,000 to $99,999",Asian (Korean),Yes,NY,Donald Trump,1
+67,"Completed some college, but no degree",Not Hispanic,"$95,000 to $99,999",Asian,Yes,NY,Donald Trump,1
 23,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,MI,Joe Biden,0
 64,High school graduate,Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,TX,Joe Biden,0
 48,Associate Degree,Mexican,"$15,000 to $19,999",White,Yes,FL,Donald Trump,1
 44,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,No,MO,Donald Trump,1
-32,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",Asian (Asian Indian),Yes,PA,Donald Trump,1
+32,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",Asian,Yes,PA,Donald Trump,1
 27,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,PA,Donald Trump,1
 40,Completed some high school,Not Hispanic,"$20,000 to $24,999",White,No,AL,Donald Trump,1
 25,Masters degree,Not Hispanic,"$85,000 to $89,999",White,Yes,CA,Joe Biden,0
@@ -825,7 +825,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 66,Associate Degree,Not Hispanic,"$75,000 to $79,999",White,Yes,OR,Joe Biden,0
 69,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,AZ,Joe Biden,0
 41,High school graduate,Not Hispanic,"$50,000 to $54,999",White,No,OH,Donald Trump,1
-23,"Completed some college, but no degree",Not Hispanic,"$85,000 to $89,999",Asian (Filipino),Yes,FL,Joe Biden,0
+23,"Completed some college, but no degree",Not Hispanic,"$85,000 to $89,999",Asian,Yes,FL,Joe Biden,0
 29,High school graduate,Not Hispanic,"$15,000 to $19,999",White,Yes,OK,Joe Biden,0
 64,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,OR,Donald Trump,1
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,AZ,Joe Biden,0
@@ -834,7 +834,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 39,High school graduate,Colombian,"$30,000 to $34,999","Black, or African American",Yes,FL,Joe Biden,0
 57,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,NC,Joe Biden,0
 39,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,Yes,KY,Donald Trump,1
-76,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian (Chinese),Yes,MA,Joe Biden,0
+76,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian,Yes,MA,Joe Biden,0
 40,"Completed some graduate, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
 70,"Completed some graduate, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,MI,Donald Trump,1
 39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,CA,Joe Biden,0
@@ -849,7 +849,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 49,Associate Degree,Not Hispanic,"$25,000 to $29,999",White,Yes,PA,Donald Trump,1
 43,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,AZ,Donald Trump,1
 18,High school graduate,Mexican,"$200,000 to $249,999","Black, or African American",Yes,CA,Joe Biden,0
-71,Masters degree,Not Hispanic,"$95,000 to $99,999",Asian (Japanese),Yes,HI,Joe Biden,0
+71,Masters degree,Not Hispanic,"$95,000 to $99,999",Asian,Yes,HI,Joe Biden,0
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999","Black, or African American",Yes,NV,Joe Biden,0
 69,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
 40,"Completed some college, but no degree",Not Hispanic,"$250,000 and above",White,Yes,NJ,Joe Biden,0
@@ -913,7 +913,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 69,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,FL,Donald Trump,1
 61,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,NC,Joe Biden,0
 66,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,PA,Donald Trump,1
-65,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,TX,Donald Trump,1
+65,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,TX,Donald Trump,1
 47,Masters degree,Not Hispanic,"$60,000 to $64,999",White,Yes,MN,Joe Biden,0
 36,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,Yes,IL,Donald Trump,1
 28,"Completed some graduate, but no degree",Mexican,"$35,000 to $39,999","Black, or African American",Yes,IN,Joe Biden,0
@@ -940,7 +940,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 35,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,MO,Joe Biden,0
 41,Associate Degree,Not Hispanic,"$55,000 to $59,999",White,No,PA,Donald Trump,1
 62,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,AZ,Donald Trump,1
-24,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999",Asian (Asian Indian),Yes,TX,Joe Biden,0
+24,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999",Asian,Yes,TX,Joe Biden,0
 69,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Donald Trump,1
 43,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,TN,Donald Trump,1
 78,Associate Degree,Not Hispanic,"$175,000 to $199,999",White,Yes,MD,Joe Biden,0
@@ -953,7 +953,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 56,Associate Degree,Mexican,"$125,000 to $149,999",White,Yes,IA,Donald Trump,1
 65,Doctorate degree,Not Hispanic,"$100,000 to $124,999",White,Yes,GA,Donald Trump,1
 62,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,VA,Donald Trump,1
-57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",Asian (Filipino),Yes,NJ,Donald Trump,1
+57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",Asian,Yes,NJ,Donald Trump,1
 21,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,TX,Joe Biden,0
 67,"Completed some graduate, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,TX,Donald Trump,1
 19,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,MO,Joe Biden,0
@@ -969,9 +969,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,OR,Joe Biden,0
 45,Completed some high school,Not Hispanic,"$30,000 to $34,999",White,Yes,NY,Donald Trump,1
 73,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",White,Yes,SC,Donald Trump,1
-61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,CA,Joe Biden,0
+61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Joe Biden,0
 48,Associate Degree,Spanish,"Less than $14,999",White,Yes,AZ,Donald Trump,1
-65,Masters degree,Not Hispanic,"$50,000 to $54,999",Asian (Japanese),Yes,IN,Donald Trump,1
+65,Masters degree,Not Hispanic,"$50,000 to $54,999",Asian,Yes,IN,Donald Trump,1
 60,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,MI,Joe Biden,0
 54,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,MO,Joe Biden,0
 73,High school graduate,Not Hispanic,"$60,000 to $64,999",White,No,GA,Donald Trump,1
@@ -1012,7 +1012,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,Masters degree,Not Hispanic,"$60,000 to $64,999",White,Yes,PA,Donald Trump,1
 67,High school graduate,Not Hispanic,"$45,000 to $49,999",White,No,OK,Donald Trump,1
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,NJ,Donald Trump,1
-45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian (Asian Indian),Yes,PA,Joe Biden,0
+45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian,Yes,PA,Joe Biden,0
 29,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,SC,Joe Biden,0
 50,Completed some high school,Mexican,"$35,000 to $39,999",White,Yes,FL,Donald Trump,1
 69,Doctorate degree,Not Hispanic,"$125,000 to $149,999",White,Yes,NY,Joe Biden,0
@@ -1074,7 +1074,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 71,"Completed some graduate, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,IL,Joe Biden,0
 58,Other post high school vocational training,Not Hispanic,"$75,000 to $79,999",White,Yes,AR,Donald Trump,1
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999","Black, or African American",Yes,FL,Joe Biden,0
-45,Completed some high school,Mexican,"$50,000 to $54,999",Pacific Islander (Other),Yes,NC,Joe Biden,0
+45,Completed some high school,Mexican,"$50,000 to $54,999",Pacific Islander,Yes,NC,Joe Biden,0
 69,Associate Degree,Not Hispanic,"$40,000 to $44,999",Some other race,Yes,MI,Donald Trump,1
 70,Associate Degree,Not Hispanic,"$40,000 to $44,999",White,Yes,NC,Donald Trump,1
 34,Completed some high school,Not Hispanic,"$25,000 to $29,999",White,Yes,VA,Donald Trump,1
@@ -1089,7 +1089,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,ND,Donald Trump,1
 70,Associate Degree,Not Hispanic,"Less than $14,999","Black, or African American",Yes,IL,Joe Biden,0
 65,"Completed some college, but no degree",Not Hispanic,"$80,000 to $84,999",White,Yes,LA,Donald Trump,1
-27,Other post high school vocational training,Mexican,"$15,000 to $19,999",Pacific Islander (Other),Yes,NC,Joe Biden,0
+27,Other post high school vocational training,Mexican,"$15,000 to $19,999",Pacific Islander,Yes,NC,Joe Biden,0
 46,Masters degree,Not Hispanic,"$175,000 to $199,999",White,No,LA,Joe Biden,0
 29,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Donald Trump,1
 37,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,PA,Joe Biden,0
@@ -1111,14 +1111,14 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 49,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999","Black, or African American",Yes,DE,Joe Biden,0
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,FL,Donald Trump,1
 67,High school graduate,Not Hispanic,"$60,000 to $64,999",White,Yes,CO,Donald Trump,1
-50,Masters degree,Not Hispanic,"$55,000 to $59,999",Asian (Asian Indian),Yes,GA,Joe Biden,0
+50,Masters degree,Not Hispanic,"$55,000 to $59,999",Asian,Yes,GA,Joe Biden,0
 70,High school graduate,Argentinian,"$45,000 to $49,999",White,Yes,KS,Donald Trump,1
 40,"Completed some college, but no degree",Mexican,"$100,000 to $124,999",Some other race,No,PA,Donald Trump,1
 19,"Completed some graduate, but no degree",Not Hispanic,"$100,000 to $124,999","Black, or African American",No,FL,Donald Trump,1
 73,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",White,Yes,CA,Donald Trump,1
 50,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999","Black, or African American",No,WI,Donald Trump,1
 37,Other post high school vocational training,Not Hispanic,"$75,000 to $79,999",Some other race,Yes,NC,Donald Trump,1
-25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",Asian (Chinese),Yes,CA,Joe Biden,0
+25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",Asian,Yes,CA,Joe Biden,0
 39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,NJ,Joe Biden,0
 81,High school graduate,Not Hispanic,"$45,000 to $49,999",White,No,TX,Donald Trump,1
 72,Associate Degree,Not Hispanic,"$100,000 to $124,999",American Indian or Alaska Native,Yes,CA,Donald Trump,1
@@ -1130,7 +1130,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 70,Doctorate degree,Not Hispanic,"$250,000 and above",White,Yes,CA,Donald Trump,1
 65,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,MN,Donald Trump,1
 43,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,Yes,AL,Joe Biden,0
-72,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Asian (Filipino),Yes,CA,Joe Biden,0
+72,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Asian,Yes,CA,Joe Biden,0
 73,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,IL,Joe Biden,0
 76,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,Yes,WI,Joe Biden,0
 50,Middle School - Grades 4 - 8,Not Hispanic,"$25,000 to $29,999",White,Yes,IL,Donald Trump,1
@@ -1167,13 +1167,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 60,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,RI,Joe Biden,0
 26,High school graduate,Not Hispanic,"$30,000 to $34,999",White,No,IL,Donald Trump,1
 60,Other post high school vocational training,Not Hispanic,"Less than $14,999",White,No,CA,Joe Biden,0
-20,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
-34,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",Asian (Asian Indian),Yes,NY,Donald Trump,1
+20,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
+34,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",Asian,Yes,NY,Donald Trump,1
 39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,Yes,TX,Joe Biden,0
 32,Doctorate degree,Not Hispanic,"$100,000 to $124,999",White,Yes,IL,Joe Biden,0
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999","Black, or African American",No,FL,Joe Biden,0
 20,Completed some high school,Not Hispanic,"$70,000 to $74,999",White,Yes,SC,Joe Biden,0
-58,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,MI,Joe Biden,0
+58,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,MI,Joe Biden,0
 54,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,FL,Joe Biden,0
 67,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
 59,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,KY,Donald Trump,1
@@ -1192,7 +1192,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 18,Masters degree,Not Hispanic,"$250,000 and above","Black, or African American",No,TX,Joe Biden,0
 39,Masters degree,Not Hispanic,"$250,000 and above",White,Yes,TX,Donald Trump,1
 64,High school graduate,Not Hispanic,"$50,000 to $54,999",White,Yes,MO,Joe Biden,0
-28,Masters degree,Not Hispanic,"$60,000 to $64,999",Asian (Asian Indian),Yes,NV,Donald Trump,1
+28,Masters degree,Not Hispanic,"$60,000 to $64,999",Asian,Yes,NV,Donald Trump,1
 19,High school graduate,Not Hispanic,"$95,000 to $99,999",White,Yes,IL,Joe Biden,0
 66,Associate Degree,Not Hispanic,"$25,000 to $29,999",White,Yes,KS,Joe Biden,0
 47,Associate Degree,Not Hispanic,"$150,000 to $174,999",White,No,UT,Joe Biden,0
@@ -1206,7 +1206,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,Doctorate degree,Not Hispanic,"$100,000 to $124,999",White,No,NJ,Joe Biden,0
 62,Associate Degree,Cuban,"$50,000 to $54,999",White,Yes,FL,Joe Biden,0
 54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,SC,Donald Trump,1
-58,Associate Degree,Not Hispanic,"Less than $14,999",Asian (Japanese),Yes,CA,Joe Biden,0
+58,Associate Degree,Not Hispanic,"Less than $14,999",Asian,Yes,CA,Joe Biden,0
 34,Masters degree,Not Hispanic,"$150,000 to $174,999",White,No,GA,Donald Trump,1
 27,"Completed some college, but no degree",Mexican,"$15,000 to $19,999",White,Yes,AZ,Joe Biden,0
 59,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,NY,Joe Biden,0
@@ -1223,7 +1223,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 29,High school graduate,Not Hispanic,"$70,000 to $74,999",White,Yes,MA,Joe Biden,0
 77,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,NC,Donald Trump,1
 40,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,CA,Donald Trump,1
-36,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Asian (Korean),Yes,CA,Donald Trump,1
+36,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Asian,Yes,CA,Donald Trump,1
 68,Other post high school vocational training,Not Hispanic,"$70,000 to $74,999",White,Yes,AZ,Joe Biden,0
 55,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,IL,Donald Trump,1
 47,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,WA,Donald Trump,1
@@ -1255,8 +1255,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",White,No,KS,Donald Trump,1
 50,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,OR,Joe Biden,0
 57,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,NH,Joe Biden,0
-55,"Completed some graduate, but no degree",Not Hispanic,"$175,000 to $199,999",Asian (Vietnamese),Yes,GA,Donald Trump,1
-49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Vietnamese),Yes,FL,Donald Trump,1
+55,"Completed some graduate, but no degree",Not Hispanic,"$175,000 to $199,999",Asian,Yes,GA,Donald Trump,1
+49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,FL,Donald Trump,1
 57,Doctorate degree,Not Hispanic,"$250,000 and above","Black, or African American",Yes,MI,Joe Biden,0
 75,"Completed some graduate, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,TN,Donald Trump,1
 53,Associate Degree,Mexican,"$50,000 to $54,999",White,No,NV,Donald Trump,1
@@ -1267,7 +1267,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,OR,Joe Biden,0
 55,3rd Grade or less,Not Hispanic,"$65,000 to $69,999",American Indian or Alaska Native,Yes,CA,Donald Trump,1
 33,"College Degree (such as B.A., B.S.)",Venezuelan,"$125,000 to $149,999",White,Yes,PA,Donald Trump,1
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian (Chinese),Yes,CA,Joe Biden,0
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian,Yes,CA,Joe Biden,0
 48,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,ME,Donald Trump,1
 41,Masters degree,Not Hispanic,"$50,000 to $54,999",White,Yes,TX,Donald Trump,1
 75,Masters degree,Not Hispanic,"$50,000 to $54,999",White,Yes,TN,Donald Trump,1
@@ -1288,7 +1288,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 66,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,VA,Donald Trump,1
 32,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,TX,Joe Biden,0
 40,Other post high school vocational training,Mexican,"Less than $14,999",Some other race,Yes,CA,Joe Biden,0
-56,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Japanese),Yes,AZ,Joe Biden,0
+56,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,AZ,Joe Biden,0
 72,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,NY,Joe Biden,0
 59,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,No,AL,Donald Trump,1
 65,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",White,No,LA,Donald Trump,1
@@ -1300,7 +1300,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 65,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,CT,Joe Biden,0
 53,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Donald Trump,1
 80,Associate Degree,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,OH,Joe Biden,0
-35,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",Asian (Asian Indian),Yes,OH,Joe Biden,0
+35,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",Asian,Yes,OH,Joe Biden,0
 44,High school graduate,Mexican,"$55,000 to $59,999",White,Yes,MN,Donald Trump,1
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,PA,Joe Biden,0
 65,Other post high school vocational training,Mexican,"$15,000 to $19,999",Some other race,Yes,NM,Joe Biden,0
@@ -1308,19 +1308,19 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 59,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,TX,Donald Trump,1
 34,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,AZ,Joe Biden,0
 23,"College Degree (such as B.A., B.S.)",Mexican,"Less than $14,999",Some other race,Yes,CA,Joe Biden,0
-50,Masters degree,Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,HI,Joe Biden,0
+50,Masters degree,Not Hispanic,"$125,000 to $149,999",Asian,Yes,HI,Joe Biden,0
 74,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,TX,Donald Trump,1
 53,High school graduate,Spanish,"$80,000 to $84,999",White,Yes,CA,Donald Trump,1
 37,Completed some high school,Not Hispanic,"$50,000 to $54,999",White,No,ID,Donald Trump,1
-41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",Asian (Korean),Yes,VA,Donald Trump,1
+41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",Asian,Yes,VA,Donald Trump,1
 36,Associate Degree,Not Hispanic,"$45,000 to $49,999",White,Yes,HI,Joe Biden,0
 46,"Completed some graduate, but no degree",Mexican,"$125,000 to $149,999",Some other race,Yes,CA,Donald Trump,1
-49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",Asian (Asian Indian),Yes,NY,Joe Biden,0
+49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",Asian,Yes,NY,Joe Biden,0
 30,Masters degree,Mexican,"$100,000 to $124,999",White,Yes,CA,Donald Trump,1
 68,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999",White,Yes,WA,Joe Biden,0
 25,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,No,IN,Joe Biden,0
 21,Completed some high school,Not Hispanic,"Less than $14,999",White,No,OH,Donald Trump,1
-20,"College Degree (such as B.A., B.S.)",Other Hispanic,"Less than $14,999",Asian (Filipino),Yes,NY,Joe Biden,0
+20,"College Degree (such as B.A., B.S.)",Other Hispanic,"Less than $14,999",Asian,Yes,NY,Joe Biden,0
 27,"Completed some graduate, but no degree",Not Hispanic,"$20,000 to $24,999","Black, or African American",No,TX,Donald Trump,1
 50,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",No,NV,Donald Trump,1
 56,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,Yes,PA,Donald Trump,1
@@ -1349,12 +1349,12 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 61,Associate Degree,Not Hispanic,"$35,000 to $39,999","Black, or African American",Yes,MS,Joe Biden,0
 39,Completed some high school,Mexican,"$20,000 to $24,999",Some other race,Yes,CA,Donald Trump,1
 19,Completed some high school,Not Hispanic,"$90,000 to $94,999",White,Yes,GA,Joe Biden,0
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,NY,Joe Biden,0
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,NY,Joe Biden,0
 54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$90,000 to $94,999",White,Yes,NY,Joe Biden,0
 18,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,Yes,PA,Donald Trump,1
 64,Masters degree,Not Hispanic,"$85,000 to $89,999",White,Yes,FL,Joe Biden,0
 41,Completed some high school,Not Hispanic,"$20,000 to $24,999","Black, or African American",Yes,FL,Joe Biden,0
-51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian (Chinese),Yes,NC,Donald Trump,1
+51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian,Yes,NC,Donald Trump,1
 71,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,No,MN,Joe Biden,0
 25,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,NV,Joe Biden,0
 20,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,VA,Joe Biden,0
@@ -1381,11 +1381,11 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 51,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,OH,Joe Biden,0
 28,Other post high school vocational training,Not Hispanic,"$40,000 to $44,999",Some other race,Yes,CT,Joe Biden,0
 44,Completed some high school,Not Hispanic,"Less than $14,999",White,No,SC,Joe Biden,0
-48,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,CA,Joe Biden,0
+48,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Joe Biden,0
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",White,Yes,TX,Joe Biden,0
 56,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,CA,Donald Trump,1
 40,Middle School - Grades 4 - 8,Not Hispanic,"$40,000 to $44,999",White,Yes,SD,Donald Trump,1
-18,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian (Japanese),Yes,GA,Joe Biden,0
+18,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian,Yes,GA,Joe Biden,0
 68,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,CA,Joe Biden,0
 73,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,GA,Joe Biden,0
 49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Donald Trump,1
@@ -1401,7 +1401,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 46,Other post high school vocational training,Not Hispanic,"$100,000 to $124,999",White,Yes,TN,Donald Trump,1
 30,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,NV,Donald Trump,1
 62,High school graduate,Not Hispanic,"$55,000 to $59,999",White,No,KY,Donald Trump,1
-28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Asian (Japanese),Yes,CA,Joe Biden,0
+28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Asian,Yes,CA,Joe Biden,0
 33,"Completed some college, but no degree",Cuban,"$45,000 to $49,999",White,Yes,CA,Donald Trump,1
 47,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,NY,Joe Biden,0
 53,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999","Black, or African American",Yes,TX,Joe Biden,0
@@ -1425,11 +1425,11 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 30,Completed some high school,Not Hispanic,"Less than $14,999",White,No,LA,Donald Trump,1
 36,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,TX,Joe Biden,0
 20,"Completed some college, but no degree",Mexican,"$40,000 to $44,999",White,Yes,FL,Joe Biden,0
-38,Masters degree,Not Hispanic,"$150,000 to $174,999",Asian (Korean),Yes,AZ,Joe Biden,0
+38,Masters degree,Not Hispanic,"$150,000 to $174,999",Asian,Yes,AZ,Joe Biden,0
 49,Associate Degree,Cuban,"Less than $14,999",White,Yes,TX,Donald Trump,1
 25,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,MA,Joe Biden,0
 39,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,WA,Joe Biden,0
-47,Associate Degree,Not Hispanic,"$70,000 to $74,999",Asian (Chinese),Yes,CA,Joe Biden,0
+47,Associate Degree,Not Hispanic,"$70,000 to $74,999",Asian,Yes,CA,Joe Biden,0
 63,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,Yes,OK,Donald Trump,1
 29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
 55,Masters degree,Not Hispanic,"$45,000 to $49,999",White,Yes,FL,Donald Trump,1
@@ -1506,7 +1506,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 37,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,NC,Joe Biden,0
 33,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,KS,Donald Trump,1
 69,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,MO,Joe Biden,0
-72,Associate Degree,Not Hispanic,"$20,000 to $24,999",Asian (Vietnamese),Yes,MI,Donald Trump,1
+72,Associate Degree,Not Hispanic,"$20,000 to $24,999",Asian,Yes,MI,Donald Trump,1
 38,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,NY,Donald Trump,1
 18,High school graduate,Not Hispanic,"Less than $14,999",White,No,MI,Joe Biden,0
 42,Associate Degree,Mexican,"$45,000 to $49,999",White,Yes,CA,Joe Biden,0
@@ -1599,7 +1599,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 46,Associate Degree,Not Hispanic,"$15,000 to $19,999",White,Yes,IN,Donald Trump,1
 64,Associate Degree,Not Hispanic,"$250,000 and above",White,Yes,KY,Joe Biden,0
 38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,Yes,MI,Donald Trump,1
-68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian (Chinese),Yes,NJ,Donald Trump,1
+68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian,Yes,NJ,Donald Trump,1
 64,"Completed some college, but no degree",Not Hispanic,"$85,000 to $89,999",White,Yes,CA,Joe Biden,0
 37,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,TX,Joe Biden,0
 59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
@@ -1613,13 +1613,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,FL,Donald Trump,1
 42,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,CA,Donald Trump,1
 23,"Completed some college, but no degree",Other Hispanic,"$55,000 to $59,999",Some other race,Yes,CA,Joe Biden,0
-43,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian (Chinese),Yes,CA,Joe Biden,0
+43,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian,Yes,CA,Joe Biden,0
 58,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Donald Trump,1
 41,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,CA,Donald Trump,1
-57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian (Japanese),Yes,CA,Joe Biden,0
+57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian,Yes,CA,Joe Biden,0
 67,Other post high school vocational training,Not Hispanic,"$30,000 to $34,999",White,Yes,IL,Donald Trump,1
-20,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Asian (Filipino),Yes,NY,Joe Biden,0
-40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,GA,Joe Biden,0
+20,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Asian,Yes,NY,Joe Biden,0
+40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,GA,Joe Biden,0
 42,"College Degree (such as B.A., B.S.)",Mexican,"$30,000 to $34,999",White,Yes,WA,Joe Biden,0
 41,Doctorate degree,Not Hispanic,"$175,000 to $199,999",White,Yes,CA,Donald Trump,1
 32,High school graduate,Not Hispanic,"Less than $14,999",White,No,AL,Joe Biden,0
@@ -1682,7 +1682,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 55,"Completed some college, but no degree",Other Hispanic,"$30,000 to $34,999",Some other race,Yes,FL,Joe Biden,0
 67,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,NJ,Donald Trump,1
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,MA,Joe Biden,0
-33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",Asian (Asian Indian),Yes,MA,Joe Biden,0
+33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",Asian,Yes,MA,Joe Biden,0
 37,Completed some high school,Not Hispanic,"Less than $14,999",White,No,IN,Donald Trump,1
 47,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,AL,Donald Trump,1
 75,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Some other race,Yes,ID,Joe Biden,0
@@ -1720,13 +1720,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,Completed some high school,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Donald Trump,1
 31,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,AZ,Joe Biden,0
 36,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,WA,Joe Biden,0
-43,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Filipino),Yes,HI,Joe Biden,0
+43,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,HI,Joe Biden,0
 22,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",White,Yes,VA,Joe Biden,0
 43,"Completed some college, but no degree",Mexican,"$95,000 to $99,999","Black, or African American",Yes,AZ,Joe Biden,0
 61,"Completed some graduate, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,DC,Joe Biden,0
 24,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,OH,Donald Trump,1
 55,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,CA,Joe Biden,0
-24,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",Asian (Asian Indian),Yes,NY,Joe Biden,0
+24,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",Asian,Yes,NY,Joe Biden,0
 36,"College Degree (such as B.A., B.S.)",Other Hispanic,"$35,000 to $39,999",Some other race,Yes,MA,Joe Biden,0
 76,High school graduate,Not Hispanic,"$35,000 to $39,999",White,Yes,NJ,Donald Trump,1
 48,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,No,MO,Donald Trump,1
@@ -1738,7 +1738,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 33,Masters degree,Not Hispanic,"$45,000 to $49,999",White,Yes,AL,Joe Biden,0
 41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,ME,Joe Biden,0
 62,Associate Degree,Not Hispanic,"$65,000 to $69,999",White,Yes,AZ,Joe Biden,0
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,CA,Joe Biden,0
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
 35,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Some other race,Yes,NC,Joe Biden,0
 69,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,AZ,Donald Trump,1
 21,High school graduate,Not Hispanic,"$250,000 and above",White,Yes,CA,Donald Trump,1
@@ -1771,7 +1771,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 36,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,OH,Joe Biden,0
 30,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,AL,Donald Trump,1
 56,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,FL,Donald Trump,1
-26,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,KS,Donald Trump,1
+26,Completed some high school,Not Hispanic,"Less than $14,999",Asian,Yes,KS,Donald Trump,1
 31,Completed some high school,Not Hispanic,"$25,000 to $29,999",White,Yes,FL,Donald Trump,1
 61,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,Yes,MD,Donald Trump,1
 41,"Completed some graduate, but no degree",Mexican,"$125,000 to $149,999",White,Yes,VA,Joe Biden,0
@@ -1785,7 +1785,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,High school graduate,Not Hispanic,"$70,000 to $74,999",White,Yes,GA,Donald Trump,1
 24,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,VA,Joe Biden,0
 40,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
-24,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,CT,Joe Biden,0
+24,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian,Yes,CT,Joe Biden,0
 34,Other post high school vocational training,Not Hispanic,"$75,000 to $79,999",White,No,NC,Donald Trump,1
 32,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,AR,Donald Trump,1
 19,"Completed some graduate, but no degree",Mexican,"$250,000 and above","Black, or African American",No,IL,Joe Biden,0
@@ -1805,27 +1805,27 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 75,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999",White,Yes,MN,Donald Trump,1
 38,Associate Degree,Not Hispanic,"$55,000 to $59,999",White,Yes,MI,Joe Biden,0
 19,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,No,AK,Joe Biden,0
-52,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",Asian (Chinese),Yes,WA,Joe Biden,0
+52,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",Asian,Yes,WA,Joe Biden,0
 29,Associate Degree,Not Hispanic,"$75,000 to $79,999",White,Yes,MI,Joe Biden,0
 35,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",No,NC,Joe Biden,0
-47,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",Asian (Other),Yes,HI,Donald Trump,1
+47,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",Asian,Yes,HI,Donald Trump,1
 48,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,IL,Joe Biden,0
 33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",White,Yes,CT,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,NC,Joe Biden,0
 22,"College Degree (such as B.A., B.S.)",Mexican,"$250,000 and above","Black, or African American",No,FL,Joe Biden,0
 20,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999","Black, or African American",Yes,TN,Joe Biden,0
-48,Masters degree,Not Hispanic,"$175,000 to $199,999",Asian (Vietnamese),Yes,MD,Joe Biden,0
+48,Masters degree,Not Hispanic,"$175,000 to $199,999",Asian,Yes,MD,Joe Biden,0
 50,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,FL,Donald Trump,1
-30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian (Chinese),Yes,PA,Joe Biden,0
+30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian,Yes,PA,Joe Biden,0
 66,Associate Degree,Not Hispanic,"$35,000 to $39,999",White,Yes,AZ,Joe Biden,0
 57,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999",White,Yes,OH,Joe Biden,0
-49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,NJ,Joe Biden,0
+49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,NJ,Joe Biden,0
 72,Other post high school vocational training,Not Hispanic,"$45,000 to $49,999",White,Yes,MO,Donald Trump,1
 27,High school graduate,Other Hispanic,"Less than $14,999","Black, or African American",Yes,NY,Joe Biden,0
 35,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",No,AL,Joe Biden,0
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,NV,Joe Biden,0
 62,Associate Degree,Not Hispanic,"$25,000 to $29,999",White,Yes,VA,Joe Biden,0
-43,Doctorate degree,Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,WA,Joe Biden,0
+43,Doctorate degree,Not Hispanic,"$100,000 to $124,999",Asian,Yes,WA,Joe Biden,0
 70,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,CA,Joe Biden,0
 38,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,Yes,CA,Joe Biden,0
 60,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,MS,Donald Trump,1
@@ -1849,7 +1849,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 28,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,NY,Joe Biden,0
 52,"Completed some college, but no degree",Not Hispanic,"$200,000 to $249,999",White,Yes,NV,Donald Trump,1
 62,"Completed some college, but no degree",Not Hispanic,"$95,000 to $99,999",White,Yes,TX,Donald Trump,1
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Korean),Yes,CA,Joe Biden,0
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Joe Biden,0
 78,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,NY,Donald Trump,1
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,PA,Joe Biden,0
 33,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,AZ,Donald Trump,1
@@ -1871,7 +1871,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 79,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999",White,Yes,NY,Joe Biden,0
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",White,Yes,CT,Joe Biden,0
 21,High school graduate,Not Hispanic,"$100,000 to $124,999",White,Yes,NJ,Donald Trump,1
-43,High school graduate,Not Hispanic,"$30,000 to $34,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+43,High school graduate,Not Hispanic,"$30,000 to $34,999",Asian,Yes,CA,Joe Biden,0
 56,High school graduate,Not Hispanic,"$50,000 to $54,999",White,Yes,IA,Donald Trump,1
 46,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,PA,Joe Biden,0
 29,Completed some high school,Not Hispanic,"$45,000 to $49,999",White,Yes,AZ,Donald Trump,1
@@ -1890,7 +1890,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 32,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,MA,Joe Biden,0
 30,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,No,OH,Joe Biden,0
 29,Masters degree,Mexican,"$250,000 and above",White,Yes,CO,Joe Biden,0
-32,Masters degree,Mexican,"$60,000 to $64,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+32,Masters degree,Mexican,"$60,000 to $64,999",Asian,Yes,CA,Joe Biden,0
 26,Other post high school vocational training,Mexican,"$30,000 to $34,999",White,Yes,LA,Donald Trump,1
 30,"College Degree (such as B.A., B.S.)",Mexican,"$15,000 to $19,999","Black, or African American",Yes,SC,Joe Biden,0
 29,"College Degree (such as B.A., B.S.)",Other Hispanic,"$15,000 to $19,999","Black, or African American",Yes,NY,Donald Trump,1
@@ -1911,7 +1911,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,"College Degree (such as B.A., B.S.)",Mexican,"$40,000 to $44,999",Some other race,Yes,CA,Joe Biden,0
 34,Other post high school vocational training,Not Hispanic,"$55,000 to $59,999","Black, or African American",Yes,FL,Joe Biden,0
 44,Completed some high school,Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,CT,Donald Trump,1
-22,Completed some high school,Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+22,Completed some high school,Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Joe Biden,0
 51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,KS,Donald Trump,1
 48,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,CA,Joe Biden,0
 67,High school graduate,Mexican,"$90,000 to $94,999",Some other race,Yes,TX,Donald Trump,1
@@ -1932,7 +1932,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,Masters degree,Not Hispanic,"$80,000 to $84,999","Black, or African American",Yes,NY,Joe Biden,0
 66,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,MO,Donald Trump,1
 19,Completed some high school,Not Hispanic,"$85,000 to $89,999",White,Yes,FL,Donald Trump,1
-51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian (Asian Indian),Yes,OK,Donald Trump,1
+51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian,Yes,OK,Donald Trump,1
 64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",White,Yes,PA,Joe Biden,0
 41,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,AZ,Donald Trump,1
 66,"College Degree (such as B.A., B.S.)",Spanish,"$60,000 to $64,999",White,Yes,IL,Joe Biden,0
@@ -1958,7 +1958,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 42,Masters degree,Not Hispanic,"$45,000 to $49,999",White,Yes,PA,Donald Trump,1
 71,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,CO,Joe Biden,0
 62,Masters degree,Not Hispanic,"$70,000 to $74,999",White,Yes,NE,Donald Trump,1
-18,High school graduate,Not Hispanic,"Less than $14,999",Asian (Other),Yes,VA,Joe Biden,0
+18,High school graduate,Not Hispanic,"Less than $14,999",Asian,Yes,VA,Joe Biden,0
 23,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,No,KY,Donald Trump,1
 19,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,PA,Donald Trump,1
 35,Doctorate degree,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
@@ -1977,13 +1977,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,DC,Donald Trump,1
 30,"Completed some graduate, but no degree",Not Hispanic,"$65,000 to $69,999",Some other race,Yes,CA,Joe Biden,0
 66,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,CT,Joe Biden,0
-72,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,TX,Donald Trump,1
+72,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",Asian,Yes,TX,Donald Trump,1
 37,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,Yes,FL,Joe Biden,0
 18,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,MD,Joe Biden,0
 20,High school graduate,Not Hispanic,"$15,000 to $19,999",White,Yes,MD,Joe Biden,0
 23,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,CT,Joe Biden,0
 37,Other post high school vocational training,Not Hispanic,"$35,000 to $39,999",White,Yes,MA,Donald Trump,1
-24,"Completed some graduate, but no degree",Not Hispanic,"$175,000 to $199,999",Asian (Chinese),No,MA,Joe Biden,0
+24,"Completed some graduate, but no degree",Not Hispanic,"$175,000 to $199,999",Asian,No,MA,Joe Biden,0
 63,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,TN,Joe Biden,0
 30,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,OR,Joe Biden,0
 19,High school graduate,Not Hispanic,"$65,000 to $69,999",White,Yes,FL,Joe Biden,0
@@ -2022,8 +2022,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NE,Donald Trump,1
 51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Joe Biden,0
 22,Other post high school vocational training,Not Hispanic,"$55,000 to $59,999",White,Yes,CO,Joe Biden,0
-24,Masters degree,Not Hispanic,"$25,000 to $29,999",Asian (Other),Yes,IL,Joe Biden,0
-18,Completed some high school,Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+24,Masters degree,Not Hispanic,"$25,000 to $29,999",Asian,Yes,IL,Joe Biden,0
+18,Completed some high school,Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
 20,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,MA,Joe Biden,0
 77,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",White,Yes,WA,Joe Biden,0
 75,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999","Black, or African American",Yes,MD,Joe Biden,0
@@ -2050,7 +2050,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 33,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,NC,Joe Biden,0
 35,Other post high school vocational training,Not Hispanic,"$55,000 to $59,999",White,No,FL,Joe Biden,0
 51,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999",White,Yes,NY,Donald Trump,1
-49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian (Asian Indian),Yes,HI,Joe Biden,0
+49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian,Yes,HI,Joe Biden,0
 34,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,SC,Joe Biden,0
 37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",White,Yes,MS,Donald Trump,1
 65,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999","Black, or African American",Yes,NC,Joe Biden,0
@@ -2081,7 +2081,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,NJ,Joe Biden,0
 21,Completed some high school,Not Hispanic,"Less than $14,999",American Indian or Alaska Native,No,UT,Joe Biden,0
 38,Other post high school vocational training,Mexican,"$45,000 to $49,999",Some other race,Yes,IL,Joe Biden,0
-37,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",Asian (Asian Indian),Yes,IL,Joe Biden,0
+37,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",Asian,Yes,IL,Joe Biden,0
 27,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,CO,Joe Biden,0
 40,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,NY,Joe Biden,0
 63,High school graduate,Not Hispanic,"$30,000 to $34,999",White,Yes,MI,Donald Trump,1
@@ -2092,7 +2092,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 30,High school graduate,Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,IN,Donald Trump,1
 18,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,AZ,Joe Biden,0
 37,High school graduate,Mexican,"$75,000 to $79,999",White,Yes,CA,Joe Biden,0
-29,Associate Degree,Not Hispanic,"$70,000 to $74,999",Asian (Other),Yes,OH,Joe Biden,0
+29,Associate Degree,Not Hispanic,"$70,000 to $74,999",Asian,Yes,OH,Joe Biden,0
 33,Completed some high school,Not Hispanic,"$25,000 to $29,999",White,No,FL,Donald Trump,1
 21,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,SD,Joe Biden,0
 18,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,WI,Donald Trump,1
@@ -2164,9 +2164,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 56,"Completed some graduate, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Joe Biden,0
 59,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,MN,Joe Biden,0
 30,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999","Black, or African American",Yes,SC,Joe Biden,0
-45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian,Yes,CA,Joe Biden,0
 58,Other post high school vocational training,Other Hispanic,"$20,000 to $24,999",Some other race,Yes,NV,Joe Biden,0
-21,Middle School - Grades 4 - 8,Mexican,"Less than $14,999",Pacific Islander (Other),No,TN,Joe Biden,0
+21,Middle School - Grades 4 - 8,Mexican,"Less than $14,999",Pacific Islander,No,TN,Joe Biden,0
 50,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,No,MN,Donald Trump,1
 31,Completed some high school,Not Hispanic,"$60,000 to $64,999",White,Yes,FL,Joe Biden,0
 22,"Completed some college, but no degree",Mexican,"$40,000 to $44,999",Some other race,Yes,NY,Joe Biden,0
@@ -2177,7 +2177,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 51,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,No,CT,Joe Biden,0
 70,Associate Degree,Not Hispanic,"Less than $14,999",White,No,TN,Donald Trump,1
 28,Other post high school vocational training,Not Hispanic,"Less than $14,999",White,No,MT,Donald Trump,1
-60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Vietnamese),Yes,CA,Joe Biden,0
+60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
 21,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,KY,Donald Trump,1
 42,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,LA,Donald Trump,1
 45,"College Degree (such as B.A., B.S.)",Mexican,"$95,000 to $99,999",White,Yes,VA,Joe Biden,0
@@ -2186,15 +2186,15 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 19,"College Degree (such as B.A., B.S.)",Argentinian,"$70,000 to $74,999",White,Yes,OK,Donald Trump,1
 56,"Completed some graduate, but no degree",Not Hispanic,"$250,000 and above",White,Yes,CA,Donald Trump,1
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,CA,Donald Trump,1
-26,Completed some high school,Not Hispanic,"$150,000 to $174,999",Asian (Chinese),Yes,CA,Joe Biden,0
-19,Completed some high school,Not Hispanic,"$70,000 to $74,999",Asian (Asian Indian),Yes,TX,Joe Biden,0
+26,Completed some high school,Not Hispanic,"$150,000 to $174,999",Asian,Yes,CA,Joe Biden,0
+19,Completed some high school,Not Hispanic,"$70,000 to $74,999",Asian,Yes,TX,Joe Biden,0
 19,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,GA,Joe Biden,0
 61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",White,Yes,NC,Joe Biden,0
 25,Completed some high school,Not Hispanic,"$50,000 to $54,999",White,Yes,CA,Donald Trump,1
 31,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999",White,Yes,CO,Donald Trump,1
 32,Associate Degree,Not Hispanic,"$95,000 to $99,999",White,Yes,IA,Donald Trump,1
 37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,CO,Joe Biden,0
-24,High school graduate,Other Hispanic,"$35,000 to $39,999",Pacific Islander (Other),Yes,NY,Joe Biden,0
+24,High school graduate,Other Hispanic,"$35,000 to $39,999",Pacific Islander,Yes,NY,Joe Biden,0
 34,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,FL,Joe Biden,0
 60,Completed some high school,Not Hispanic,"Less than $14,999",White,No,MO,Donald Trump,1
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999","Black, or African American",Yes,VA,Joe Biden,0
@@ -2206,7 +2206,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 52,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",White,No,CT,Donald Trump,1
 51,Completed some high school,Not Hispanic,"$60,000 to $64,999",White,Yes,GA,Donald Trump,1
 24,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,AR,Joe Biden,0
-26,High school graduate,Not Hispanic,"$30,000 to $34,999",Pacific Islander (Native Hawaiian),Yes,HI,Donald Trump,1
+26,High school graduate,Not Hispanic,"$30,000 to $34,999",Pacific Islander,Yes,HI,Donald Trump,1
 39,Other post high school vocational training,Not Hispanic,"$25,000 to $29,999",White,No,IL,Donald Trump,1
 34,High school graduate,Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,NC,Joe Biden,0
 39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,SC,Donald Trump,1
@@ -2227,12 +2227,12 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 44,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,No,TX,Donald Trump,1
 60,Masters degree,Not Hispanic,"$25,000 to $29,999","Black, or African American",No,TX,Joe Biden,0
 69,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,OR,Joe Biden,0
-34,Completed some high school,Not Hispanic,"$25,000 to $29,999",Asian (Asian Indian),Yes,AZ,Donald Trump,1
+34,Completed some high school,Not Hispanic,"$25,000 to $29,999",Asian,Yes,AZ,Donald Trump,1
 53,Associate Degree,Not Hispanic,"$100,000 to $124,999",Some other race,Yes,CA,Donald Trump,1
 39,High school graduate,Mexican,"$30,000 to $34,999",White,Yes,CA,Joe Biden,0
 58,Masters degree,Not Hispanic,"$55,000 to $59,999","Black, or African American",Yes,TX,Donald Trump,1
 40,Completed some high school,Mexican,"$70,000 to $74,999",Some other race,Yes,NC,Joe Biden,0
-37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian (Asian Indian),Yes,CA,Donald Trump,1
+37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian,Yes,CA,Donald Trump,1
 53,Completed some high school,Mexican,"$35,000 to $39,999",Some other race,Yes,CA,Joe Biden,0
 33,Associate Degree,Not Hispanic,"$200,000 to $249,999","Black, or African American",No,CA,Joe Biden,0
 49,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,NV,Donald Trump,1
@@ -2246,7 +2246,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 68,High school graduate,Not Hispanic,"$65,000 to $69,999",White,Yes,NJ,Donald Trump,1
 23,"College Degree (such as B.A., B.S.)",Mexican,"Less than $14,999",Some other race,Yes,NJ,Joe Biden,0
 37,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,OK,Donald Trump,1
-21,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,ID,Joe Biden,0
+21,Completed some high school,Not Hispanic,"Less than $14,999",Asian,Yes,ID,Joe Biden,0
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999","Black, or African American",Yes,NY,Joe Biden,0
 51,Other post high school vocational training,Not Hispanic,"$75,000 to $79,999",White,Yes,CA,Donald Trump,1
 40,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,OR,Donald Trump,1
@@ -2269,7 +2269,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 58,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,FL,Donald Trump,1
 51,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,CA,Donald Trump,1
 21,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,GA,Joe Biden,0
-37,"College Degree (such as B.A., B.S.)",Spanish,"$95,000 to $99,999",Asian (Chinese),Yes,AZ,Joe Biden,0
+37,"College Degree (such as B.A., B.S.)",Spanish,"$95,000 to $99,999",Asian,Yes,AZ,Joe Biden,0
 28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,TN,Joe Biden,0
 38,High school graduate,Not Hispanic,"$20,000 to $24,999",White,No,NH,Donald Trump,1
 30,3rd Grade or less,Other Hispanic,"$100,000 to $124,999",Some other race,Yes,OK,Joe Biden,0
@@ -2301,7 +2301,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 66,Associate Degree,Not Hispanic,"$60,000 to $64,999","Black, or African American",Yes,CA,Joe Biden,0
 60,Associate Degree,Not Hispanic,"$125,000 to $149,999",White,No,SC,Donald Trump,1
 32,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,Yes,NC,Joe Biden,0
-72,"Completed some graduate, but no degree",Not Hispanic,"$200,000 to $249,999",Asian (Chinese),Yes,FL,Joe Biden,0
+72,"Completed some graduate, but no degree",Not Hispanic,"$200,000 to $249,999",Asian,Yes,FL,Joe Biden,0
 66,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999","Black, or African American",Yes,GA,Joe Biden,0
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,GA,Joe Biden,0
 75,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",White,Yes,NY,Donald Trump,1
@@ -2420,7 +2420,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$90,000 to $94,999",White,Yes,IL,Joe Biden,0
 24,High school graduate,Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,NV,Donald Trump,1
 64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,CA,Joe Biden,0
-53,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian (Filipino),Yes,AZ,Donald Trump,1
+53,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",Asian,Yes,AZ,Donald Trump,1
 55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,GA,Joe Biden,0
 40,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,IL,Joe Biden,0
 64,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,TX,Joe Biden,0
@@ -2469,7 +2469,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,UT,Donald Trump,1
 21,Other post high school vocational training,Mexican,"$35,000 to $39,999",Some other race,Yes,TX,Joe Biden,0
 25,"Completed some college, but no degree",Mexican,"$20,000 to $24,999",Some other race,Yes,TX,Donald Trump,1
-20,High school graduate,Not Hispanic,"$125,000 to $149,999",Asian (Other),Yes,VA,Donald Trump,1
+20,High school graduate,Not Hispanic,"$125,000 to $149,999",Asian,Yes,VA,Donald Trump,1
 53,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,WA,Joe Biden,0
 69,Associate Degree,Not Hispanic,"$85,000 to $89,999",White,Yes,NJ,Joe Biden,0
 71,Associate Degree,Not Hispanic,"$125,000 to $149,999",White,Yes,IL,Donald Trump,1
@@ -2484,7 +2484,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 32,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Donald Trump,1
 92,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Joe Biden,0
 74,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,FL,Joe Biden,0
-40,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",Asian (Asian Indian),Yes,IL,Donald Trump,1
+40,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",Asian,Yes,IL,Donald Trump,1
 69,Associate Degree,Not Hispanic,"$45,000 to $49,999",White,Yes,SC,Donald Trump,1
 65,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,PA,Donald Trump,1
 83,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,FL,Donald Trump,1
@@ -2527,7 +2527,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 39,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,NJ,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,PA,Donald Trump,1
 61,Associate Degree,Not Hispanic,"$95,000 to $99,999",White,Yes,MD,Donald Trump,1
-63,Associate Degree,Not Hispanic,"$40,000 to $44,999",Asian (Asian Indian),Yes,NY,Donald Trump,1
+63,Associate Degree,Not Hispanic,"$40,000 to $44,999",Asian,Yes,NY,Donald Trump,1
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,OH,Donald Trump,1
 31,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,CA,Joe Biden,0
 49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,CA,Donald Trump,1
@@ -2535,7 +2535,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 46,"Completed some graduate, but no degree",Mexican,"$125,000 to $149,999","Black, or African American",Yes,FL,Joe Biden,0
 51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,No,IL,Donald Trump,1
 42,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",White,Yes,KY,Joe Biden,0
-25,"College Degree (such as B.A., B.S.)",Other Hispanic,"Less than $14,999",Asian (Other),Yes,CA,Donald Trump,1
+25,"College Degree (such as B.A., B.S.)",Other Hispanic,"Less than $14,999",Asian,Yes,CA,Donald Trump,1
 52,Other post high school vocational training,Not Hispanic,"$35,000 to $39,999",White,Yes,MD,Joe Biden,0
 62,Completed some high school,Not Hispanic,"$35,000 to $39,999",White,No,MO,Donald Trump,1
 31,Other post high school vocational training,Not Hispanic,"Less than $14,999","Black, or African American",Yes,IN,Donald Trump,1
@@ -2557,7 +2557,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 32,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,No,CA,Joe Biden,0
 72,Other post high school vocational training,Not Hispanic,"$75,000 to $79,999",White,Yes,FL,Joe Biden,0
 62,Completed some high school,Not Hispanic,"$30,000 to $34,999",White,No,SC,Donald Trump,1
-30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Asian,Yes,CA,Joe Biden,0
 23,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,No,IL,Donald Trump,1
 20,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999",White,Yes,MO,Donald Trump,1
 55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,IL,Donald Trump,1
@@ -2569,7 +2569,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 64,Other post high school vocational training,Not Hispanic,"$45,000 to $49,999",White,Yes,VA,Joe Biden,0
 60,Masters degree,Not Hispanic,"$50,000 to $54,999",White,Yes,NC,Joe Biden,0
 31,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,MA,Joe Biden,0
-57,Masters degree,Not Hispanic,"$200,000 to $249,999",Asian (Chinese),Yes,CA,Donald Trump,1
+57,Masters degree,Not Hispanic,"$200,000 to $249,999",Asian,Yes,CA,Donald Trump,1
 65,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",White,Yes,IN,Donald Trump,1
 33,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,NM,Joe Biden,0
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,No,FL,Donald Trump,1
@@ -2590,9 +2590,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 71,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",White,Yes,MD,Donald Trump,1
 33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,MD,Joe Biden,0
 30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NC,Joe Biden,0
-20,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian (Other),Yes,NJ,Joe Biden,0
+20,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian,Yes,NJ,Joe Biden,0
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,MI,Joe Biden,0
-40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",Asian (Chinese),Yes,UT,Donald Trump,1
+40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",Asian,Yes,UT,Donald Trump,1
 18,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,IL,Joe Biden,0
 55,"Completed some graduate, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,MA,Donald Trump,1
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,WI,Joe Biden,0
@@ -2692,7 +2692,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 64,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,MN,Joe Biden,0
 62,Other post high school vocational training,Not Hispanic,"$45,000 to $49,999",White,Yes,NJ,Joe Biden,0
 44,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,NC,Donald Trump,1
-27,"College Degree (such as B.A., B.S.)",Mexican,"$20,000 to $24,999",Asian (Asian Indian),Yes,MS,Joe Biden,0
+27,"College Degree (such as B.A., B.S.)",Mexican,"$20,000 to $24,999",Asian,Yes,MS,Joe Biden,0
 61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",White,Yes,CO,Joe Biden,0
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,SD,Donald Trump,1
 33,Masters degree,Other Hispanic,"$45,000 to $49,999",White,Yes,MS,Donald Trump,1
@@ -2745,7 +2745,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 74,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,FL,Donald Trump,1
 46,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",White,Yes,FL,Donald Trump,1
 22,Other post high school vocational training,Not Hispanic,"$90,000 to $94,999",American Indian or Alaska Native,Yes,CA,Joe Biden,0
-32,Completed some high school,Not Hispanic,"$15,000 to $19,999",Pacific Islander (Native Hawaiian),Yes,HI,Donald Trump,1
+32,Completed some high school,Not Hispanic,"$15,000 to $19,999",Pacific Islander,Yes,HI,Donald Trump,1
 28,Completed some high school,Mexican,"Less than $14,999",White,Yes,NM,Joe Biden,0
 38,High school graduate,Not Hispanic,"$70,000 to $74,999",White,Yes,CA,Joe Biden,0
 36,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,TX,Joe Biden,0
@@ -2784,7 +2784,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 66,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,Yes,NC,Joe Biden,0
 73,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,PA,Donald Trump,1
 61,Other post high school vocational training,Not Hispanic,"$95,000 to $99,999",White,Yes,VA,Donald Trump,1
-42,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,MA,Joe Biden,0
+42,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian,Yes,MA,Joe Biden,0
 38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,No,NY,Joe Biden,0
 56,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,IL,Donald Trump,1
 29,Other post high school vocational training,Not Hispanic,"$40,000 to $44,999",White,Yes,MI,Donald Trump,1
@@ -2805,8 +2805,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 42,Other post high school vocational training,Not Hispanic,"$25,000 to $29,999","Black, or African American",No,GA,Joe Biden,0
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,CA,Joe Biden,0
 20,"Completed some college, but no degree",Mexican,"$50,000 to $54,999",White,Yes,WA,Joe Biden,0
-21,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,FL,Joe Biden,0
-38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Filipino),Yes,CA,Donald Trump,1
+21,Completed some high school,Not Hispanic,"Less than $14,999",Asian,Yes,FL,Joe Biden,0
+38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Donald Trump,1
 57,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,CA,Joe Biden,0
 19,High school graduate,Other Hispanic,"$40,000 to $44,999",Some other race,Yes,NY,Joe Biden,0
 56,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,TN,Joe Biden,0
@@ -2817,7 +2817,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 53,Other post high school vocational training,Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,TX,Joe Biden,0
 27,"College Degree (such as B.A., B.S.)",Mexican,"$30,000 to $34,999",White,No,NC,Joe Biden,0
 21,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,PA,Joe Biden,0
-24,Masters degree,Mexican,"$65,000 to $69,999",Asian (Chinese),Yes,CA,Joe Biden,0
+24,Masters degree,Mexican,"$65,000 to $69,999",Asian,Yes,CA,Joe Biden,0
 31,Masters degree,Other Hispanic,"$100,000 to $124,999",White,Yes,TN,Donald Trump,1
 62,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,OR,Donald Trump,1
 24,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",White,Yes,WA,Joe Biden,0
@@ -2835,7 +2835,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",White,Yes,IN,Joe Biden,0
 31,"College Degree (such as B.A., B.S.)",Mexican,"$45,000 to $49,999",White,Yes,CA,Joe Biden,0
 20,Completed some high school,Not Hispanic,"$20,000 to $24,999",White,Yes,TX,Donald Trump,1
-51,Masters degree,Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,NY,Donald Trump,1
+51,Masters degree,Not Hispanic,"$125,000 to $149,999",Asian,Yes,NY,Donald Trump,1
 37,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Donald Trump,1
 50,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,WA,Joe Biden,0
 44,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,NC,Joe Biden,0
@@ -2843,14 +2843,14 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 38,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,VA,Joe Biden,0
 52,Completed some high school,Not Hispanic,"$45,000 to $49,999",White,Yes,SC,Joe Biden,0
 59,Completed some high school,Not Hispanic,"$25,000 to $29,999",White,Yes,IL,Joe Biden,0
-22,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,MA,Joe Biden,0
+22,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian,Yes,MA,Joe Biden,0
 32,Other post high school vocational training,Other Hispanic,"Less than $14,999",Some other race,Yes,NJ,Joe Biden,0
 47,Completed some high school,Not Hispanic,"$20,000 to $24,999",White,Yes,FL,Donald Trump,1
 40,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,KY,Donald Trump,1
 60,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,MD,Donald Trump,1
 37,"College Degree (such as B.A., B.S.)",Mexican,"$150,000 to $174,999","Black, or African American",Yes,CA,Joe Biden,0
 25,Associate Degree,Not Hispanic,"$125,000 to $149,999",White,Yes,IL,Donald Trump,1
-41,"College Degree (such as B.A., B.S.)",Mexican,"$45,000 to $49,999",Asian (Asian Indian),Yes,CO,Joe Biden,0
+41,"College Degree (such as B.A., B.S.)",Mexican,"$45,000 to $49,999",Asian,Yes,CO,Joe Biden,0
 23,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,VA,Joe Biden,0
 62,"Completed some college, but no degree",Puerto Rican,"Less than $14,999",White,Yes,NY,Joe Biden,0
 37,Masters degree,Not Hispanic,"$35,000 to $39,999","Black, or African American",Yes,CT,Joe Biden,0
@@ -2923,7 +2923,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 54,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,KS,Joe Biden,0
 29,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,CA,Joe Biden,0
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,OH,Joe Biden,0
-51,Masters degree,Not Hispanic,"$55,000 to $59,999",Asian (Asian Indian),Yes,AZ,Joe Biden,0
+51,Masters degree,Not Hispanic,"$55,000 to $59,999",Asian,Yes,AZ,Joe Biden,0
 30,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,WA,Donald Trump,1
 71,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,AZ,Donald Trump,1
 32,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,CO,Joe Biden,0
@@ -2935,7 +2935,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 22,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,Yes,MD,Joe Biden,0
 48,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,OH,Donald Trump,1
 29,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,MT,Donald Trump,1
-52,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",Asian (Chinese),Yes,NY,Joe Biden,0
+52,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",Asian,Yes,NY,Joe Biden,0
 45,High school graduate,Not Hispanic,"Less than $14,999",Some other race,Yes,SC,Donald Trump,1
 27,"Completed some college, but no degree",Mexican,"$50,000 to $54,999","Black, or African American",Yes,TX,Joe Biden,0
 44,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,WI,Joe Biden,0
@@ -2964,10 +2964,10 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 55,"College Degree (such as B.A., B.S.)",Mexican,"$70,000 to $74,999","Black, or African American",Yes,AZ,Donald Trump,1
 50,Completed some high school,Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Donald Trump,1
 18,High school graduate,Mexican,"$30,000 to $34,999",White,Yes,CA,Joe Biden,0
-30,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",Asian (Chinese),Yes,CA,Donald Trump,1
+30,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",Asian,Yes,CA,Donald Trump,1
 33,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,MN,Joe Biden,0
 38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",White,Yes,NY,Joe Biden,0
-26,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+26,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Asian,Yes,CA,Joe Biden,0
 36,Other post high school vocational training,Mexican,"$70,000 to $74,999",White,Yes,LA,Joe Biden,0
 50,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,LA,Joe Biden,0
 21,Completed some high school,Mexican,"$45,000 to $49,999",Some other race,Yes,NY,Donald Trump,1
@@ -2987,13 +2987,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 69,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,CA,Donald Trump,1
 39,High school graduate,Mexican,"Less than $14,999",Some other race,Yes,TX,Joe Biden,0
 46,Other post high school vocational training,Not Hispanic,"Less than $14,999",American Indian or Alaska Native,Yes,NC,Donald Trump,1
-47,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian (Chinese),Yes,CA,Donald Trump,1
+47,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Donald Trump,1
 39,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,CA,Joe Biden,0
 58,High school graduate,Other Hispanic,"$45,000 to $49,999",White,Yes,NY,Joe Biden,0
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,NJ,Joe Biden,0
 30,Doctorate degree,Not Hispanic,"$75,000 to $79,999",White,Yes,CA,Joe Biden,0
 65,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,IL,Joe Biden,0
-36,Associate Degree,Not Hispanic,"$65,000 to $69,999",Asian (Filipino),Yes,CA,Donald Trump,1
+36,Associate Degree,Not Hispanic,"$65,000 to $69,999",Asian,Yes,CA,Donald Trump,1
 35,"College Degree (such as B.A., B.S.)",Mexican,"$70,000 to $74,999",White,No,CA,Joe Biden,0
 48,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,AL,Donald Trump,1
 42,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,DC,Donald Trump,1
@@ -3001,7 +3001,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 77,Masters degree,Not Hispanic,"$250,000 and above",White,Yes,CA,Joe Biden,0
 28,"Completed some graduate, but no degree",Not Hispanic,"$125,000 to $149,999",White,Yes,SC,Donald Trump,1
 53,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,VA,Donald Trump,1
-61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian (Other),Yes,WA,Donald Trump,1
+61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian,Yes,WA,Donald Trump,1
 33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",White,Yes,CO,Joe Biden,0
 40,"Completed some graduate, but no degree",Not Hispanic,"$125,000 to $149,999",White,Yes,NY,Donald Trump,1
 65,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,PA,Joe Biden,0
@@ -3033,7 +3033,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 50,"Completed some college, but no degree",Mexican,"$15,000 to $19,999",Some other race,Yes,FL,Joe Biden,0
 51,High school graduate,Not Hispanic,"$75,000 to $79,999",White,Yes,MI,Donald Trump,1
 72,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,LA,Joe Biden,0
-29,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",Asian (Filipino),Yes,HI,Donald Trump,1
+29,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",Asian,Yes,HI,Donald Trump,1
 78,Masters degree,Not Hispanic,"$40,000 to $44,999",White,Yes,IN,Donald Trump,1
 60,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,GA,Donald Trump,1
 48,Masters degree,Not Hispanic,"$15,000 to $19,999",White,Yes,GA,Joe Biden,0
@@ -3077,7 +3077,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 60,High school graduate,Not Hispanic,"$50,000 to $54,999",White,Yes,NY,Donald Trump,1
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,KS,Joe Biden,0
 20,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,AZ,Joe Biden,0
-28,"College Degree (such as B.A., B.S.)",Ecuadorian,"$50,000 to $54,999",Asian (Chinese),Yes,PA,Donald Trump,1
+28,"College Degree (such as B.A., B.S.)",Ecuadorian,"$50,000 to $54,999",Asian,Yes,PA,Donald Trump,1
 56,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,DE,Joe Biden,0
 75,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,TX,Joe Biden,0
 29,Doctorate degree,Not Hispanic,"$150,000 to $174,999",White,Yes,CA,Donald Trump,1
@@ -3085,8 +3085,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 56,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NC,Donald Trump,1
 40,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Donald Trump,1
 19,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,WV,Donald Trump,1
-38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Korean),Yes,MD,Donald Trump,1
-57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",Asian (Japanese),Yes,VT,Joe Biden,0
+38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,MD,Donald Trump,1
+57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",Asian,Yes,VT,Joe Biden,0
 31,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,NC,Joe Biden,0
 61,"Completed some graduate, but no degree",Not Hispanic,"$250,000 and above",White,Yes,WI,Donald Trump,1
 37,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,Yes,IL,Joe Biden,0
@@ -3137,9 +3137,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,WI,Joe Biden,0
 42,Other post high school vocational training,Not Hispanic,"$35,000 to $39,999",White,No,NE,Donald Trump,1
 54,High school graduate,Not Hispanic,"$80,000 to $84,999",American Indian or Alaska Native,No,GA,Donald Trump,1
-62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",Asian (Japanese),Yes,HI,Joe Biden,0
+62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",Asian,Yes,HI,Joe Biden,0
 47,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,IN,Donald Trump,1
-31,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",Asian (Asian Indian),Yes,IN,Joe Biden,0
+31,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",Asian,Yes,IN,Joe Biden,0
 66,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,Yes,OH,Joe Biden,0
 54,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,IL,Joe Biden,0
 28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,TX,Donald Trump,1
@@ -3171,7 +3171,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,FL,Joe Biden,0
 65,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,MD,Donald Trump,1
 35,Associate Degree,Not Hispanic,"$100,000 to $124,999",White,Yes,MI,Joe Biden,0
-29,Doctorate degree,Not Hispanic,"$15,000 to $19,999",Asian (Chinese),Yes,IL,Joe Biden,0
+29,Doctorate degree,Not Hispanic,"$15,000 to $19,999",Asian,Yes,IL,Joe Biden,0
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",White,Yes,NJ,Joe Biden,0
 68,Other post high school vocational training,Not Hispanic,"Less than $14,999",White,Yes,MI,Joe Biden,0
 29,Other post high school vocational training,Not Hispanic,"$100,000 to $124,999",White,Yes,MO,Donald Trump,1
@@ -3194,7 +3194,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",White,Yes,VT,Joe Biden,0
 23,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,TX,Joe Biden,0
 45,"College Degree (such as B.A., B.S.)",Venezuelan,"$75,000 to $79,999",White,Yes,CA,Joe Biden,0
-18,High school graduate,Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,IL,Joe Biden,0
+18,High school graduate,Not Hispanic,"$125,000 to $149,999",Asian,Yes,IL,Joe Biden,0
 36,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,TX,Joe Biden,0
 56,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,PA,Donald Trump,1
 45,Masters degree,Not Hispanic,"$80,000 to $84,999",White,Yes,CA,Donald Trump,1
@@ -3253,7 +3253,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 57,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,WA,Joe Biden,0
 43,Associate Degree,Not Hispanic,"$40,000 to $44,999","Black, or African American",Yes,FL,Joe Biden,0
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,MN,Joe Biden,0
-35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,AZ,Donald Trump,1
+35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,AZ,Donald Trump,1
 22,Other post high school vocational training,Mexican,"$20,000 to $24,999",Some other race,Yes,CA,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,CA,Joe Biden,0
 57,Other post high school vocational training,Not Hispanic,"$55,000 to $59,999","Black, or African American",Yes,TX,Joe Biden,0
@@ -3320,7 +3320,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,VA,Joe Biden,0
 67,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",White,Yes,WI,Joe Biden,0
 21,Completed some high school,Mexican,"Less than $14,999",White,Yes,AZ,Joe Biden,0
-45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian (Filipino),Yes,TX,Donald Trump,1
+45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian,Yes,TX,Donald Trump,1
 52,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,UT,Joe Biden,0
 39,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Donald Trump,1
 52,Masters degree,Not Hispanic,"Less than $14,999",White,Yes,NY,Donald Trump,1
@@ -3328,9 +3328,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 46,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,IA,Joe Biden,0
 52,Completed some high school,Not Hispanic,"$25,000 to $29,999",White,Yes,CT,Joe Biden,0
 38,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Donald Trump,1
-46,Doctorate degree,Not Hispanic,"$200,000 to $249,999",Asian (Chinese),Yes,IL,Joe Biden,0
+46,Doctorate degree,Not Hispanic,"$200,000 to $249,999",Asian,Yes,IL,Joe Biden,0
 63,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999","Black, or African American",Yes,IL,Joe Biden,0
-23,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Asian (Asian Indian),Yes,IL,Donald Trump,1
+23,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Asian,Yes,IL,Donald Trump,1
 35,Masters degree,Other Hispanic,"$20,000 to $24,999",Some other race,Yes,CA,Donald Trump,1
 63,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,CA,Donald Trump,1
 52,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",White,Yes,IL,Donald Trump,1
@@ -3349,7 +3349,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 18,"Completed some graduate, but no degree",Mexican,"$80,000 to $84,999",White,Yes,CA,Joe Biden,0
 29,"Completed some graduate, but no degree",Not Hispanic,"$100,000 to $124,999",White,No,NC,Donald Trump,1
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999","Black, or African American",Yes,OH,Joe Biden,0
-25,"Completed some college, but no degree",Spanish,"$70,000 to $74,999",Pacific Islander (Samoan),Yes,MD,Joe Biden,0
+25,"Completed some college, but no degree",Spanish,"$70,000 to $74,999",Pacific Islander,Yes,MD,Joe Biden,0
 68,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,FL,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",Some other race,Yes,IL,Joe Biden,0
 29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,CA,Joe Biden,0
@@ -3358,7 +3358,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 22,Other post high school vocational training,Mexican,"$35,000 to $39,999",White,Yes,AZ,Joe Biden,0
 69,"Completed some graduate, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,TX,Donald Trump,1
 38,Masters degree,Spanish,"$45,000 to $49,999",White,Yes,CA,Donald Trump,1
-38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",Asian (Asian Indian),Yes,MO,Joe Biden,0
+38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",Asian,Yes,MO,Joe Biden,0
 47,Masters degree,Not Hispanic,"$50,000 to $54,999",White,Yes,CT,Joe Biden,0
 26,High school graduate,Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,NV,Joe Biden,0
 66,Associate Degree,Not Hispanic,"$65,000 to $69,999",White,Yes,NH,Donald Trump,1
@@ -3379,7 +3379,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 70,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,CA,Joe Biden,0
 49,Other post high school vocational training,Not Hispanic,"$100,000 to $124,999",White,Yes,FL,Donald Trump,1
 50,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,No,OH,Donald Trump,1
-18,Completed some high school,Not Hispanic,"$175,000 to $199,999",Asian (Asian Indian),Yes,CA,Joe Biden,0
+18,Completed some high school,Not Hispanic,"$175,000 to $199,999",Asian,Yes,CA,Joe Biden,0
 32,Completed some high school,Not Hispanic,"$30,000 to $34,999",White,Yes,UT,Donald Trump,1
 45,Completed some high school,Not Hispanic,"Less than $14,999",White,No,KY,Donald Trump,1
 65,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",White,Yes,OH,Joe Biden,0
@@ -3397,7 +3397,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 61,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
 30,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,KS,Joe Biden,0
 63,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,WI,Donald Trump,1
-54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",Asian (Chinese),Yes,MN,Joe Biden,0
+54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",Asian,Yes,MN,Joe Biden,0
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",White,Yes,NJ,Donald Trump,1
 24,"Completed some college, but no degree",Mexican,"Less than $14,999",Some other race,Yes,ID,Joe Biden,0
 72,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Joe Biden,0
@@ -3414,7 +3414,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 32,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",White,Yes,SD,Joe Biden,0
 69,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,AZ,Joe Biden,0
 37,"College Degree (such as B.A., B.S.)",Other Hispanic,"$175,000 to $199,999",Some other race,Yes,CO,Joe Biden,0
-48,Masters degree,Not Hispanic,"$60,000 to $64,999",Pacific Islander (Native Hawaiian),Yes,HI,Joe Biden,0
+48,Masters degree,Not Hispanic,"$60,000 to $64,999",Pacific Islander,Yes,HI,Joe Biden,0
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,No,TN,Joe Biden,0
 21,Completed some high school,Not Hispanic,"Less than $14,999","Black, or African American",Yes,NC,Joe Biden,0
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Joe Biden,0
@@ -3476,7 +3476,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 61,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,GA,Donald Trump,1
 24,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,No,OH,Donald Trump,1
 65,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,CA,Donald Trump,1
-18,Completed some high school,Not Hispanic,"$250,000 and above",Asian (Asian Indian),Yes,MI,Donald Trump,1
+18,Completed some high school,Not Hispanic,"$250,000 and above",Asian,Yes,MI,Donald Trump,1
 51,Masters degree,Not Hispanic,"$55,000 to $59,999","Black, or African American",Yes,NY,Joe Biden,0
 53,Other post high school vocational training,Mexican,"$35,000 to $39,999",Some other race,Yes,NJ,Joe Biden,0
 29,"College Degree (such as B.A., B.S.)",Mexican,"$35,000 to $39,999",American Indian or Alaska Native,Yes,OH,Donald Trump,1
@@ -3485,7 +3485,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 68,"Completed some college, but no degree",Mexican,"$95,000 to $99,999",White,Yes,CA,Joe Biden,0
 40,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Donald Trump,1
 19,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,AL,Joe Biden,0
-19,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",Asian (Other),Yes,CA,Joe Biden,0
+19,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",Asian,Yes,CA,Joe Biden,0
 64,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,UT,Donald Trump,1
 31,High school graduate,Mexican,"Less than $14,999",Some other race,Yes,NY,Joe Biden,0
 40,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,TX,Joe Biden,0
@@ -3504,7 +3504,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 19,Associate Degree,Not Hispanic,"$45,000 to $49,999",White,Yes,FL,Joe Biden,0
 25,Doctorate degree,Not Hispanic,"$90,000 to $94,999",White,Yes,WI,Donald Trump,1
 39,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,VT,Donald Trump,1
-57,Masters degree,Not Hispanic,"$150,000 to $174,999",Asian (Chinese),Yes,NJ,Joe Biden,0
+57,Masters degree,Not Hispanic,"$150,000 to $174,999",Asian,Yes,NJ,Joe Biden,0
 18,High school graduate,Not Hispanic,"Less than $14,999",American Indian or Alaska Native,No,OK,Donald Trump,1
 35,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,OR,Donald Trump,1
 19,High school graduate,Not Hispanic,"$70,000 to $74,999",White,Yes,AR,Donald Trump,1
@@ -3513,7 +3513,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 20,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,OH,Joe Biden,0
 69,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,WA,Donald Trump,1
 67,High school graduate,Not Hispanic,"$65,000 to $69,999",White,Yes,WA,Donald Trump,1
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian (Asian Indian),Yes,TX,Joe Biden,0
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian,Yes,TX,Joe Biden,0
 57,High school graduate,Not Hispanic,"$65,000 to $69,999",White,Yes,MO,Donald Trump,1
 51,Associate Degree,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,OH,Joe Biden,0
 71,Masters degree,Not Hispanic,"$70,000 to $74,999",White,Yes,CO,Joe Biden,0
@@ -3521,7 +3521,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 63,High school graduate,Not Hispanic,"$75,000 to $79,999",White,Yes,WA,Joe Biden,0
 40,"College Degree (such as B.A., B.S.)",Mexican,"$200,000 to $249,999",White,Yes,AZ,Joe Biden,0
 33,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,AR,Donald Trump,1
-22,Masters degree,Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,IL,Joe Biden,0
+22,Masters degree,Not Hispanic,"Less than $14,999",Asian,Yes,IL,Joe Biden,0
 18,High school graduate,Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,FL,Joe Biden,0
 26,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,TX,Joe Biden,0
 39,Masters degree,Not Hispanic,"$55,000 to $59,999",White,Yes,VA,Joe Biden,0
@@ -3538,13 +3538,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 58,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,IN,Joe Biden,0
 59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Some other race,Yes,CA,Donald Trump,1
 42,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,MI,Joe Biden,0
-31,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Asian Indian),Yes,CA,Donald Trump,1
+31,Completed some high school,Not Hispanic,"Less than $14,999",Asian,Yes,CA,Donald Trump,1
 47,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",White,Yes,LA,Donald Trump,1
 41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
 43,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,PA,Donald Trump,1
 21,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,NY,Joe Biden,0
 19,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,TN,Donald Trump,1
-72,Masters degree,Not Hispanic,"$125,000 to $149,999",Asian (Chinese),Yes,CA,Joe Biden,0
+72,Masters degree,Not Hispanic,"$125,000 to $149,999",Asian,Yes,CA,Joe Biden,0
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,NV,Donald Trump,1
 40,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,CA,Donald Trump,1
 82,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,CA,Joe Biden,0
@@ -3580,14 +3580,14 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 64,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",White,Yes,ID,Donald Trump,1
 18,Completed some high school,Not Hispanic,"$125,000 to $149,999",White,Yes,NJ,Donald Trump,1
 55,Associate Degree,Not Hispanic,"$40,000 to $44,999",White,Yes,WI,Joe Biden,0
-29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian (Korean),Yes,HI,Joe Biden,0
+29,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian,Yes,HI,Joe Biden,0
 21,"Completed some graduate, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,MS,Joe Biden,0
 30,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",White,Yes,TX,Donald Trump,1
 42,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,FL,Joe Biden,0
-45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",Asian (Other),Yes,AL,Joe Biden,0
+45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",Asian,Yes,AL,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,TX,Joe Biden,0
 50,"Completed some graduate, but no degree",Not Hispanic,"$85,000 to $89,999",White,Yes,CA,Joe Biden,0
-38,High school graduate,Other Hispanic,"$75,000 to $79,999",Asian (Japanese),Yes,AZ,Donald Trump,1
+38,High school graduate,Other Hispanic,"$75,000 to $79,999",Asian,Yes,AZ,Donald Trump,1
 34,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,WI,Joe Biden,0
 28,"Completed some college, but no degree",Mexican,"$125,000 to $149,999",White,Yes,CA,Donald Trump,1
 39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,No,OR,Donald Trump,1
@@ -3604,7 +3604,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 36,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,MS,Donald Trump,1
 78,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,NJ,Joe Biden,0
 19,High school graduate,Not Hispanic,"$35,000 to $39,999",White,Yes,TX,Joe Biden,0
-44,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian (Japanese),Yes,HI,Donald Trump,1
+44,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian,Yes,HI,Donald Trump,1
 24,Associate Degree,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,IL,Joe Biden,0
 19,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",American Indian or Alaska Native,Yes,AZ,Joe Biden,0
 50,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,WI,Donald Trump,1
@@ -3628,7 +3628,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 59,High school graduate,Not Hispanic,"$35,000 to $39,999",White,No,CO,Donald Trump,1
 20,"Completed some college, but no degree",Mexican,"Less than $14,999",Some other race,Yes,MI,Joe Biden,0
 58,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,OH,Donald Trump,1
-19,High school graduate,Not Hispanic,"$125,000 to $149,999",Asian (Asian Indian),Yes,OH,Joe Biden,0
+19,High school graduate,Not Hispanic,"$125,000 to $149,999",Asian,Yes,OH,Joe Biden,0
 38,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,CA,Joe Biden,0
 20,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,No,CA,Donald Trump,1
 21,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,AZ,Donald Trump,1
@@ -3666,9 +3666,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,Masters degree,Not Hispanic,"$30,000 to $34,999",White,Yes,MA,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,Yes,NC,Donald Trump,1
 65,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,NV,Donald Trump,1
-21,High school graduate,Not Hispanic,"Less than $14,999",Asian (Vietnamese),Yes,MO,Joe Biden,0
+21,High school graduate,Not Hispanic,"Less than $14,999",Asian,Yes,MO,Joe Biden,0
 56,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,NC,Donald Trump,1
-40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",Asian (Chinese),Yes,CA,Donald Trump,1
+40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",Asian,Yes,CA,Donald Trump,1
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999","Black, or African American",Yes,NC,Joe Biden,0
 50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,FL,Joe Biden,0
 27,Completed some high school,Not Hispanic,"$50,000 to $54,999",White,Yes,WA,Joe Biden,0
@@ -3742,12 +3742,12 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 55,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,NV,Joe Biden,0
 50,High school graduate,Not Hispanic,"$20,000 to $24,999",White,No,TN,Donald Trump,1
 51,Other post high school vocational training,Not Hispanic,"$35,000 to $39,999",White,Yes,LA,Joe Biden,0
-28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian (Asian Indian),Yes,TX,Joe Biden,0
-46,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",Asian (Chinese),Yes,CA,Joe Biden,0
+28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",Asian,Yes,TX,Joe Biden,0
+46,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",Asian,Yes,CA,Joe Biden,0
 60,"Completed some graduate, but no degree",Not Hispanic,"$250,000 and above",White,Yes,IL,Joe Biden,0
-22,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",Asian (Filipino),No,CA,Joe Biden,0
+22,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",Asian,No,CA,Joe Biden,0
 35,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,NY,Donald Trump,1
-51,Completed some high school,Mexican,"$80,000 to $84,999",Asian (Other),Yes,CA,Joe Biden,0
+51,Completed some high school,Mexican,"$80,000 to $84,999",Asian,Yes,CA,Joe Biden,0
 75,High school graduate,Not Hispanic,"$20,000 to $24,999",American Indian or Alaska Native,Yes,MA,Joe Biden,0
 67,Associate Degree,Not Hispanic,"$45,000 to $49,999",White,Yes,CA,Joe Biden,0
 43,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,CA,Joe Biden,0
@@ -3766,7 +3766,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 29,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Some other race,Yes,MO,Joe Biden,0
 39,"Completed some graduate, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
 40,Masters degree,Not Hispanic,"$200,000 to $249,999",White,No,DC,Donald Trump,1
-68,"Completed some graduate, but no degree",Not Hispanic,"Less than $14,999",Asian (Chinese),Yes,CA,Donald Trump,1
+68,"Completed some graduate, but no degree",Not Hispanic,"Less than $14,999",Asian,Yes,CA,Donald Trump,1
 53,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,Yes,LA,Joe Biden,0
 69,High school graduate,Not Hispanic,"$15,000 to $19,999",White,Yes,MO,Donald Trump,1
 40,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Donald Trump,1
@@ -3774,20 +3774,20 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,LA,Donald Trump,1
 29,Completed some high school,Not Hispanic,"$20,000 to $24,999",White,Yes,MT,Donald Trump,1
 24,"College Degree (such as B.A., B.S.)",Other Hispanic,"$30,000 to $34,999","Black, or African American",Yes,IN,Donald Trump,1
-38,"Completed some graduate, but no degree",Not Hispanic,"$175,000 to $199,999",Asian (Filipino),Yes,FL,Joe Biden,0
+38,"Completed some graduate, but no degree",Not Hispanic,"$175,000 to $199,999",Asian,Yes,FL,Joe Biden,0
 34,Other post high school vocational training,Mexican,"Less than $14,999",White,Yes,NC,Donald Trump,1
 35,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,VA,Donald Trump,1
 70,Other post high school vocational training,Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,NJ,Joe Biden,0
 32,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,PA,Joe Biden,0
 37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,ID,Donald Trump,1
 60,"College Degree (such as B.A., B.S.)",Not Hispanic,"$200,000 to $249,999",White,Yes,WA,Joe Biden,0
-19,High school graduate,Not Hispanic,"$45,000 to $49,999",Asian (Other),Yes,NJ,Joe Biden,0
+19,High school graduate,Not Hispanic,"$45,000 to $49,999",Asian,Yes,NJ,Joe Biden,0
 56,High school graduate,Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,MD,Joe Biden,0
 22,Completed some high school,Not Hispanic,"$20,000 to $24,999",White,Yes,TX,Donald Trump,1
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,TX,Joe Biden,0
 23,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,RI,Joe Biden,0
 54,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999",White,Yes,MO,Joe Biden,0
-63,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",Asian (Chinese),Yes,CA,Donald Trump,1
+63,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",Asian,Yes,CA,Donald Trump,1
 60,High school graduate,Not Hispanic,"$35,000 to $39,999",White,Yes,MI,Joe Biden,0
 35,Masters degree,Not Hispanic,"$250,000 and above",White,Yes,MA,Donald Trump,1
 52,Masters degree,Colombian,"$125,000 to $149,999",Some other race,Yes,NY,Joe Biden,0
@@ -3797,7 +3797,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 25,"College Degree (such as B.A., B.S.)",Other Hispanic,"$30,000 to $34,999",White,Yes,NV,Joe Biden,0
 28,"Completed some graduate, but no degree",Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,OH,Joe Biden,0
 20,High school graduate,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
-29,High school graduate,Not Hispanic,"Less than $14,999",Pacific Islander (Native Hawaiian),Yes,HI,Joe Biden,0
+29,High school graduate,Not Hispanic,"Less than $14,999",Pacific Islander,Yes,HI,Joe Biden,0
 41,Masters degree,Not Hispanic,"$250,000 and above",White,Yes,VA,Donald Trump,1
 73,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,CA,Joe Biden,0
 19,High school graduate,Mexican,"Less than $14,999","Black, or African American",Yes,VA,Joe Biden,0
@@ -3829,7 +3829,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 50,"Completed some college, but no degree",Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,NV,Joe Biden,0
 36,Other post high school vocational training,Not Hispanic,"$45,000 to $49,999",White,Yes,TX,Donald Trump,1
 25,"Completed some college, but no degree",Mexican,"Less than $14,999",White,Yes,CO,Joe Biden,0
-53,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian (Filipino),Yes,OR,Joe Biden,0
+53,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian,Yes,OR,Joe Biden,0
 65,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,IL,Joe Biden,0
 37,Doctorate degree,Mexican,"$45,000 to $49,999",American Indian or Alaska Native,Yes,MD,Joe Biden,0
 49,"Completed some college, but no degree",Mexican,"Less than $14,999",Some other race,Yes,CO,Joe Biden,0
@@ -3867,8 +3867,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 30,"Completed some college, but no degree",Mexican,"Less than $14,999",Some other race,Yes,TX,Donald Trump,1
 26,Completed some high school,Mexican,"Less than $14,999",Some other race,Yes,OK,Donald Trump,1
 69,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",Some other race,Yes,OH,Joe Biden,0
-73,High school graduate,Not Hispanic,"$30,000 to $34,999",Asian (Chinese),Yes,CA,Joe Biden,0
-71,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian (Filipino),Yes,FL,Donald Trump,1
+73,High school graduate,Not Hispanic,"$30,000 to $34,999",Asian,Yes,CA,Joe Biden,0
+71,"College Degree (such as B.A., B.S.)",Not Hispanic,"$150,000 to $174,999",Asian,Yes,FL,Donald Trump,1
 48,"Completed some college, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Joe Biden,0
 43,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,No,OR,Donald Trump,1
 24,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,WA,Donald Trump,1
@@ -3956,7 +3956,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 57,Associate Degree,Not Hispanic,"$25,000 to $29,999",White,Yes,MI,Joe Biden,0
 20,Completed some high school,Cuban,"$25,000 to $29,999",White,Yes,NJ,Donald Trump,1
 54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999",White,Yes,MI,Donald Trump,1
-38,High school graduate,Not Hispanic,"$15,000 to $19,999",Asian (Filipino),Yes,WI,Donald Trump,1
+38,High school graduate,Not Hispanic,"$15,000 to $19,999",Asian,Yes,WI,Donald Trump,1
 40,"College Degree (such as B.A., B.S.)",Mexican,"$55,000 to $59,999",White,Yes,TX,Joe Biden,0
 39,Completed some high school,Mexican,"$65,000 to $69,999",Some other race,Yes,CA,Joe Biden,0
 35,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,FL,Donald Trump,1
@@ -4003,7 +4003,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 69,High school graduate,Not Hispanic,"$75,000 to $79,999",White,Yes,FL,Joe Biden,0
 54,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,NJ,Joe Biden,0
 77,"Completed some graduate, but no degree",Not Hispanic,"$30,000 to $34,999",American Indian or Alaska Native,Yes,MA,Joe Biden,0
-26,High school graduate,Not Hispanic,"Less than $14,999",Asian (Other),Yes,FL,Joe Biden,0
+26,High school graduate,Not Hispanic,"Less than $14,999",Asian,Yes,FL,Joe Biden,0
 55,"College Degree (such as B.A., B.S.)",Other Hispanic,"$30,000 to $34,999",White,Yes,CA,Donald Trump,1
 55,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,NY,Joe Biden,0
 38,Other post high school vocational training,Not Hispanic,"$20,000 to $24,999",White,No,TX,Joe Biden,0
@@ -4054,7 +4054,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 42,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,PA,Donald Trump,1
 40,"College Degree (such as B.A., B.S.)",Argentinian,"$100,000 to $124,999",White,Yes,WI,Joe Biden,0
 27,Completed some high school,Not Hispanic,"$80,000 to $84,999",Some other race,No,OH,Donald Trump,1
-64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Asian (Chinese),Yes,FL,Joe Biden,0
+64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Asian,Yes,FL,Joe Biden,0
 69,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,SC,Joe Biden,0
 20,Doctorate degree,Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,VA,Joe Biden,0
 31,High school graduate,Mexican,"Less than $14,999",Some other race,Yes,NY,Joe Biden,0
@@ -4062,9 +4062,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$30,000 to $34,999",Some other race,No,OH,Joe Biden,0
 53,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,NJ,Donald Trump,1
 75,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,FL,Joe Biden,0
-43,Associate Degree,Venezuelan,"Less than $14,999",Asian (Chinese),Yes,FL,Donald Trump,1
+43,Associate Degree,Venezuelan,"Less than $14,999",Asian,Yes,FL,Donald Trump,1
 27,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,PA,Joe Biden,0
-21,"Completed some college, but no degree",Not Hispanic,"$80,000 to $84,999",Asian (Korean),Yes,CA,Joe Biden,0
+21,"Completed some college, but no degree",Not Hispanic,"$80,000 to $84,999",Asian,Yes,CA,Joe Biden,0
 33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,MI,Donald Trump,1
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Some other race,Yes,NY,Joe Biden,0
 38,Associate Degree,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,PA,Joe Biden,0
@@ -4075,7 +4075,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 36,Associate Degree,Other Hispanic,"$85,000 to $89,999",White,Yes,NY,Joe Biden,0
 69,Associate Degree,Not Hispanic,"$40,000 to $44,999",White,Yes,FL,Donald Trump,1
 64,"Completed some college, but no degree",Not Hispanic,"$175,000 to $199,999",White,Yes,IL,Donald Trump,1
-28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian (Other),Yes,CA,Joe Biden,0
+28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian,Yes,CA,Joe Biden,0
 66,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",White,No,TN,Donald Trump,1
 66,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999","Black, or African American",Yes,CA,Joe Biden,0
 33,Masters degree,Not Hispanic,"$55,000 to $59,999",White,Yes,IL,Donald Trump,1
@@ -4172,7 +4172,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 38,High school graduate,Not Hispanic,"$50,000 to $54,999",White,No,IL,Donald Trump,1
 40,"Completed some college, but no degree",Mexican,"$35,000 to $39,999",White,Yes,FL,Joe Biden,0
 40,"College Degree (such as B.A., B.S.)",Mexican,"$40,000 to $44,999",White,Yes,TX,Joe Biden,0
-36,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",Asian (Other),Yes,NC,Donald Trump,1
+36,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",Asian,Yes,NC,Donald Trump,1
 21,Doctorate degree,Not Hispanic,"$50,000 to $54,999","Black, or African American",No,NJ,Joe Biden,0
 26,High school graduate,Not Hispanic,"$30,000 to $34,999",White,Yes,TX,Joe Biden,0
 49,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,KY,Donald Trump,1
@@ -4222,7 +4222,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 38,Associate Degree,Not Hispanic,"$150,000 to $174,999",White,Yes,NH,Joe Biden,0
 67,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,AR,Joe Biden,0
 73,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,ID,Donald Trump,1
-59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian (Filipino),Yes,CA,Joe Biden,0
+59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",Asian,Yes,CA,Joe Biden,0
 66,High school graduate,Not Hispanic,"$30,000 to $34,999",White,Yes,IA,Donald Trump,1
 34,"Completed some graduate, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,IL,Joe Biden,0
 48,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,AR,Donald Trump,1
@@ -4245,7 +4245,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 54,High school graduate,Mexican,"$20,000 to $24,999","Black, or African American",Yes,DE,Joe Biden,0
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,NC,Joe Biden,0
 45,"College Degree (such as B.A., B.S.)",Mexican,"$15,000 to $19,999",White,Yes,TX,Joe Biden,0
-38,Doctorate degree,Nicaraguan,"$75,000 to $79,999",Asian (Chinese),Yes,PA,Joe Biden,0
+38,Doctorate degree,Nicaraguan,"$75,000 to $79,999",Asian,Yes,PA,Joe Biden,0
 67,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999","Black, or African American",No,CA,Joe Biden,0
 64,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,IL,Donald Trump,1
 45,Associate Degree,Mexican,"$70,000 to $74,999",White,Yes,VA,Joe Biden,0
@@ -4277,7 +4277,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 35,"College Degree (such as B.A., B.S.)",Venezuelan,"$125,000 to $149,999",White,Yes,CA,Donald Trump,1
 66,"Completed some college, but no degree",Not Hispanic,"$85,000 to $89,999",White,Yes,AL,Joe Biden,0
 76,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",White,No,AZ,Donald Trump,1
-31,Associate Degree,Not Hispanic,"$25,000 to $29,999",Asian (Filipino),Yes,LA,Joe Biden,0
+31,Associate Degree,Not Hispanic,"$25,000 to $29,999",Asian,Yes,LA,Joe Biden,0
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,LA,Donald Trump,1
 27,"College Degree (such as B.A., B.S.)",Mexican,"Less than $14,999",Some other race,Yes,FL,Joe Biden,0
 38,High school graduate,Not Hispanic,"$30,000 to $34,999",White,Yes,NV,Donald Trump,1
@@ -4307,18 +4307,18 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 34,"Completed some college, but no degree",Mexican,"Less than $14,999","Black, or African American",Yes,IL,Joe Biden,0
 54,Associate Degree,Not Hispanic,"$55,000 to $59,999",White,Yes,MI,Joe Biden,0
 72,"Completed some graduate, but no degree",Not Hispanic,"$55,000 to $59,999",White,Yes,SD,Donald Trump,1
-33,Masters degree,Not Hispanic,"$55,000 to $59,999",Asian (Asian Indian),No,CA,Donald Trump,1
+33,Masters degree,Not Hispanic,"$55,000 to $59,999",Asian,No,CA,Donald Trump,1
 51,Associate Degree,Not Hispanic,"$85,000 to $89,999","Black, or African American",Yes,CA,Joe Biden,0
 35,"Completed some college, but no degree",Mexican,"$70,000 to $74,999",White,Yes,CA,Donald Trump,1
 71,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,NY,Donald Trump,1
-62,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian (Chinese),Yes,CA,Joe Biden,0
+62,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",Asian,Yes,CA,Joe Biden,0
 58,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,No,MI,Donald Trump,1
 70,"College Degree (such as B.A., B.S.)",Not Hispanic,"$45,000 to $49,999",White,Yes,IL,Joe Biden,0
 66,Associate Degree,Not Hispanic,"$95,000 to $99,999",White,Yes,GA,Donald Trump,1
 30,Masters degree,Not Hispanic,"Less than $14,999",White,No,TX,Joe Biden,0
 50,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,NY,Joe Biden,0
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,TX,Donald Trump,1
-55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Pacific Islander (Native Hawaiian),Yes,NV,Joe Biden,0
+55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Pacific Islander,Yes,NV,Joe Biden,0
 48,Other post high school vocational training,Not Hispanic,"$85,000 to $89,999",White,No,IN,Donald Trump,1
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Donald Trump,1
 56,"Completed some college, but no degree",Not Hispanic,"$60,000 to $64,999",White,Yes,NY,Donald Trump,1
@@ -4347,7 +4347,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 49,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",White,Yes,OH,Joe Biden,0
 69,Masters degree,Not Hispanic,"$40,000 to $44,999",White,Yes,IN,Donald Trump,1
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Some other race,Yes,FL,Joe Biden,0
-26,"Completed some college, but no degree",Mexican,"$200,000 to $249,999",Asian (Filipino),Yes,CA,Donald Trump,1
+26,"Completed some college, but no degree",Mexican,"$200,000 to $249,999",Asian,Yes,CA,Donald Trump,1
 39,Associate Degree,Not Hispanic,"$175,000 to $199,999",White,Yes,FL,Donald Trump,1
 58,Other post high school vocational training,Not Hispanic,"$65,000 to $69,999",White,Yes,TN,Donald Trump,1
 34,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,MI,Joe Biden,0
@@ -4386,9 +4386,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 46,Completed some high school,Not Hispanic,"Less than $14,999",White,No,MO,Donald Trump,1
 62,"Completed some college, but no degree",Spanish,"$45,000 to $49,999",White,Yes,AZ,Donald Trump,1
 67,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,CA,Joe Biden,0
-36,Completed some high school,Mexican,"Less than $14,999",Pacific Islander (Other),No,FL,Joe Biden,0
+36,Completed some high school,Mexican,"Less than $14,999",Pacific Islander,No,FL,Joe Biden,0
 51,"Completed some graduate, but no degree",Not Hispanic,"$55,000 to $59,999",Some other race,Yes,OR,Joe Biden,0
-55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian (Other),Yes,MD,Donald Trump,1
+55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Asian,Yes,MD,Donald Trump,1
 57,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999","Black, or African American",Yes,TX,Donald Trump,1
 47,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Some other race,Yes,TX,Joe Biden,0
 37,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
@@ -4412,7 +4412,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 48,Associate Degree,Not Hispanic,"$40,000 to $44,999",White,Yes,NM,Donald Trump,1
 34,"Completed some graduate, but no degree",Not Hispanic,"$75,000 to $79,999",White,Yes,PA,Donald Trump,1
 29,"Completed some college, but no degree",Mexican,"$50,000 to $54,999",Some other race,Yes,CA,Donald Trump,1
-22,Completed some high school,Not Hispanic,"$25,000 to $29,999",Asian (Asian Indian),Yes,HI,Joe Biden,0
+22,Completed some high school,Not Hispanic,"$25,000 to $29,999",Asian,Yes,HI,Joe Biden,0
 39,Doctorate degree,Not Hispanic,"$80,000 to $84,999",White,No,TX,Donald Trump,1
 32,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,WA,Joe Biden,0
 48,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,NY,Joe Biden,0
@@ -4451,13 +4451,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,PA,Donald Trump,1
 53,"Completed some college, but no degree",Not Hispanic,"$50,000 to $54,999",White,Yes,TX,Donald Trump,1
 35,"Completed some graduate, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Donald Trump,1
-26,High school graduate,Not Hispanic,"Less than $14,999",Asian (Vietnamese),Yes,DC,Joe Biden,0
+26,High school graduate,Not Hispanic,"Less than $14,999",Asian,Yes,DC,Joe Biden,0
 39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",White,Yes,WI,Donald Trump,1
 29,"Completed some graduate, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,IL,Donald Trump,1
 40,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,VA,Donald Trump,1
 35,"Completed some graduate, but no degree",Not Hispanic,"$85,000 to $89,999",White,Yes,PA,Donald Trump,1
 64,Associate Degree,Not Hispanic,"$30,000 to $34,999",White,No,KS,Donald Trump,1
-50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian (Korean),Yes,MA,Donald Trump,1
+50,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",Asian,Yes,MA,Donald Trump,1
 18,High school graduate,Mexican,"Less than $14,999",Some other race,Yes,KS,Joe Biden,0
 66,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,MI,Donald Trump,1
 19,Doctorate degree,Mexican,"Less than $14,999","Black, or African American",Yes,KY,Joe Biden,0
@@ -4614,7 +4614,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 43,Masters degree,Not Hispanic,"$150,000 to $174,999",White,Yes,NY,Donald Trump,1
 28,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,No,OH,Joe Biden,0
 40,High school graduate,Not Hispanic,"$95,000 to $99,999",Some other race,Yes,CA,Donald Trump,1
-25,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Asian (Asian Indian),Yes,NJ,Donald Trump,1
+25,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Asian,Yes,NJ,Donald Trump,1
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999","Black, or African American",Yes,VA,Joe Biden,0
 26,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,IL,Joe Biden,0
 51,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",White,Yes,IA,Joe Biden,0
@@ -4628,13 +4628,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 27,Associate Degree,Not Hispanic,"$20,000 to $24,999","Black, or African American",Yes,CO,Donald Trump,1
 40,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,TX,Donald Trump,1
 40,"Completed some graduate, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,OH,Joe Biden,0
-27,High school graduate,Other Hispanic,"$30,000 to $34,999",Asian (Other),Yes,KS,Joe Biden,0
+27,High school graduate,Other Hispanic,"$30,000 to $34,999",Asian,Yes,KS,Joe Biden,0
 63,"Completed some college, but no degree",Other Hispanic,"$25,000 to $29,999",Some other race,Yes,WA,Joe Biden,0
 78,Masters degree,Not Hispanic,"$25,000 to $29,999",White,No,FL,Joe Biden,0
 63,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,WI,Joe Biden,0
 64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",White,Yes,FL,Donald Trump,1
 46,Associate Degree,Not Hispanic,"Less than $14,999",Some other race,No,TX,Joe Biden,0
-20,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Asian (Chinese),Yes,NY,Joe Biden,0
+20,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999",Asian,Yes,NY,Joe Biden,0
 31,"Completed some college, but no degree",Mexican,"$15,000 to $19,999",Some other race,Yes,TX,Joe Biden,0
 61,"Completed some college, but no degree",Ecuadorian,"Less than $14,999",White,Yes,FL,Joe Biden,0
 43,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,NY,Joe Biden,0
@@ -4647,7 +4647,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,NY,Donald Trump,1
 45,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",American Indian or Alaska Native,Yes,NC,Donald Trump,1
 36,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,PA,Joe Biden,0
-30,High school graduate,Not Hispanic,"$20,000 to $24,999",Pacific Islander (Native Hawaiian),Yes,OR,Joe Biden,0
+30,High school graduate,Not Hispanic,"$20,000 to $24,999",Pacific Islander,Yes,OR,Joe Biden,0
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999","Black, or African American",Yes,AL,Joe Biden,0
 44,Associate Degree,Cuban,"$95,000 to $99,999",White,Yes,FL,Joe Biden,0
 25,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,TX,Joe Biden,0
@@ -4676,14 +4676,14 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 72,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",White,Yes,CO,Donald Trump,1
 41,Masters degree,Not Hispanic,"$125,000 to $149,999",White,No,TX,Donald Trump,1
 80,Masters degree,Not Hispanic,"$45,000 to $49,999",White,Yes,NJ,Donald Trump,1
-39,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian (Asian Indian),Yes,VA,Donald Trump,1
+39,Masters degree,Not Hispanic,"$100,000 to $124,999",Asian,Yes,VA,Donald Trump,1
 66,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,FL,Joe Biden,0
 31,"College Degree (such as B.A., B.S.)",Mexican,"$15,000 to $19,999",White,Yes,TX,Donald Trump,1
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,TX,Donald Trump,1
 43,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",White,Yes,IL,Joe Biden,0
 28,"Completed some college, but no degree",Spanish,"$55,000 to $59,999",White,Yes,TX,Donald Trump,1
 81,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999",White,Yes,VA,Donald Trump,1
-18,"Completed some college, but no degree",Not Hispanic,"$175,000 to $199,999",Pacific Islander (Samoan),Yes,VA,Joe Biden,0
+18,"Completed some college, but no degree",Not Hispanic,"$175,000 to $199,999",Pacific Islander,Yes,VA,Joe Biden,0
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999",White,Yes,NC,Donald Trump,1
 65,Other post high school vocational training,Not Hispanic,"Less than $14,999",White,Yes,VA,Joe Biden,0
 53,Associate Degree,Mexican,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
@@ -4699,7 +4699,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,Associate Degree,Not Hispanic,"$45,000 to $49,999","Black, or African American",Yes,NC,Joe Biden,0
 35,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",Some other race,Yes,IL,Joe Biden,0
 62,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",White,No,FL,Donald Trump,1
-42,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999",Asian (Filipino),Yes,PA,Donald Trump,1
+42,"Completed some college, but no degree",Not Hispanic,"$65,000 to $69,999",Asian,Yes,PA,Donald Trump,1
 50,"College Degree (such as B.A., B.S.)",Mexican,"$55,000 to $59,999",White,Yes,TX,Joe Biden,0
 62,Associate Degree,Not Hispanic,"$15,000 to $19,999",Some other race,Yes,AR,Joe Biden,0
 48,Associate Degree,Not Hispanic,"$45,000 to $49,999",White,Yes,CO,Donald Trump,1
@@ -4709,7 +4709,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999","Black, or African American",Yes,MD,Joe Biden,0
 64,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,OH,Donald Trump,1
 52,Other post high school vocational training,Not Hispanic,"$25,000 to $29,999","Black, or African American",Yes,GA,Joe Biden,0
-48,Associate Degree,Not Hispanic,"$65,000 to $69,999",Asian (Other),Yes,MD,Joe Biden,0
+48,Associate Degree,Not Hispanic,"$65,000 to $69,999",Asian,Yes,MD,Joe Biden,0
 51,Associate Degree,Cuban,"$40,000 to $44,999",White,Yes,FL,Donald Trump,1
 40,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,VA,Donald Trump,1
 25,"Completed some college, but no degree",Mexican,"Less than $14,999",Some other race,Yes,FL,Joe Biden,0
@@ -4721,7 +4721,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 45,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Joe Biden,0
 45,Masters degree,Not Hispanic,"$250,000 and above",White,Yes,NY,Donald Trump,1
 64,Associate Degree,Not Hispanic,"$15,000 to $19,999",White,Yes,PA,Joe Biden,0
-53,"Completed some graduate, but no degree",Not Hispanic,"$50,000 to $54,999",Asian (Filipino),No,MA,Joe Biden,0
+53,"Completed some graduate, but no degree",Not Hispanic,"$50,000 to $54,999",Asian,No,MA,Joe Biden,0
 38,"Completed some graduate, but no degree",Not Hispanic,"$125,000 to $149,999",White,Yes,FL,Donald Trump,1
 67,Masters degree,Not Hispanic,"$65,000 to $69,999","Black, or African American",Yes,TX,Joe Biden,0
 24,"College Degree (such as B.A., B.S.)",Not Hispanic,"$25,000 to $29,999",White,Yes,IL,Joe Biden,0
@@ -4740,7 +4740,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 39,Other post high school vocational training,Not Hispanic,"$40,000 to $44,999",White,Yes,TX,Donald Trump,1
 41,Masters degree,Not Hispanic,"$100,000 to $124,999",White,Yes,VA,Donald Trump,1
 50,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",Some other race,Yes,FL,Donald Trump,1
-32,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian (Asian Indian),Yes,VA,Joe Biden,0
+32,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Asian,Yes,VA,Joe Biden,0
 36,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",American Indian or Alaska Native,Yes,MS,Joe Biden,0
 60,Associate Degree,Not Hispanic,"$95,000 to $99,999",American Indian or Alaska Native,Yes,MA,Joe Biden,0
 26,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999","Black, or African American",Yes,IL,Joe Biden,0
@@ -4752,10 +4752,10 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 38,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,ME,Joe Biden,0
 37,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",White,Yes,NJ,Donald Trump,1
 44,Associate Degree,Mexican,"$20,000 to $24,999",White,Yes,TX,Joe Biden,0
-43,Associate Degree,Not Hispanic,"$25,000 to $29,999",Asian (Other),Yes,OH,Joe Biden,0
+43,Associate Degree,Not Hispanic,"$25,000 to $29,999",Asian,Yes,OH,Joe Biden,0
 25,"College Degree (such as B.A., B.S.)",Mexican,"$45,000 to $49,999","Black, or African American",Yes,VA,Joe Biden,0
-25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",Asian (Asian Indian),Yes,FL,Joe Biden,0
-28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian (Other),Yes,MN,Joe Biden,0
+25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",Asian,Yes,FL,Joe Biden,0
+28,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",Asian,Yes,MN,Joe Biden,0
 49,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,KY,Donald Trump,1
 32,"College Degree (such as B.A., B.S.)",Argentinian,"$125,000 to $149,999",White,Yes,CA,Donald Trump,1
 55,High school graduate,Not Hispanic,"$100,000 to $124,999",White,Yes,CA,Joe Biden,0
@@ -4765,9 +4765,9 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 34,Associate Degree,Other Hispanic,"$25,000 to $29,999",Some other race,Yes,PA,Joe Biden,0
 38,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,TX,Donald Trump,1
 68,"College Degree (such as B.A., B.S.)",Mexican,"$30,000 to $34,999",White,Yes,TN,Donald Trump,1
-68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",Asian (Asian Indian),Yes,IL,Joe Biden,0
+68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$65,000 to $69,999",Asian,Yes,IL,Joe Biden,0
 43,Completed some high school,Mexican,"$35,000 to $39,999",Some other race,Yes,NM,Donald Trump,1
-30,Completed some high school,Not Hispanic,"$15,000 to $19,999",Pacific Islander (Native Hawaiian),Yes,OR,Donald Trump,1
+30,Completed some high school,Not Hispanic,"$15,000 to $19,999",Pacific Islander,Yes,OR,Donald Trump,1
 43,High school graduate,Other Hispanic,"$25,000 to $29,999",White,No,FL,Donald Trump,1
 64,Associate Degree,Not Hispanic,"$85,000 to $89,999",White,Yes,CA,Donald Trump,1
 46,Associate Degree,Venezuelan,"$45,000 to $49,999",Some other race,Yes,FL,Joe Biden,0
@@ -4802,7 +4802,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 60,"Completed some college, but no degree",Mexican,"$50,000 to $54,999",White,Yes,TX,Donald Trump,1
 43,"Completed some college, but no degree",Mexican,"$30,000 to $34,999",White,Yes,TX,Joe Biden,0
 26,High school graduate,Other Hispanic,"Less than $14,999",Some other race,Yes,NJ,Joe Biden,0
-62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Asian (Filipino),No,CA,Donald Trump,1
+62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",Asian,No,CA,Donald Trump,1
 60,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,GA,Donald Trump,1
 69,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,WV,Joe Biden,0
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$70,000 to $74,999",White,Yes,NY,Joe Biden,0
@@ -4821,7 +4821,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 62,"College Degree (such as B.A., B.S.)",Not Hispanic,"$95,000 to $99,999",White,Yes,WA,Joe Biden,0
 32,"College Degree (such as B.A., B.S.)",Not Hispanic,"$35,000 to $39,999",Some other race,Yes,GA,Joe Biden,0
 72,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,VA,Joe Biden,0
-39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",Asian (Asian Indian),Yes,CO,Joe Biden,0
+39,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",Asian,Yes,CO,Joe Biden,0
 41,"College Degree (such as B.A., B.S.)",Not Hispanic,"$60,000 to $64,999",White,Yes,NY,Donald Trump,1
 59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,FL,Joe Biden,0
 68,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,IL,Joe Biden,0
@@ -4833,7 +4833,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,CA,Donald Trump,1
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999",White,Yes,NY,Donald Trump,1
 18,High school graduate,Venezuelan,"Less than $14,999",Some other race,Yes,FL,Donald Trump,1
-38,Associate Degree,Not Hispanic,"$100,000 to $124,999",Asian (Other),Yes,WA,Joe Biden,0
+38,Associate Degree,Not Hispanic,"$100,000 to $124,999",Asian,Yes,WA,Joe Biden,0
 71,Completed some high school,Not Hispanic,"$40,000 to $44,999",White,Yes,AZ,Joe Biden,0
 65,High school graduate,Not Hispanic,"$25,000 to $29,999",White,Yes,OH,Donald Trump,1
 46,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,ME,Joe Biden,0
@@ -4843,7 +4843,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 56,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",White,Yes,NY,Donald Trump,1
 40,Completed some high school,Not Hispanic,"$60,000 to $64,999",White,No,OR,Joe Biden,0
 40,"College Degree (such as B.A., B.S.)",Not Hispanic,"Less than $14,999",White,Yes,PA,Joe Biden,0
-45,Associate Degree,Not Hispanic,"$70,000 to $74,999",Asian (Chinese),Yes,WA,Joe Biden,0
+45,Associate Degree,Not Hispanic,"$70,000 to $74,999",Asian,Yes,WA,Joe Biden,0
 42,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,MS,Joe Biden,0
 58,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,Yes,UT,Donald Trump,1
 45,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,NJ,Joe Biden,0
@@ -4980,7 +4980,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 73,Associate Degree,Not Hispanic,"$75,000 to $79,999",White,Yes,SC,Joe Biden,0
 67,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,CO,Donald Trump,1
 19,High school graduate,Not Hispanic,"$95,000 to $99,999",White,Yes,FL,Joe Biden,0
-22,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",Asian (Other),Yes,CA,Joe Biden,0
+22,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",Asian,Yes,CA,Joe Biden,0
 35,Masters degree,Not Hispanic,"$75,000 to $79,999",White,Yes,MO,Joe Biden,0
 61,Associate Degree,Not Hispanic,"$20,000 to $24,999",White,Yes,NY,Joe Biden,0
 59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$55,000 to $59,999",White,Yes,NJ,Joe Biden,0
@@ -5000,7 +5000,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 63,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,KS,Joe Biden,0
 35,"College Degree (such as B.A., B.S.)",Spanish,"$25,000 to $29,999",White,Yes,OR,Donald Trump,1
 68,Other post high school vocational training,Not Hispanic,"$40,000 to $44,999",White,Yes,TN,Donald Trump,1
-41,Masters degree,Not Hispanic,"$50,000 to $54,999",Asian (Filipino),Yes,CA,Joe Biden,0
+41,Masters degree,Not Hispanic,"$50,000 to $54,999",Asian,Yes,CA,Joe Biden,0
 70,High school graduate,Not Hispanic,"$85,000 to $89,999",White,Yes,OR,Donald Trump,1
 35,High school graduate,Mexican,"$15,000 to $19,999",White,Yes,TX,Joe Biden,0
 62,Masters degree,Not Hispanic,"$125,000 to $149,999",White,Yes,AZ,Donald Trump,1
@@ -5015,7 +5015,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 27,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,Yes,ME,Donald Trump,1
 33,Associate Degree,Not Hispanic,"$50,000 to $54,999",White,Yes,WV,Donald Trump,1
 20,Completed some high school,Not Hispanic,"Less than $14,999",White,Yes,RI,Joe Biden,0
-19,Completed some high school,Not Hispanic,"$95,000 to $99,999",Asian (Chinese),Yes,NC,Joe Biden,0
+19,Completed some high school,Not Hispanic,"$95,000 to $99,999",Asian,Yes,NC,Joe Biden,0
 38,High school graduate,Not Hispanic,"$20,000 to $24,999","Black, or African American",Yes,GA,Donald Trump,1
 66,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,NJ,Joe Biden,0
 57,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",White,Yes,NJ,Joe Biden,0
@@ -5060,7 +5060,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 23,Associate Degree,Not Hispanic,"Less than $14,999",White,Yes,CA,Donald Trump,1
 63,"Completed some college, but no degree",Not Hispanic,"$90,000 to $94,999",White,No,NE,Donald Trump,1
 71,High school graduate,Not Hispanic,"$40,000 to $44,999","Black, or African American",Yes,GA,Joe Biden,0
-56,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",Asian (Filipino),Yes,CA,Donald Trump,1
+56,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",Asian,Yes,CA,Donald Trump,1
 60,Completed some high school,Not Hispanic,"$35,000 to $39,999","Black, or African American",Yes,MS,Donald Trump,1
 62,Associate Degree,Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Donald Trump,1
 18,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,CA,Donald Trump,1
@@ -5085,14 +5085,14 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 24,"Completed some graduate, but no degree",Not Hispanic,"$15,000 to $19,999","Black, or African American",Yes,NY,Joe Biden,0
 32,High school graduate,Not Hispanic,"$60,000 to $64,999",White,Yes,CA,Joe Biden,0
 26,"College Degree (such as B.A., B.S.)",Other Hispanic,"$25,000 to $29,999",Some other race,Yes,FL,Donald Trump,1
-18,High school graduate,Not Hispanic,"$150,000 to $174,999",Asian (Asian Indian),Yes,NJ,Donald Trump,1
+18,High school graduate,Not Hispanic,"$150,000 to $174,999",Asian,Yes,NJ,Donald Trump,1
 28,"Completed some college, but no degree",Not Hispanic,"$40,000 to $44,999","Black, or African American",Yes,AL,Joe Biden,0
-48,Masters degree,Not Hispanic,"$70,000 to $74,999",Asian (Filipino),Yes,CA,Donald Trump,1
+48,Masters degree,Not Hispanic,"$70,000 to $74,999",Asian,Yes,CA,Donald Trump,1
 34,"Completed some college, but no degree",Not Hispanic,"$100,000 to $124,999","Black, or African American",Yes,SC,Joe Biden,0
 18,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",No,VA,Joe Biden,0
 30,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,GA,Joe Biden,0
 31,"College Degree (such as B.A., B.S.)",Mexican,"$100,000 to $124,999",White,Yes,FL,Joe Biden,0
-61,Masters degree,Not Hispanic,"$20,000 to $24,999",Asian (Japanese),Yes,NY,Joe Biden,0
+61,Masters degree,Not Hispanic,"$20,000 to $24,999",Asian,Yes,NY,Joe Biden,0
 40,Doctorate degree,Not Hispanic,"$200,000 to $249,999",White,Yes,PA,Donald Trump,1
 36,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,GA,Joe Biden,0
 24,Completed some high school,Other Hispanic,"$50,000 to $54,999",Some other race,Yes,NY,Joe Biden,0
@@ -5116,7 +5116,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 47,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",American Indian or Alaska Native,No,NY,Donald Trump,1
 33,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,IL,Donald Trump,1
 28,High school graduate,Not Hispanic,"$20,000 to $24,999",White,Yes,AZ,Joe Biden,0
-40,High school graduate,Other Hispanic,"$45,000 to $49,999",Asian (Chinese),Yes,NH,Joe Biden,0
+40,High school graduate,Other Hispanic,"$45,000 to $49,999",Asian,Yes,NH,Joe Biden,0
 35,"Completed some college, but no degree",Not Hispanic,"$80,000 to $84,999",White,Yes,AZ,Donald Trump,1
 40,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,VA,Donald Trump,1
 55,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",White,Yes,MT,Joe Biden,0
@@ -5135,7 +5135,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 25,"Completed some graduate, but no degree",Mexican,"$30,000 to $34,999",White,No,SC,Donald Trump,1
 49,Associate Degree,Not Hispanic,"$40,000 to $44,999",White,Yes,FL,Joe Biden,0
 26,Masters degree,Not Hispanic,"$40,000 to $44,999",White,Yes,VA,Joe Biden,0
-39,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",Asian (Filipino),Yes,CA,Joe Biden,0
+39,"Completed some graduate, but no degree",Not Hispanic,"$95,000 to $99,999",Asian,Yes,CA,Joe Biden,0
 47,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,MA,Joe Biden,0
 41,"College Degree (such as B.A., B.S.)",Mexican,"$150,000 to $174,999",White,Yes,IL,Donald Trump,1
 25,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",White,Yes,IL,Joe Biden,0
@@ -5156,7 +5156,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 41,High school graduate,Not Hispanic,"Less than $14,999",White,No,OK,Joe Biden,0
 41,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,MS,Joe Biden,0
 24,High school graduate,Not Hispanic,"Less than $14,999","Black, or African American",Yes,NV,Joe Biden,0
-18,High school graduate,Not Hispanic,"$150,000 to $174,999",Asian (Asian Indian),Yes,NY,Joe Biden,0
+18,High school graduate,Not Hispanic,"$150,000 to $174,999",Asian,Yes,NY,Joe Biden,0
 50,Completed some high school,Not Hispanic,"$15,000 to $19,999",White,Yes,FL,Joe Biden,0
 24,Other post high school vocational training,Not Hispanic,"$50,000 to $54,999",White,No,FL,Donald Trump,1
 54,Masters degree,Not Hispanic,"$70,000 to $74,999","Black, or African American",Yes,TX,Joe Biden,0
@@ -5172,7 +5172,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 54,Associate Degree,Not Hispanic,"Less than $14,999",American Indian or Alaska Native,Yes,ND,Joe Biden,0
 30,"Completed some college, but no degree",Mexican,"$45,000 to $49,999",Some other race,Yes,CA,Joe Biden,0
 74,"Completed some college, but no degree",Not Hispanic,"$80,000 to $84,999",White,Yes,PA,Joe Biden,0
-37,High school graduate,Not Hispanic,"$90,000 to $94,999",Asian (Filipino),Yes,NY,Donald Trump,1
+37,High school graduate,Not Hispanic,"$90,000 to $94,999",Asian,Yes,NY,Donald Trump,1
 23,"Completed some college, but no degree",Spanish,"Less than $14,999",White,Yes,CA,Joe Biden,0
 25,"Completed some graduate, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,TX,Joe Biden,0
 33,"Completed some college, but no degree",Not Hispanic,"$20,000 to $24,999",White,No,OK,Joe Biden,0
@@ -5189,11 +5189,11 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 63,"Completed some graduate, but no degree",Other Hispanic,"$60,000 to $64,999",White,Yes,GA,Donald Trump,1
 55,Completed some high school,Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,TX,Joe Biden,0
 70,Associate Degree,Not Hispanic,"$30,000 to $34,999","Black, or African American",Yes,KS,Joe Biden,0
-42,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",Asian (Other),No,KY,Donald Trump,1
+42,"Completed some college, but no degree",Not Hispanic,"$70,000 to $74,999",Asian,No,KY,Donald Trump,1
 38,"Completed some college, but no degree",Mexican,"$70,000 to $74,999",Some other race,Yes,CA,Joe Biden,0
 64,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",Yes,GA,Joe Biden,0
 25,High school graduate,Cuban,"$30,000 to $34,999",White,Yes,FL,Donald Trump,1
-47,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian (Filipino),Yes,CA,Donald Trump,1
+47,"College Degree (such as B.A., B.S.)",Not Hispanic,"$20,000 to $24,999",Asian,Yes,CA,Donald Trump,1
 25,Associate Degree,Not Hispanic,"$55,000 to $59,999",White,Yes,SC,Donald Trump,1
 60,"Completed some college, but no degree",Not Hispanic,"$45,000 to $49,999",White,Yes,FL,Donald Trump,1
 31,"College Degree (such as B.A., B.S.)",Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Joe Biden,0
@@ -5218,13 +5218,13 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$40,000 to $44,999",White,Yes,NY,Donald Trump,1
 30,"Completed some college, but no degree",Mexican,"$70,000 to $74,999",Some other race,Yes,TX,Donald Trump,1
 34,"Completed some college, but no degree",Not Hispanic,"$75,000 to $79,999",White,Yes,VA,Joe Biden,0
-20,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian (Japanese),Yes,CA,Joe Biden,0
+20,High school graduate,Not Hispanic,"$100,000 to $124,999",Asian,Yes,CA,Joe Biden,0
 26,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999",Some other race,Yes,MI,Joe Biden,0
 27,High school graduate,Not Hispanic,"Less than $14,999",White,No,NJ,Donald Trump,1
 50,High school graduate,Not Hispanic,"Less than $14,999",White,Yes,LA,Donald Trump,1
 45,"Completed some college, but no degree",Not Hispanic,"$150,000 to $174,999",White,Yes,TX,Joe Biden,0
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$80,000 to $84,999",White,Yes,TX,Donald Trump,1
-22,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Asian (Filipino),Yes,IL,Joe Biden,0
+22,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",Asian,Yes,IL,Joe Biden,0
 64,Associate Degree,Not Hispanic,"$100,000 to $124,999",Some other race,Yes,NY,Joe Biden,0
 35,"College Degree (such as B.A., B.S.)",Not Hispanic,"$15,000 to $19,999","Black, or African American",No,MS,Joe Biden,0
 48,High school graduate,Not Hispanic,"$70,000 to $74,999",White,Yes,GA,Joe Biden,0
@@ -5247,7 +5247,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 27,"Completed some college, but no degree",Mexican,"Less than $14,999",White,Yes,MN,Joe Biden,0
 36,Completed some high school,Not Hispanic,"$45,000 to $49,999",White,No,IN,Donald Trump,1
 25,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",White,Yes,MI,Donald Trump,1
-19,Completed some high school,Not Hispanic,"Less than $14,999",Asian (Other),Yes,NY,Donald Trump,1
+19,Completed some high school,Not Hispanic,"Less than $14,999",Asian,Yes,NY,Donald Trump,1
 44,"Completed some college, but no degree",Not Hispanic,"$55,000 to $59,999","Black, or African American",Yes,TX,Joe Biden,0
 28,High school graduate,Other Hispanic,"Less than $14,999",White,Yes,NM,Joe Biden,0
 64,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,NY,Donald Trump,1
@@ -5257,10 +5257,10 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 71,High school graduate,Not Hispanic,"$40,000 to $44,999",White,Yes,NY,Joe Biden,0
 33,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",White,Yes,CA,Donald Trump,1
 62,"Completed some graduate, but no degree",Mexican,"$40,000 to $44,999",White,Yes,AZ,Joe Biden,0
-54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",Pacific Islander (Guamanian),Yes,MD,Donald Trump,1
+54,"College Degree (such as B.A., B.S.)",Not Hispanic,"$250,000 and above",Pacific Islander,Yes,MD,Donald Trump,1
 36,High school graduate,Not Hispanic,"$25,000 to $29,999",White,No,FL,Donald Trump,1
 59,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,MI,Donald Trump,1
-27,"College Degree (such as B.A., B.S.)",Not Hispanic,"$90,000 to $94,999",Asian (Filipino),Yes,TX,Joe Biden,0
+27,"College Degree (such as B.A., B.S.)",Not Hispanic,"$90,000 to $94,999",Asian,Yes,TX,Joe Biden,0
 66,"College Degree (such as B.A., B.S.)",Not Hispanic,"$75,000 to $79,999",White,Yes,OH,Donald Trump,1
 59,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,ME,Donald Trump,1
 46,"Completed some college, but no degree",Not Hispanic,"$35,000 to $39,999",White,Yes,GA,Joe Biden,0
@@ -5272,8 +5272,8 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 58,"College Degree (such as B.A., B.S.)",Not Hispanic,"$125,000 to $149,999",Some other race,Yes,NY,Joe Biden,0
 38,High school graduate,Not Hispanic,"$30,000 to $34,999",White,Yes,IL,Donald Trump,1
 43,"College Degree (such as B.A., B.S.)",Mexican,"$50,000 to $54,999",Some other race,Yes,RI,Joe Biden,0
-38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",Asian (Japanese),Yes,KS,Donald Trump,1
-35,Associate Degree,Not Hispanic,"$15,000 to $19,999",Asian (Other),Yes,GA,Joe Biden,0
+38,"College Degree (such as B.A., B.S.)",Not Hispanic,"$175,000 to $199,999",Asian,Yes,KS,Donald Trump,1
+35,Associate Degree,Not Hispanic,"$15,000 to $19,999",Asian,Yes,GA,Joe Biden,0
 29,"Completed some graduate, but no degree",Not Hispanic,"$25,000 to $29,999",Some other race,Yes,PA,Donald Trump,1
 28,"College Degree (such as B.A., B.S.)",Other Hispanic,"Less than $14,999",Some other race,Yes,NY,Donald Trump,1
 40,High school graduate,Not Hispanic,"$35,000 to $39,999",White,Yes,NY,Donald Trump,1
@@ -5319,12 +5319,12 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 28,"Completed some college, but no degree",Not Hispanic,"$85,000 to $89,999",White,Yes,MD,Joe Biden,0
 36,"College Degree (such as B.A., B.S.)",Not Hispanic,"$50,000 to $54,999",White,Yes,MN,Joe Biden,0
 39,Masters degree,Not Hispanic,"$175,000 to $199,999",White,Yes,NY,Donald Trump,1
-19,Completed some high school,Not Hispanic,"$100,000 to $124,999",Asian (Filipino),Yes,WA,Joe Biden,0
+19,Completed some high school,Not Hispanic,"$100,000 to $124,999",Asian,Yes,WA,Joe Biden,0
 65,"Completed some college, but no degree",Not Hispanic,"Less than $14,999",White,Yes,CA,Donald Trump,1
 40,Masters degree,Not Hispanic,"$200,000 to $249,999",White,Yes,NY,Donald Trump,1
 32,Associate Degree,Not Hispanic,"$40,000 to $44,999",American Indian or Alaska Native,Yes,OK,Donald Trump,1
 51,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,No,FL,Joe Biden,0
-40,"College Degree (such as B.A., B.S.)",Other Hispanic,"$80,000 to $84,999",Asian (Other),Yes,NJ,Joe Biden,0
+40,"College Degree (such as B.A., B.S.)",Other Hispanic,"$80,000 to $84,999",Asian,Yes,NJ,Joe Biden,0
 44,Masters degree,Not Hispanic,"$65,000 to $69,999",White,Yes,ME,Joe Biden,0
 44,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",White,Yes,IN,Joe Biden,0
 31,Completed some high school,Not Hispanic,"Less than $14,999",American Indian or Alaska Native,No,TX,Joe Biden,0
@@ -5386,7 +5386,7 @@ age,education,hispanic,household_income,race_ethnicity,extra_covid_worn_mask,sta
 65,"Completed some college, but no degree",Not Hispanic,"$125,000 to $149,999",White,Yes,TN,Joe Biden,0
 44,"College Degree (such as B.A., B.S.)",Not Hispanic,"$85,000 to $89,999",White,Yes,MA,Joe Biden,0
 75,High school graduate,Not Hispanic,"$45,000 to $49,999",White,Yes,VA,Donald Trump,1
-22,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",Asian (Vietnamese),Yes,NY,Joe Biden,0
+22,"Completed some college, but no degree",Not Hispanic,"$30,000 to $34,999",Asian,Yes,NY,Joe Biden,0
 46,"Completed some college, but no degree",Not Hispanic,"$25,000 to $29,999",White,Yes,MI,Donald Trump,1
 39,"Completed some college, but no degree",Not Hispanic,"Less than $14,999","Black, or African American",No,OH,Joe Biden,0
 63,High school graduate,Not Hispanic,"$100,000 to $124,999",White,Yes,OH,Joe Biden,0
