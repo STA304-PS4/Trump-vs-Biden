@@ -1,5 +1,5 @@
 #### Preamble ####
-# Purpose: The purpose of this code is to prepare and clean the Nationscape Data Set downloaded from the Democracy Fund Voter Study Group. Because we aren't looking at each and every one of the more than 200 variables included in the dataset, we want to clean the dataset so that it only includes variables that we are interested in. To address this issue, we only included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those who are willing to vote for Donald Trump or Joe Biden.
+# Purpose: The purpose of this code is to prepare and clean the Nationscape Data Set downloaded from the Democracy Fund Voter Study Group. Because we aren't looking at each and every one of the more than 200 variables included in the dataset, we want to clean the dataset so that it only includes variables that we are interested in. To address this issue, we only included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those willing to vote for Donald Trump or Joe Biden. A problem we encountered with the raw dataset was that a lot of the values were shown as N/A; to address this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row in the dataset, every column has a meaningful value.
 # Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
 # Data: 2 November 2020
 # Contact: arjun.dhatt@mail.utoronto.ca 
@@ -11,7 +11,6 @@
  ## 4. After unzipping the file, open ‘phase_2_v20200814’ -> ‘ns20200625’ -> ’01-data_cleaning-survey.R’. We open the folder pertaining to ‘ns20200625’ because we want data from June 25th, 2020. 
  ## 5. We want to then open ’01-data_cleaning-survey.R’ in R that way we can filter the dataset to our needs. 
  ## 6. You may need to adjust the file paths depending on your system. 
-
 
 #### Workspace setup ####
 library(haven)
@@ -33,7 +32,10 @@ tbdata <-
  )) %>% 
   filter(!is.na(binary))
 
-write_csv(ps3_data, "outputs/clean-survey.csv")
+# Removing all NA values 
+tbdatax <- na.omit(tbdata)
+
+write_csv(tbdatax, "outputs/clean-survey.csv")
 
 
 #### What else???? ####
