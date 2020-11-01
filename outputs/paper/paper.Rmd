@@ -54,7 +54,7 @@ The post-stratification estimate is defined by $\hat{y}_{PS} = \frac{\sum{N_j\ha
 - 11 education levels
 - 15 races;
 - 24 income levels;
-- 51 states
+- 51 states;
 - 2 options for mask wearing habits.
 
 That is 
@@ -73,9 +73,10 @@ $\beta_0$ is the intercept,each of $\beta_{j[i]}^{var}$ represents the parameter
 
 # Results
 
-```{r, eval = FALSE}
+```{r}
 fit <- brms::brm(
-  binary ~ (1 | state) + (1 | age) + (1 | education) + (1 | household_income),
+  binary ~ (1 | age) + (1 | education) + (1 | race_ethnicity0)+ (1 | hispanic)
+  + (1 | household_income) + (1 | state) + (1 | extra_covid_worn_mask),
   family = bernoulli(link = "logit"),
   data = clean_survey
 )
