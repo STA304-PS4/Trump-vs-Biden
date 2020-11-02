@@ -16,6 +16,9 @@ bibliography: references.bib
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 library(tidyverse)
+library(lme4)
+library(rstanarm)
+library(brms)
 ```
 
 # Introduction
@@ -70,7 +73,6 @@ Another weakness of the data comes from the fact that we use convenience-based s
 
 Lastly another weakness of our dataset is due to the fact that the survey data we are analyzing is collected from June 25th, 2020 to July 1st, 2020. Between July and November (the month of the election), many voters may not have an informed vote and their opinions may still be swayed after watching crucial debates and hearing what the leaders have to say; our data doesn’t take into consideration the people whose votes may change in the most crucial months of the election. A solution to this weakness can be to analyze data that may have occurred closer to the actual election so that the participants have an informed vote. 
 
-
 # Model
 
 The model we use to predict the result of the election is MRP, multilevel regression with post-stratification. The advantage of this model is that it has better performance when estimating behaviors of a particular subgroup of the population. One can interpret MRP as a combination of multilevel logistic regression and post-stratification. Logistic regression allows us the simplicity of analyzing the categorical response variable while incorporating both numerical and categorical explanatory variables; while combined with post-stratification, it yields a much narrower confidence interval for the estimation. 
@@ -104,9 +106,7 @@ The post-stratification estimate is defined by $\hat{y}_{PS} = \frac{\sum{N_j\ha
 - 51 states;
 - 2 options for mask wearing habits.
 
-That is 
-
-We fit the logistic regressions for estimating candidate support in each cell. We used `function` from `package` to fit \@ref(eq:model).
+That is 30,697,920 cells in total. We fit the logistic regressions for estimating candidate support in each cell. We used `function` from `package` to fit \@ref(eq:model).
 
 \begin{equation}
 P(Trump) = logit^{-1}(
@@ -121,23 +121,29 @@ $\beta_0$ is the intercept,each of $\beta_{j[i]}^{var}$ represents the parameter
 # Results
 
 ```{r}
-fit <- brms::brm(
-  binary ~ (1 | age) + (1 | education) + (1 | race_ethnicity0)+ (1 | hispanic)
-  + (1 | household_income) + (1 | state) + (1 | extra_covid_worn_mask),
-  family = bernoulli(link = "logit"),
-  data = clean_survey
-)
-print(fit)
+attach(clean_survey)
+mod <- brm(binary ~ age + education_grouped + race_ethnicity + hispanic + household_income_grouped + state + extra_covid_worn_mask,
+           data = clean_survey,
+           family = bernoulli(),
+           iter = 4000
+           )
+
+summary(mod)
 ```
 
-```{r, eval=FALSE}
+```{r}
+usa_00001$estimate <-
+  mod %>%
+  predict(newdata = usa_00001)
+```
+
+
+```{r}
 # to get the estimated proportions and associated 95% PIs by state
-res_state <- fit %>%
-  add_predicted_draws(newdata=state_prop %>% 
-                        filter(age_group>20, age_group<80, decade_married>1969),
-                      allow_new_levels=TRUE) %>%
-  rename(kept_name_predict = .prediction) %>% 
-  mutate(kept_name_predict_prop = kept_name_predict*prop) %>% 
+res_state <- mod %>%
+  tidybayes::add_predicted_draws(newdata = census_data) %>%
+  rename(president_predict = .prediction) %>%  
+  mutate(president_predict_prop = president_predict*prop) %>% 
   group_by(state_name, .draw) %>% 
   summarise(kept_name_predict = sum(kept_name_predict_prop)) %>% 
   group_by(state_name) %>% 
