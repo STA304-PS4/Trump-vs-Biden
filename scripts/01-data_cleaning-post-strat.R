@@ -84,10 +84,11 @@ race0 <- recode(prep_data$race, !!!recode_key_race)
 prep_data <- prep_data %>% 
   mutate(
     education_grouped = educ0,
-    race = race0
+    race_ethnicity = race0,
+    hispanic = hispan
   ) %>% 
   mutate(
-    age_group = case_when(
+    age = case_when(
       as.numeric(age) >=18 & as.numeric(age) <=35 ~ "18-35",
       as.numeric(age) >=36 & as.numeric(age) <=55 ~ "36-55",
       as.numeric(age) >=56 & as.numeric(age) <=75 ~ "56-75",
@@ -95,7 +96,7 @@ prep_data <- prep_data %>%
     )
   ) %>% 
   mutate(
-    income_group = case_when(
+    household_income_grouped = case_when(
       as.numeric(ftotinc) <25000 ~ "$25k or less",
       as.numeric(ftotinc) >=25000 & as.numeric(ftotinc) < 50000 ~ "$25k to $50k",
       as.numeric(ftotinc) >=50000 & as.numeric(ftotinc) < 75000 ~ "$50k to $75k",
@@ -105,7 +106,7 @@ prep_data <- prep_data %>%
     )
   ) %>% 
   select(
-    age_group, income_group, education_grouped, race, hispan
+    age, household_income_grouped, education_grouped, race_ethnicity, hispanic
   )
 
 
@@ -114,7 +115,7 @@ write_dta(prep_data, "outputs/post_strat_data.dta")
 
 #Create a new tibble that includes the count of individuals in each of our subdivided categories
 cell_counts <- prep_data %>% 
-  group_by(age_group, income_group, education_grouped, race, hispan) %>% 
+  group_by(age, household_income_grouped, education_grouped, race_ethnicity, hispanic) %>% 
   summarise(n = n()) #%>%  
 
 
@@ -125,13 +126,13 @@ write_csv(cell_counts, "outputs/post_strat_cellcount.csv")
 #Each will be based on one of our variables of comparison 
 age_prop <- cell_counts %>% 
   ungroup() %>% 
-  group_by(age_group) %>% 
+  group_by(age) %>% 
   mutate(prop = n/sum(n)) %>% 
   ungroup()
 
 income_prop <- cell_counts %>% 
   ungroup() %>% 
-  group_by(income_group) %>% 
+  group_by(household_income_grouped) %>% 
   mutate(prop = n/sum(n)) %>% 
   ungroup()
 
@@ -143,13 +144,13 @@ education_prop <- cell_counts %>%
 
 race_prop <- cell_counts %>% 
   ungroup() %>% 
-  group_by(race) %>% 
+  group_by(race_ethnicity) %>% 
   mutate(prop = n/sum(n)) %>% 
   ungroup()
 
 hispanic_prop <- cell_counts %>% 
   ungroup() %>% 
-  group_by(hispan) %>% 
+  group_by(hispanic) %>% 
   mutate(prop = n/sum(n)) %>% 
   ungroup()
 

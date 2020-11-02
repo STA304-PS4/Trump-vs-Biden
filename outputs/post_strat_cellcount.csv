@@ -1,4 +1,4 @@
-age_group,income_group,education_grouped,race,hispan,n
+age,household_income_grouped,education_grouped,race_ethnicity,hispanic,n
 18-35,$100k to $150k,Less than HS,white,not hispanic,393
 18-35,$100k to $150k,Less than HS,white,mexican,138
 18-35,$100k to $150k,Less than HS,white,puerto rican,8
