@@ -74,6 +74,11 @@ The variables that we used in our dataset are as follow:
 
 We also created another variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. [ADD INFORMATOIN ABOUT OTHER MUTATIONS WE CREATED]
 
+The first 6 rows of the dataset can be viewed below: 
+```{r}
+head(tbdata)
+```
+
 ```{r}
 incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
@@ -130,6 +135,10 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
 agegraph
 ```
 Key features of data? 
+
+```{r}
+head(tbdata)
+```
 
 The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the united states (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
 
