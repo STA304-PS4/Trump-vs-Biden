@@ -119,7 +119,7 @@ cell_counts <- prep_data %>%
 
 
 #Generate the Data file of these cell counts
-write_dta(cell_counts, "outputs/post_strat_cellcount.dta")
+write_csv(cell_counts, "outputs/post_strat_cellcount.csv")
 
 #Create the proportion files needed in the modelling stage 
 #Each will be based on one of our variables of comparison 
