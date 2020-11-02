@@ -26,6 +26,9 @@ library(merTools)
 library(readr)
 library(knitr)
 ```
+# Abstract
+
+In this report, we will be forecasting the winner of the upcoming US Presidential Elections 2020 between incumbent Donald Trump of the Republican Party and Joe Biden of the Democratic Party, by looking at different factors that affect a citizen’s voting intentions leading to Election Day. We cleaned the (name of the dataset) dataset and chose the variables age, education, race, family income, geographic region, and mask-wearing decision which will form the basis of our Elections prediction. Then we used a MRP model (a combination of multilevel logistic regression and post-stratification) to analyse the factors and it also helps us in achieving a much narrower confidence interval for our prediction. After our analysis, we concluded that (who will win the election) will win x% of the national popular vote, with a y% of margin of error.
 
 # Introduction
 

@@ -88,7 +88,7 @@ prep_data <- prep_data %>%
     hispanic = hispan
   ) %>% 
   mutate(
-    age = case_when(
+    age_group = case_when(
       as.numeric(age) >=18 & as.numeric(age) <=35 ~ "18-35",
       as.numeric(age) >=36 & as.numeric(age) <=55 ~ "36-55",
       as.numeric(age) >=56 & as.numeric(age) <=75 ~ "56-75",
@@ -106,16 +106,15 @@ prep_data <- prep_data %>%
     )
   ) %>% 
   select(
-    age, household_income_grouped, education_grouped, race_ethnicity, hispanic
+    age_group, household_income_grouped, education_grouped, race_ethnicity, hispanic
   )
-
 
 # Generate the data file 
 write_dta(prep_data, "outputs/post_strat_data.dta")
 
 #Create a new tibble that includes the count of individuals in each of our subdivided categories
 cell_counts <- prep_data %>% 
-  group_by(age, household_income_grouped, education_grouped, race_ethnicity, hispanic) %>% 
+  group_by(age_group, household_income_grouped, education_grouped, race_ethnicity, hispanic) %>% 
   summarise(n = n()) %>% 
   mutate(prop = n/nrow(prep_data))
 
