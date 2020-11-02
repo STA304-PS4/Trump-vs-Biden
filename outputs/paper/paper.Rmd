@@ -8,13 +8,18 @@ abstract: |
   | First sentence. Second sentence. Third sentence. Fourth sentence. 
 output:
   bookdown::pdf_document2:
+    fig_caption: yes        
+    includes:  
+      in_header: modify.tex
 toc: FALSE
 bibliography: references.bib
+header-includes:
+- \usepackage{caption}
 ---
 
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(lme4)
 library(rstanarm)
@@ -99,14 +104,12 @@ The post-stratification estimate is defined by $\hat{y}_{PS} = \frac{\sum{N_j\ha
 
 \@ref(eq:logistic) produces a proportion for the post-stratification based on regression, instead of merely averaging the sample in each stratum. Specifically, all possible cells are determined from combining:
 
-- 76 different ages;
-- 11 education levels
-- 7 races;
-- 24 income levels;
-- 51 states;
-- 2 options for mask wearing habits.
+- 4 different age groups;
+- 6 education levels
+- 5 races;
+- 6 income levels;
 
-That is 30,697,920 cells in total. We fit the logistic regressions for estimating candidate support in each cell. We used `function` from `package` to fit \@ref(eq:model).
+That is 720 cells in total. We fit the logistic regressions for estimating candidate support in each cell. We used `function` from `package` to fit \@ref(eq:model).
 
 \begin{equation}
 P(Trump) = logit^{-1}(
@@ -116,24 +119,73 @@ P(Trump) = logit^{-1}(
 \end{equation}
 
 \@ref(eq:model) is the model that we fit using the survey data, with $\beta_{j[i]}^{var} \sim N(0, \sigma^2_{var})$. 
-$\beta_0$ is the intercept,each of $\beta_{j[i]}^{var}$ represents the parameter for the i-th respondent in j-th cell. For example, $\beta_{j[i]}^{state}$ can take values from $\beta$ for all states in the US. Then the model sums up estimates for each cell to the population. 
+$\beta_0$ is the intercept,each of $\beta_{j[i]}^{var}$ represents the parameter for the i-th respondent in j-th cell. For example, $\beta_{j[i]}^{edu}$ can take values from $\beta$ from any of the six education levels. Then we predict the results by summing up estimates for each cell to the population. The results of the logidtic regression is summarised in table 1. 
 
 # Results
 
 ```{r}
-attach(clean_survey)
-mod <- brm(binary ~ (1|age_group) + (1|education_grouped) + (1|race_ethnicity) + (1|household_income_grouped),
-           data = clean_survey,
-           family = bernoulli(),
-           iter = 4000,
-           control = list(adapt_delta = 0.98)
+mod <- glmer(binary ~ age_group + (1|education_grouped) + race_ethnicity + household_income_grouped,
+           data = clean_survey_2,
+           family = binomial()
            )
 
 summary(mod)
 ```
 
+### Summary Table
+\begin{center}
+\captionof{table}{3329}
+\begin{tabular}{|l|l|l|l|}
+\hline
+variable & $\hat{\beta}$ & Std. Error & p-value \\ \hline
+intercept & -0.00 & 0.26 & 0.99 \\ \hline
+$36 < age < 55$ & $0.42$ & $0.07$ & $6.06e^{-9}$ \\ \hline
+$56 < age < 75$ & $0.37$ & $0.07$ & $8.91e^{-7}$ \\ \hline
+$age > 76$ & $0.62$ & $0.18$ & $0.00$ \\ \hline
+Asian or Pacific Islander & $ -0.75 $ & $0.27$ & $0.01$ \\ \hline
+black & $-1.89$ & $0.26$ & $1.25e^{-12}$ \\ \hline
+nec & $-0.75$ & $0.26$ & $0.01$ \\ \hline
+white & $0.09$ & $0.24$ & $0.68$ \\ \hline
+$income > 150k$ & $0.14$ & $0.11$ & $0.22$ \\ \hline
+$income < 25k$ & $-0.38$ & $0.10$ & $0.01$ \\ \hline
+$25k < income < 50k$ & $-0.27$ & $0.10$ & $0.01$ \\ \hline
+$50k < income < 75k$ & $-0.19$ & $0.10$ & $0.06$ \\ \hline
+$75k < income < 100k$ & $-0.31$ & $0.11$ & $0.01$ \\ \hline
+\end{tabular}
+\end{center}
 
 # Discussion
+
+```{r}
+#prediction with posterior_linpred()
+posterior_prob <- posterior_linpred(mod, transform = TRUE, newdata = post_strat_cellcount_2)
+poststrat_prob <- posterior_prob %*% post_strat_cellcount_2$n / sum(post_strat_cellcount_2$n)
+model_popn_pref <- c(mean = mean(poststrat_prob), sd = sd(poststrat_prob))
+round(model_popn_pref, 3)
+```
+
+```{r}
+# predictio using predict()
+post_strat_cellcount_2$estimate <-
+  mod %>%
+  predict(newdata = post_strat_cellcount_2)
+```
+
+```{r}
+# prediction using add_prediction_draw
+post_stratified_estimates <-
+  mod %>%
+  tidybayes::add_predicted_draws(newdata = census_data) %>%
+  rename(alp_predict = .prediction) %>%
+  mutate(alp_predict_prop = alp_predict*cell_prop_of_division_total) %>%
+  group_by(state, .draw) %>%
+  summarise(alp_predict = sum(alp_predict_prop)) %>%
+  group_by(state) %>%
+  summarise(mean = mean(alp_predict),
+  lower = quantile(alp_predict, 0.025),
+  upper = quantile(alp_predict, 0.975))
+```
+
 
 ## First discussion point
 
