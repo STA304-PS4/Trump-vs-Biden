@@ -1,46 +1,154 @@
 #### Preamble ####
-# Purpose: Prepare and clean the survey data downloaded from [...UPDATE ME!!!!!]
-# Author: Rohan Alexander and Sam Caetano [CHANGE THIS TO YOUR NAME!!!!]
-# Data: 22 October 2020
-# Contact: rohan.alexander@utoronto.ca [PROBABLY CHANGE THIS ALSO!!!!]
+# Purpose: To prepare the survey data downloaded from IPUMS USA based on the 2018 ACS survey. 
+# This data set will be used in the post-stratification process. MEaning that the data will be 
+# adjusted to match the categories used in the cleaned Nation-Scape Data set. Then bin counts will
+# be generated so that the two data sets may be compared. 
+# Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
+# Data: 2 November 2020
+# Contact: ben.draskovic@mail.utoronto.ca
 # License: MIT
 # Pre-requisites: 
-# - Need to have downloaded the ACS data and saved it to inputs/data
-# - Don't forget to gitignore it!
+# - Need to have downloaded the ACS data and saved it to inputs/ACS
+# - Set up a gitignore in order to retain the privacy of the data 
 
 
 #### Workspace setup ####
 library(haven)
 library(tidyverse)
 # Read in the raw data. 
-raw_data <- read_dta("inputs/data/usa_00003.dta"
-                     )
+raw_data <- read_dta("inputs/ACS/usa_00001.dta.gz"
+)
 # Add the labels
 raw_data <- labelled::to_factor(raw_data)
 
-# Just keep some variables that may be of interest (change 
-# this depending on your interests)
+# Select variables of interest for analysis
 names(raw_data)
 
 reduced_data <- 
   raw_data %>% 
-  select(region,
-         stateicp,
-         sex, 
-         age, 
+  select(age, 
          race, 
          hispan,
-         marst, 
-         bpl,
-         citizen,
-         educd,
-         labforce,
-         inctot)
+         educ,
+         ftotinc)
 rm(raw_data)
-         
 
-#### What's next? ####
+#Remove all na values from the data (For Family income NA was 9999999)
+#Remove all children under 18
+prep_data <- reduced_data %>% 
+  filter(
+    ftotinc<9999999,
+    as.integer(age)>18,
+    !is.na(age),
+    !is.na(race),
+    !is.na(hispan),
+  )
+# This removes 799,716 respondants from the data 
 
+unique(prep_data$educ)
 
+#Group the education responses into groups that best match the groups in UCLA Survey being used
+#Notably an estimate as to when a degree would be completed had to be used for this we used the estimate of 3 years or above
+recode_key_education <- c(  
+  "n/a or no schooling" = "Less than HS",
+  "nursery school to grade 4" = "Less than HS",
+  "grade 5, 6, 7, or 8" = "Less than HS",
+  "grade 9" = "Completed Some HS",
+  "grade 10" = "Completed Some HS",
+  "grade 11" = "Completed Some HS",
+  "grade 12" = "Completed HS",
+  "1 year of college" = "Participated in Higher Education",
+  "2 years of college" = "Participated in Higher Education",
+  "3 years of college" = "Completed 1 Higher Education Degree",
+  "4 years of college" = "Completed 1 Higher Education Degree",
+  "5+ years of college" = "Completed 1 Higher Education Degree or more"
+)
 
-         
+# After the keys is made use the recode function to create a new string based on the collumn being changed 
+educ0 <- recode(prep_data$educ, !!!recode_key_education)
+
+#Include Bi/Multi Racial individuals in other as this was not gathered in UCLA data 
+#Assuming that Bi/Multi Racial individuals would select other with no Bi/Multi Racial option
+recode_key_race <- c(  
+  "Two major races" = "Other race, nec",
+  "Three or more major races" = "Other race, nec",
+  "Chinese" = "Asian or Pacific Islander",
+  "Japanese" = "Asian or Pacific Islander",
+  "Other Asian or Pacific Islander" = "Asian or Pacific Islander"
+)
+# After the keys is made use the recode function to create a new string based on the collumn being changed
+race0 <-recode(prep_data$race, !!!recode_key_race)
+
+# Adjust the actual collumns in the data set 
+# Also group age into Age_groups and group income into Income_Groups for post-stratification, 
+prep_data <- prep_data %>% 
+  mutate(
+    education_grouped = educ0
+  ) %>% 
+  mutate(
+    age_group = case_when(
+      as.numeric(age) >=18 & as.numeric(age) <=35 ~ "18-35",
+      as.numeric(age) >=36 & as.numeric(age) <=55 ~ "36-55",
+      as.numeric(age) >=56 & as.numeric(age) <=75 ~ "56-75",
+      as.numeric(age) >=76 ~ "76 or Older",
+    )
+  ) %>% 
+  mutate(
+    income_group = case_when(
+      as.numeric(ftotinc) <25000 ~ "$25k or less",
+      as.numeric(ftotinc) >=25000 & as.numeric(ftotinc) < 50000 ~ "$25k to $50k",
+      as.numeric(ftotinc) >=50000 & as.numeric(ftotinc) < 75000 ~ "$50k to $75k",
+      as.numeric(ftotinc) >=75000 & as.numeric(ftotinc) < 100000 ~ "$75k to $100k",
+      as.numeric(ftotinc) >=100000 & as.numeric(ftotinc) < 150000 ~ "$100k to $150k",
+      as.numeric(ftotinc) >=150000  ~ "$150k or more"
+    )
+  ) %>% 
+  select(
+    age_group, income_group, education_grouped, race, hispan
+  )
+
+# Generate the data file 
+write_dta(prep_data, "outputs/post_strat_data.dta")
+
+#Create a new tibble that includes the count of individuals in each of our subdivided categories
+cell_counts <- prep_data %>% 
+  group_by(age_group, income_group, education_grouped, race, hispan) %>% 
+  add_tally() %>% 
+  ungroup() %>% 
+  select(age_group, income_group, education_grouped, race, hispan, n)
+
+#Generate the Data file of these cell counts
+write_dta(cell_counts, "outputs/post_strat_cellcount.dta")
+
+#Create the proportion files needed in the modelling stage 
+#Each will be based on one of our variables of comparison 
+age_prop <- cell_counts %>% 
+  ungroup() %>% 
+  group_by(age_group) %>% 
+  mutate(prop = n/sum(n)) %>% 
+  ungroup()
+
+income_prop <- cell_counts %>% 
+  ungroup() %>% 
+  group_by(income_group) %>% 
+  mutate(prop = n/sum(n)) %>% 
+  ungroup()
+
+education_prop <- cell_counts %>% 
+  ungroup() %>% 
+  group_by(education_grouped) %>% 
+  mutate(prop = n/sum(n)) %>% 
+  ungroup()
+
+race_prop <- cell_counts %>% 
+  ungroup() %>% 
+  group_by(race) %>% 
+  mutate(prop = n/sum(n)) %>% 
+  ungroup()
+
+hispanic_prop <- cell_counts %>% 
+  ungroup() %>% 
+  group_by(hispan) %>% 
+  mutate(prop = n/sum(n)) %>% 
+  ungroup()
+
