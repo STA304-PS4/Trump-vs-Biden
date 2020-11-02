@@ -56,17 +56,21 @@ tbdata <- na.omit(tbdata)
 
 #Group all of the Asian and PAcific Islander Ethnicity options in to 3 categories
 recode_key_race <- c(  
-  "Asian (Asian Indian)" = "Asian or Pacific Islander",
-  "Asian (Chinese)" = "Asian or Pacific Islander",
-  "Asian (Filipino)" = "Asian or Pacific Islander",
-  "Asian (Japanese)" = "Asian or Pacific Islander",
-  "Asian (Korean)" = "Asian or Pacific Islander",
-  "Asian (Vietnamese)" = "Asian or Pacific Islander",
-  "Asian (Other)" = "Asian or Pacific Islander",
-  "Pacific Islander (Native Hawaiian)" = "Asian or Pacific Islander",
-  "Pacific Islander (Guamanian)" = "Asian or Pacific Islander",
-  "Pacific Islander (Samoan)" = "Asian or Pacific Islander",
-  "Pacific Islander (Other)" = "Asian or Pacific Islander"
+  "Asian (Asian Indian)" = "asian or pacific islander",
+  "Asian (Chinese)" = "asian or pacific islander",
+  "Asian (Filipino)" = "asian or pacific islander",
+  "Asian (Japanese)" = "asian or pacific islander",
+  "Asian (Korean)" = "asian or pacific islander",
+  "Asian (Vietnamese)" = "asian or pacific islander",
+  "Asian (Other)" = "asian or pacific islander",
+  "Pacific Islander (Native Hawaiian)" = "asian or pacific islander",
+  "Pacific Islander (Guamanian)" = "asian or pacific islander",
+  "Pacific Islander (Samoan)" = "asian or pacific islander",
+  "Pacific Islander (Other)" = "asian or pacific islander",
+  "White" = "white",
+  "Some other race" = "other race, nec",
+  "Black, or African American" = "black/african american/negro",
+  "American Indian or Alaska Native" = "american indian or alaska native"
 )
 
 # After the key is made use the recode function to create a new string based on the collumn being changed 
@@ -106,16 +110,20 @@ household_income0 <- recode(tbdata$household_income, !!!recode_key_income)
 
 #Group the Hispanic responses into groups that match the ACS groups
 recode_key_hispanic <- c(  
-  "Argentinian" = "Other Hispanic",
-  "Colombian" = "Other Hispanic",
-  "Ecuadorian" = "Other Hispanic",
-  "Salvadorean" = "Other Hispanic",
-  "Guatemalan" = "Other Hispanic",
-  "Nicaraguan" = "Other Hispanic",
-  "Panamanian" = "Other Hispanic",
-  "Peruvian" = "Other Hispanic",
-  "Spanish" = "Other Hispanic",
-  "Venezuelan" = "Other Hispanic"
+  "Argentinian" = "other",
+  "Colombian" = "other",
+  "Ecuadorian" = "other",
+  "Salvadorean" = "other",
+  "Guatemalan" = "other",
+  "Nicaraguan" = "other",
+  "Panamanian" = "other",
+  "Peruvian" = "other",
+  "Spanish" = "other",
+  "Venezuelan" = "other",
+  "Not Hispanic" = "not hispanic",
+  "Mexican" = "mexican",
+  "Cuban" = "cuban",
+  "Puerto Rican" = "puerto rican"
 )
 
 # After the keys is made use the recode function to create a new string based on the collumn being changed 

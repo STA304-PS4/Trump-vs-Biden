@@ -108,6 +108,7 @@ prep_data <- prep_data %>%
     age_group, income_group, education_grouped, race, hispan
   )
 
+
 # Generate the data file 
 write_dta(prep_data, "outputs/post_strat_data.dta")
 
