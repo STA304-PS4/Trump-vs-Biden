@@ -122,19 +122,21 @@ $\beta_0$ is the intercept,each of $\beta_{j[i]}^{var}$ represents the parameter
 
 ```{r}
 attach(clean_survey)
-mod <- brm(binary ~ age + education_grouped + race_ethnicity + hispanic + household_income_grouped + state + extra_covid_worn_mask,
+mod <- brm(binary ~ age + (1|education_grouped) + race_ethnicity + hispanic + household_income_grouped + state + extra_covid_worn_mask,
            data = clean_survey,
            family = bernoulli(),
-           iter = 4000
+           iter = 4000,
+           control = list(adapt_delta = 0.98)
            )
 
 summary(mod)
 ```
 
 ```{r}
-usa_00001$estimate <-
-  mod %>%
-  predict(newdata = usa_00001)
+posterior_prob <- posterior_linpred(mod, transform = TRUE, newdata = post_strat_cellcount, allow_new_levels = TRUE)
+poststrat_prob <- posterior_prob %*% post_strat_cellcount$n / sum(poststrat$n)
+model_popn_pref <- c(mean = mean(poststrat_prob), sd = sd(poststrat_prob))
+round(model_popn_pref, 3)
 ```
 
 
