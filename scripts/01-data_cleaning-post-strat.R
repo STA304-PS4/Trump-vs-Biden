@@ -116,7 +116,8 @@ write_dta(prep_data, "outputs/post_strat_data.dta")
 #Create a new tibble that includes the count of individuals in each of our subdivided categories
 cell_counts <- prep_data %>% 
   group_by(age, household_income_grouped, education_grouped, race_ethnicity, hispanic) %>% 
-  summarise(n = n()) #%>%  
+  summarise(n = n()) %>% 
+  mutate(prop = n/nrow(prep_data))
 
 
 #Generate the Data file of these cell counts
