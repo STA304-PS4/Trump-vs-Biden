@@ -146,7 +146,6 @@ tbdata <- tbdata %>%
 
 
 
-
 write_csv(tbdata, "outputs/clean-survey-2.csv")
 
 
