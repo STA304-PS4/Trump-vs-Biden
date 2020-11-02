@@ -93,7 +93,7 @@ where p is the probability of event A that we are interested in, $\beta_0$is the
 
 The main logic behind post-stratification is that we divide the sample data into strata based on a few attributes such as state, income, education level. Then we come up with a weight for each stratum to adjust its influence towards our prediction. Namely, if a stratum is over-represented, we want to reduce its impact on the prediction result; if a stratum is under-represented, we want to increase its influence. In this sense, the combination with logistic regression allows subgroups with a relatively small size to 'reference' from other subgroups with similar characteristics.
 
-To mimic the population as closely as possible, we need a post-stratification dataset large enough to refer to. In this report, we use the ACS(reason). 
+To mimic the population as closely as possible, we need a post-stratification dataset large enough to refer to. In this report, we use the ACS because the census happens less frequently than the ACS which is updated annually. 
 
 The post-stratification estimate is defined by $\hat{y}_{PS} = \frac{\sum{N_j\hat{y}_j}}{\sum{N_j}}$ where $\hat{y}_j$ is the estimate of y in cell j, and $N_j$ is the size of the j-th cell in the population. An illustration using the education variable is $\hat{y}_{edu}^{PS} = \frac{\sum_{j\in J_{edu}}{N_j\hat{y}_j}}{\sum_{j\in J_{edu}}{N_j}}$, we can get an estimation given any level of education of respondents, $J_{edu}$ denotes all subsets of education levels, $\cup_{i\in J} J^{edu}_{i} =$ all possible education levels. 
 
@@ -101,7 +101,7 @@ The post-stratification estimate is defined by $\hat{y}_{PS} = \frac{\sum{N_j\ha
 
 - 76 different ages;
 - 11 education levels
-- 15 races;
+- 7 races;
 - 24 income levels;
 - 51 states;
 - 2 options for mask wearing habits.
@@ -122,7 +122,7 @@ $\beta_0$ is the intercept,each of $\beta_{j[i]}^{var}$ represents the parameter
 
 ```{r}
 attach(clean_survey)
-mod <- brm(binary ~ age + (1|education_grouped) + race_ethnicity + hispanic + household_income_grouped + state + extra_covid_worn_mask,
+mod <- brm(binary ~ (1|age_group) + (1|education_grouped) + (1|race_ethnicity) + (1|household_income_grouped),
            data = clean_survey,
            family = bernoulli(),
            iter = 4000,
@@ -132,59 +132,6 @@ mod <- brm(binary ~ age + (1|education_grouped) + race_ethnicity + hispanic + ho
 summary(mod)
 ```
 
-```{r}
-posterior_prob <- posterior_linpred(mod, transform = TRUE, newdata = post_strat_cellcount, allow_new_levels = TRUE)
-poststrat_prob <- posterior_prob %*% post_strat_cellcount$n / sum(poststrat$n)
-model_popn_pref <- c(mean = mean(poststrat_prob), sd = sd(poststrat_prob))
-round(model_popn_pref, 3)
-```
-
-
-```{r}
-# to get the estimated proportions and associated 95% PIs by state
-res_state <- mod %>%
-  tidybayes::add_predicted_draws(newdata = census_data) %>%
-  rename(president_predict = .prediction) %>%  
-  mutate(president_predict_prop = president_predict*prop) %>% 
-  group_by(state_name, .draw) %>% 
-  summarise(kept_name_predict = sum(kept_name_predict_prop)) %>% 
-  group_by(state_name) %>% 
-  summarise(mean = mean(kept_name_predict), 
-            lower = quantile(kept_name_predict, 0.025), 
-            upper = quantile(kept_name_predict, 0.975))
-```
-
-```{r, eval=FALSE}
-# graph by state
-res_state %>% 
-  arrange(-mean) %>% 
-  left_join(d %>%
-              group_by(state_name, kept_name) %>%
-              summarise(n = n()) %>%
-              group_by(state_name) %>%
-              mutate(prop = n/sum(n)) %>%
-              filter(kept_name==1)) %>% 
-  ggplot(aes(y = mean, x = forcats::fct_inorder(state_name), color = "MRP estimate")) + 
-  geom_point() +
-  coord_flip() + 
-  geom_errorbar(aes(ymin = lower, ymax = upper), width = 0) + 
-  ylab("proportion keeping maiden name") + 
-  xlab("state") + 
-  geom_point(aes(state_name, prop, color = "raw data")) +
-  scale_color_manual(name = "", values = c("MRP estimate" = "black", "raw data" = "red")) + 
-  theme_bw() +
-  ggtitle("Proportion of women keeping maiden name after marriage")
-
-
-res_state %>% 
-  mutate(statename = str_to_title(state_name)) %>% 
-  #mutate(statename = ifelse(state_name=="district of columbia", "District of Columbia", statename)) %>% 
-  ggplot(aes(fill = mean, state = statename)) + 
-  geom_statebins() +
-  scale_fill_viridis_c(name = "proportion keeping name") +
-  theme_void()
-ggsave("state_plot.png", width = 8, height = 6)
-```
 
 # Discussion
 
