@@ -15,6 +15,7 @@
 #### Workspace setup ####
 library(haven)
 library(tidyverse)
+library(dplyr)
 # Read in the raw data. 
 raw_data <- read_dta("inputs/ACS/usa_00001.dta.gz"
 )
@@ -45,7 +46,6 @@ prep_data <- reduced_data %>%
   )
 # This removes 799,716 respondants from the data 
 
-unique(prep_data$educ)
 
 #Group the education responses into groups that best match the groups in UCLA Survey being used
 #Notably an estimate as to when a degree would be completed had to be used for this we used the estimate of 3 years or above
@@ -70,20 +70,21 @@ educ0 <- recode(prep_data$educ, !!!recode_key_education)
 #Include Bi/Multi Racial individuals in other as this was not gathered in UCLA data 
 #Assuming that Bi/Multi Racial individuals would select other with no Bi/Multi Racial option
 recode_key_race <- c(  
-  "Two major races" = "Other race, nec",
-  "Three or more major races" = "Other race, nec",
-  "Chinese" = "Asian or Pacific Islander",
-  "Japanese" = "Asian or Pacific Islander",
-  "Other Asian or Pacific Islander" = "Asian or Pacific Islander"
+  "two major races" = "other race, nec",
+  "three or more major races" = "other race, nec",
+  "chinese" = "asian or pacific islander",
+  "japanese" = "asian or pacific islander",
+  "other asian or pacific islander" = "asian or pacific islander"
 )
 # After the keys is made use the recode function to create a new string based on the collumn being changed
-race0 <-recode(prep_data$race, !!!recode_key_race)
+race0 <- recode(prep_data$race, !!!recode_key_race)
 
 # Adjust the actual collumns in the data set 
 # Also group age into Age_groups and group income into Income_Groups for post-stratification, 
 prep_data <- prep_data %>% 
   mutate(
-    education_grouped = educ0
+    education_grouped = educ0,
+    race = race0
   ) %>% 
   mutate(
     age_group = case_when(
@@ -113,9 +114,8 @@ write_dta(prep_data, "outputs/post_strat_data.dta")
 #Create a new tibble that includes the count of individuals in each of our subdivided categories
 cell_counts <- prep_data %>% 
   group_by(age_group, income_group, education_grouped, race, hispan) %>% 
-  add_tally() %>% 
-  ungroup() %>% 
-  select(age_group, income_group, education_grouped, race, hispan, n)
+  summarise(n = n()) #%>%  
+
 
 #Generate the Data file of these cell counts
 write_dta(cell_counts, "outputs/post_strat_cellcount.dta")
