@@ -1,4 +1,4 @@
-age,household_income_grouped,education_grouped,race_ethnicity,n,prop
+age_group,household_income_grouped,education_grouped,race_ethnicity,n,prop
 18-35,$100k to $150k,Less than HS,white,604,2.501218515808405e-4
 18-35,$100k to $150k,Less than HS,black/african american/negro,64,2.6502977650949987e-5
 18-35,$100k to $150k,Less than HS,american indian or alaska native,9,3.726981232164842e-6
