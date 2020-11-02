@@ -1,0 +1,721 @@
+age,household_income_grouped,education_grouped,race_ethnicity,n,prop
+18-35,$100k to $150k,Less than HS,white,604,2.501218515808405e-4
+18-35,$100k to $150k,Less than HS,black/african american/negro,64,2.6502977650949987e-5
+18-35,$100k to $150k,Less than HS,american indian or alaska native,9,3.726981232164842e-6
+18-35,$100k to $150k,Less than HS,asian or pacific islander,72,2.9815849857318737e-5
+18-35,$100k to $150k,Less than HS,"other race, nec",172,7.122675243692808e-5
+18-35,$100k to $150k,Completed Some HS,white,2678,0.0011089839710819384
+18-35,$100k to $150k,Completed Some HS,black/african american/negro,250,1.0352725644902338e-4
+18-35,$100k to $150k,Completed Some HS,american indian or alaska native,45,1.863490616082421e-5
+18-35,$100k to $150k,Completed Some HS,asian or pacific islander,114,4.7208428940754666e-5
+18-35,$100k to $150k,Completed Some HS,"other race, nec",366,1.5156390344137023e-4
+18-35,$100k to $150k,Completed HS,white,21502,0.008904172272667604
+18-35,$100k to $150k,Completed HS,black/african american/negro,2221,9.197361462931238e-4
+18-35,$100k to $150k,Completed HS,american indian or alaska native,378,1.5653321175092337e-4
+18-35,$100k to $150k,Completed HS,asian or pacific islander,1287,5.329583161995724e-4
+18-35,$100k to $150k,Completed HS,"other race, nec",2867,0.0011872505769574002
+18-35,$100k to $150k,Participated in Higher Education,white,17873,0.00740137061805358
+18-35,$100k to $150k,Participated in Higher Education,black/african american/negro,1938,8.025432919928293e-4
+18-35,$100k to $150k,Participated in Higher Education,american indian or alaska native,235,9.731562106208198e-5
+18-35,$100k to $150k,Participated in Higher Education,asian or pacific islander,1388,5.747833278049779e-4
+18-35,$100k to $150k,Participated in Higher Education,"other race, nec",2156,8.928190596163777e-4
+18-35,$100k to $150k,Completed 1 Higher Education Degree,white,19533,0.008088791600875096
+18-35,$100k to $150k,Completed 1 Higher Education Degree,black/african american/negro,1289,5.337865342511645e-4
+18-35,$100k to $150k,Completed 1 Higher Education Degree,american indian or alaska native,78,3.2300504012095296e-5
+18-35,$100k to $150k,Completed 1 Higher Education Degree,asian or pacific islander,2584,0.0010700577226571057
+18-35,$100k to $150k,Completed 1 Higher Education Degree,"other race, nec",1373,5.685716924180365e-4
+18-35,$100k to $150k,Completed 1 Higher Education Degree or more,white,8353,0.0034590526924747696
+18-35,$100k to $150k,Completed 1 Higher Education Degree or more,black/african american/negro,528,2.186495656203374e-4
+18-35,$100k to $150k,Completed 1 Higher Education Degree or more,american indian or alaska native,24,9.938616619106244e-6
+18-35,$100k to $150k,Completed 1 Higher Education Degree or more,asian or pacific islander,1637,6.778964752282051e-4
+18-35,$100k to $150k,Completed 1 Higher Education Degree or more,"other race, nec",491,2.0332753166588192e-4
+18-35,$150k or more,Less than HS,white,535,2.2154832880091004e-4
+18-35,$150k or more,Less than HS,black/african american/negro,56,2.3190105444581238e-5
+18-35,$150k or more,Less than HS,american indian or alaska native,12,4.969308309553122e-6
+18-35,$150k or more,Less than HS,asian or pacific islander,75,3.105817693470702e-5
+18-35,$150k or more,Less than HS,"other race, nec",80,3.3128722063687486e-5
+18-35,$150k or more,Completed Some HS,white,2391,9.901346806784597e-4
+18-35,$150k or more,Completed Some HS,black/african american/negro,148,6.128813581782185e-5
+18-35,$150k or more,Completed Some HS,american indian or alaska native,28,1.1595052722290619e-5
+18-35,$150k or more,Completed Some HS,asian or pacific islander,158,6.542922607578278e-5
+18-35,$150k or more,Completed Some HS,"other race, nec",228,9.441685788150933e-5
+18-35,$150k or more,Completed HS,white,15617,0.006467140655857593
+18-35,$150k or more,Completed HS,black/african american/negro,1353,5.602895119021146e-4
+18-35,$150k or more,Completed HS,american indian or alaska native,201,8.32359141850148e-5
+18-35,$150k or more,Completed HS,asian or pacific islander,1260,5.217773725030778e-4
+18-35,$150k or more,Completed HS,"other race, nec",1893,7.839083858320051e-4
+18-35,$150k or more,Participated in Higher Education,white,13645,0.005650517656987697
+18-35,$150k or more,Participated in Higher Education,black/african american/negro,1259,5.213632634772818e-4
+18-35,$150k or more,Participated in Higher Education,american indian or alaska native,117,4.8450756018142944e-5
+18-35,$150k or more,Participated in Higher Education,asian or pacific islander,1441,5.967311061721707e-4
+18-35,$150k or more,Participated in Higher Education,"other race, nec",1528,6.327585914164309e-4
+18-35,$150k or more,Completed 1 Higher Education Degree,white,18590,0.007698286789549379
+18-35,$150k or more,Completed 1 Higher Education Degree,black/african american/negro,1006,4.165936799508701e-4
+18-35,$150k or more,Completed 1 Higher Education Degree,american indian or alaska native,53,2.1947778367192957e-5
+18-35,$150k or more,Completed 1 Higher Education Degree,asian or pacific islander,3249,0.001345440224811508
+18-35,$150k or more,Completed 1 Higher Education Degree,"other race, nec",1175,4.865781053104099e-4
+18-35,$150k or more,Completed 1 Higher Education Degree or more,white,9169,0.0037969656575243815
+18-35,$150k or more,Completed 1 Higher Education Degree or more,black/african american/negro,490,2.0291342264008584e-4
+18-35,$150k or more,Completed 1 Higher Education Degree or more,american indian or alaska native,12,4.969308309553122e-6
+18-35,$150k or more,Completed 1 Higher Education Degree or more,asian or pacific islander,2466,0.0010211928576131667
+18-35,$150k or more,Completed 1 Higher Education Degree or more,"other race, nec",507,2.0995327607861944e-4
+18-35,$25k or less,Less than HS,white,2524,0.00104521118110934
+18-35,$25k or less,Less than HS,black/african american/negro,416,1.7226935473117492e-4
+18-35,$25k or less,Less than HS,american indian or alaska native,73,3.0229958883114828e-005
+18-35,$25k or less,Less than HS,asian or pacific islander,178,7.371140659170465e-5
+18-35,$25k or less,Less than HS,"other race, nec",865,3.5820430731362094e-4
+18-35,$25k or less,Completed Some HS,white,5614,0.002324808070819269
+18-35,$25k or less,Completed Some HS,black/african american/negro,1717,7.110251972918926e-4
+18-35,$25k or less,Completed Some HS,american indian or alaska native,359,1.4866514026079758e-4
+18-35,$25k or less,Completed Some HS,asian or pacific islander,209,8.654878639138356e-5
+18-35,$25k or less,Completed Some HS,"other race, nec",1140,4.7208428940754665e-4
+18-35,$25k or less,Completed HS,white,31099,0.012878376593232713
+18-35,$25k or less,Completed HS,black/african american/negro,8003,0.0033141145334461366
+18-35,$25k or less,Completed HS,american indian or alaska native,1112,4.6048923668525605e-4
+18-35,$25k or less,Completed HS,asian or pacific islander,1707,7.068841070339317e-4
+18-35,$25k or less,Completed HS,"other race, nec",4827,0.0019989042675177433
+18-35,$25k or less,Participated in Higher Education,white,22921,0.00949179298027226
+18-35,$25k or less,Participated in Higher Education,black/african american/negro,4559,0.0018879230486043904
+18-35,$25k or less,Participated in Higher Education,american indian or alaska native,479,1.983582233563288e-4
+18-35,$25k or less,Participated in Higher Education,asian or pacific islander,2176,9.011012401322995e-4
+18-35,$25k or less,Participated in Higher Education,"other race, nec",2935,0.0012154099907115345
+18-35,$25k or less,Completed 1 Higher Education Degree,white,10917,0.004520828234615954
+18-35,$25k or less,Completed 1 Higher Education Degree,black/african american/negro,1218,5.043847934196419e-4
+18-35,$25k or less,Completed 1 Higher Education Degree,american indian or alaska native,87,3.602748524426014e-5
+18-35,$25k or less,Completed 1 Higher Education Degree,asian or pacific islander,2158,8.936472776679699e-4
+18-35,$25k or less,Completed 1 Higher Education Degree,"other race, nec",1103,4.567622554530912e-4
+18-35,$25k or less,Completed 1 Higher Education Degree or more,white,2345,9.710856654918394e-4
+18-35,$25k or less,Completed 1 Higher Education Degree or more,black/african american/negro,293,1.2133394455825541e-4
+18-35,$25k or less,Completed 1 Higher Education Degree or more,american indian or alaska native,16,6.625744412737497e-6
+18-35,$25k or less,Completed 1 Higher Education Degree or more,asian or pacific islander,1051,4.352285861116943e-4
+18-35,$25k or less,Completed 1 Higher Education Degree or more,"other race, nec",251,1.0394136547481948e-4
+18-35,$25k to $50k,Less than HS,white,2138,8.85365097152048e-4
+18-35,$25k to $50k,Less than HS,black/african american/negro,249,1.031131474232273e-4
+18-35,$25k to $50k,Less than HS,american indian or alaska native,40,1.6564361031843743e-5
+18-35,$25k to $50k,Less than HS,asian or pacific islander,158,6.542922607578278e-5
+18-35,$25k to $50k,Less than HS,"other race, nec",736,3.0478424298592484e-4
+18-35,$25k to $50k,Completed Some HS,white,5040,0.0020871094900123113
+18-35,$25k to $50k,Completed Some HS,black/african american/negro,1018,4.215629882604232e-4
+18-35,$25k to $50k,Completed Some HS,american indian or alaska native,200,8.282180515921872e-5
+18-35,$25k to $50k,Completed Some HS,asian or pacific islander,190,7.868071490125778e-5
+18-35,$25k to $50k,Completed Some HS,"other race, nec",1161,4.807805789492646e-4
+18-35,$25k to $50k,Completed HS,white,35760,0.014808538762468305
+18-35,$25k to $50k,Completed HS,black/african american/negro,6526,0.0027024755023453066
+18-35,$25k to $50k,Completed HS,american indian or alaska native,947,3.921612474289006e-4
+18-35,$25k to $50k,Completed HS,asian or pacific islander,1681,6.961172723632332e-4
+18-35,$25k to $50k,Completed HS,"other race, nec",5428,0.0022477837920211957
+18-35,$25k to $50k,Participated in Higher Education,white,24408,0.01010757310163105
+18-35,$25k to $50k,Participated in Higher Education,black/african american/negro,4750,0.0019670178725314444
+18-35,$25k to $50k,Participated in Higher Education,american indian or alaska native,455,1.8841960673722256e-4
+18-35,$25k to $50k,Participated in Higher Education,asian or pacific islander,1519,6.290316101842661e-4
+18-35,$25k to $50k,Participated in Higher Education,"other race, nec",3420,0.0014162528682226398
+18-35,$25k to $50k,Completed 1 Higher Education Degree,white,17588,0.007283349545701694
+18-35,$25k to $50k,Completed 1 Higher Education Degree,black/african american/negro,1910,7.909482392705387e-4
+18-35,$25k to $50k,Completed 1 Higher Education Degree,american indian or alaska native,106,4.3895556734385914e-5
+18-35,$25k to $50k,Completed 1 Higher Education Degree,asian or pacific islander,1695,7.019147987243785e-4
+18-35,$25k to $50k,Completed 1 Higher Education Degree,"other race, nec",1535,6.356573545970035e-4
+18-35,$25k to $50k,Completed 1 Higher Education Degree or more,white,4457,0.0018456839279731888
+18-35,$25k to $50k,Completed 1 Higher Education Degree or more,black/african american/negro,601,2.488795245034522e-4
+18-35,$25k to $50k,Completed 1 Higher Education Degree or more,american indian or alaska native,34,1.407970687706718e-5
+18-35,$25k to $50k,Completed 1 Higher Education Degree or more,asian or pacific islander,873,3.6151717951998964e-4
+18-35,$25k to $50k,Completed 1 Higher Education Degree or more,"other race, nec",342,1.41625286822264e-4
+18-35,$50k to $75k,Less than HS,white,1202,4.977590490069044e-4
+18-35,$50k to $75k,Less than HS,black/african american/negro,106,4.3895556734385914e-5
+18-35,$50k to $75k,Less than HS,american indian or alaska native,23,9.524507593310151e-6
+18-35,$50k to $75k,Less than HS,asian or pacific islander,114,4.7208428940754666e-5
+18-35,$50k to $75k,Less than HS,"other race, nec",395,1.6357306518945694e-4
+18-35,$50k to $75k,Completed Some HS,white,3377,0.001398446180113408
+18-35,$50k to $75k,Completed Some HS,black/african american/negro,532,2.2030600172352177e-4
+18-35,$50k to $75k,Completed Some HS,american indian or alaska native,116,4.803664699234685e-5
+18-35,$50k to $75k,Completed Some HS,asian or pacific islander,118,4.886486504393904e-5
+18-35,$50k to $75k,Completed Some HS,"other race, nec",698,2.890481000056733e-4
+18-35,$50k to $75k,Completed HS,white,27774,0.011501464082460703
+18-35,$50k to $75k,Completed HS,black/african american/negro,3834,0.0015876940049022227
+18-35,$50k to $75k,Completed HS,american indian or alaska native,601,2.488795245034522e-4
+18-35,$50k to $75k,Completed HS,asian or pacific islander,1188,4.919615226457591e-4
+18-35,$50k to $75k,Completed HS,"other race, nec",4134,0.0017119267126410507
+18-35,$50k to $75k,Participated in Higher Education,white,20762,0.008597731593578494
+18-35,$50k to $75k,Participated in Higher Education,black/african american/negro,2836,0.0011744131971577214
+18-35,$50k to $75k,Participated in Higher Education,american indian or alaska native,335,1.3872652364169133e-4
+18-35,$50k to $75k,Participated in Higher Education,asian or pacific islander,1239,5.130810829613599e-4
+18-35,$50k to $75k,Participated in Higher Education,"other race, nec",2645,0.0010953183732306674
+18-35,$50k to $75k,Completed 1 Higher Education Degree,white,19078,0.0079003719941378725
+18-35,$50k to $75k,Completed 1 Higher Education Degree,black/african american/negro,1577,6.530499336804396e-4
+18-35,$50k to $75k,Completed 1 Higher Education Degree,american indian or alaska native,86,3.561337621846404e-5
+18-35,$50k to $75k,Completed 1 Higher Education Degree,asian or pacific islander,1911,7.913623482963348e-4
+18-35,$50k to $75k,Completed 1 Higher Education Degree,"other race, nec",1481,6.132954672040145e-4
+18-35,$50k to $75k,Completed 1 Higher Education Degree or more,white,6076,0.0025161264407370645
+18-35,$50k to $75k,Completed 1 Higher Education Degree or more,black/african american/negro,566,2.3438570860058894e-4
+18-35,$50k to $75k,Completed 1 Higher Education Degree or more,american indian or alaska native,28,1.1595052722290619e-5
+18-35,$50k to $75k,Completed 1 Higher Education Degree or more,asian or pacific islander,1175,4.865781053104099e-4
+18-35,$50k to $75k,Completed 1 Higher Education Degree or more,"other race, nec",463,1.9173247894359132e-4
+18-35,$75k to $100k,Less than HS,white,700,2.898763180572655e-4
+18-35,$75k to $100k,Less than HS,black/african american/negro,82,3.395694011527967e-5
+18-35,$75k to $100k,Less than HS,american indian or alaska native,16,6.625744412737497e-6
+18-35,$75k to $100k,Less than HS,asian or pacific islander,80,3.3128722063687486e-5
+18-35,$75k to $100k,Less than HS,"other race, nec",183,7.578195172068511e-5
+18-35,$75k to $100k,Completed Some HS,white,2355,9.752267557498004e-4
+18-35,$75k to $100k,Completed Some HS,black/african american/negro,352,1.4576637708022493e-4
+18-35,$75k to $100k,Completed Some HS,american indian or alaska native,70,2.8987631805726547e-5
+18-35,$75k to $100k,Completed Some HS,asian or pacific islander,105,4.3481447708589825e-5
+18-35,$75k to $100k,Completed Some HS,"other race, nec",404,1.6730004642162178e-4
+18-35,$75k to $100k,Completed HS,white,19148,0.0079293596259436
+18-35,$75k to $100k,Completed HS,black/african american/negro,2356,9.756408647755964e-4
+18-35,$75k to $100k,Completed HS,american indian or alaska native,326,1.349995424095265e-4
+18-35,$75k to $100k,Completed HS,asian or pacific islander,980,4.058268452801717e-4
+18-35,$75k to $100k,Completed HS,"other race, nec",2688,0.0011131250613398995
+18-35,$75k to $100k,Participated in Higher Education,white,15554,0.006441051787232439
+18-35,$75k to $100k,Participated in Higher Education,black/african american/negro,1859,7.698286789549379e-4
+18-35,$75k to $100k,Participated in Higher Education,american indian or alaska native,235,9.731562106208198e-5
+18-35,$75k to $100k,Participated in Higher Education,asian or pacific islander,979,4.0541273625437557e-4
+18-35,$75k to $100k,Participated in Higher Education,"other race, nec",1946,8.05856164199198e-4
+18-35,$75k to $100k,Completed 1 Higher Education Degree,white,15048,0.006231512620179616
+18-35,$75k to $100k,Completed 1 Higher Education Degree,black/african american/negro,1023,4.236335333894037e-4
+18-35,$75k to $100k,Completed 1 Higher Education Degree,american indian or alaska native,75,3.105817693470702e-5
+18-35,$75k to $100k,Completed 1 Higher Education Degree,asian or pacific islander,1818,7.52850208897298e-4
+18-35,$75k to $100k,Completed 1 Higher Education Degree,"other race, nec",1110,4.5966101863366383e-4
+18-35,$75k to $100k,Completed 1 Higher Education Degree or more,white,5167,0.0021397013362884154
+18-35,$75k to $100k,Completed 1 Higher Education Degree or more,black/african american/negro,397,1.6440128324104913e-4
+18-35,$75k to $100k,Completed 1 Higher Education Degree or more,american indian or alaska native,19,7.868071490125777e-6
+18-35,$75k to $100k,Completed 1 Higher Education Degree or more,asian or pacific islander,1081,4.476518568855771e-4
+18-35,$75k to $100k,Completed 1 Higher Education Degree or more,"other race, nec",322,1.3334310630634213e-4
+36-55,$100k to $150k,Less than HS,white,1594,6.600897871189731e-4
+36-55,$100k to $150k,Less than HS,black/african american/negro,115,4.7622537966550754e-5
+36-55,$100k to $150k,Less than HS,american indian or alaska native,34,1.407970687706718e-5
+36-55,$100k to $150k,Less than HS,asian or pacific islander,266,1.1015300086176089e-4
+36-55,$100k to $150k,Less than HS,"other race, nec",773,3.201062769403803e-4
+36-55,$100k to $150k,Completed Some HS,white,1791,7.416692652008035e-4
+36-55,$100k to $150k,Completed Some HS,black/african american/negro,215,8.903344054616011e-5
+36-55,$100k to $150k,Completed Some HS,american indian or alaska native,41,1.6978470057639835e-5
+36-55,$100k to $150k,Completed Some HS,asian or pacific islander,145,6.004580874043356e-5
+36-55,$100k to $150k,Completed Some HS,"other race, nec",392,1.6233073811206867e-4
+36-55,$100k to $150k,Completed HS,white,33152,0.013728542423192092
+36-55,$100k to $150k,Completed HS,black/african american/negro,2847,0.0011789683964414782
+36-55,$100k to $150k,Completed HS,american indian or alaska native,338,1.3996885071907963e-4
+36-55,$100k to $150k,Completed HS,asian or pacific islander,1592,6.59261569067381e-4
+36-55,$100k to $150k,Completed HS,"other race, nec",2503,0.0010365148915676221
+36-55,$100k to $150k,Participated in Higher Education,white,30915,0.012802180532486232
+36-55,$100k to $150k,Participated in Higher Education,black/african american/negro,2620,0.001084965647585765
+36-55,$100k to $150k,Participated in Higher Education,american indian or alaska native,274,1.1346587306812963e-4
+36-55,$100k to $150k,Participated in Higher Education,asian or pacific islander,1640,6.791388023055934e-4
+36-55,$100k to $150k,Participated in Higher Education,"other race, nec",1780,7.371140659170465e-4
+36-55,$100k to $150k,Completed 1 Higher Education Degree,white,34385,0.014239138851998677
+36-55,$100k to $150k,Completed 1 Higher Education Degree,black/african american/negro,2326,9.632175940017135e-4
+36-55,$100k to $150k,Completed 1 Higher Education Degree,american indian or alaska native,166,6.874209828215153e-5
+36-55,$100k to $150k,Completed 1 Higher Education Degree,asian or pacific islander,3809,0.0015773412792573203
+36-55,$100k to $150k,Completed 1 Higher Education Degree,"other race, nec",1450,6.004580874043356e-4
+36-55,$100k to $150k,Completed 1 Higher Education Degree or more,white,21642,0.008962147536279056
+36-55,$100k to $150k,Completed 1 Higher Education Degree or more,black/african american/negro,1888,7.818378407030246e-4
+36-55,$100k to $150k,Completed 1 Higher Education Degree or more,american indian or alaska native,100,4.141090257960936e-5
+36-55,$100k to $150k,Completed 1 Higher Education Degree or more,asian or pacific islander,2983,0.001235287223949747
+36-55,$100k to $150k,Completed 1 Higher Education Degree or more,"other race, nec",950,3.9340357450628886e-4
+36-55,$150k or more,Less than HS,white,975,4.037563001511912e-4
+36-55,$150k or more,Less than HS,black/african american/negro,65,2.691708667674608e-5
+36-55,$150k or more,Less than HS,american indian or alaska native,20,8.282180515921872e-6
+36-55,$150k or more,Less than HS,asian or pacific islander,240,9.938616619106244e-5
+36-55,$150k or more,Less than HS,"other race, nec",308,1.275455799451968e-4
+36-55,$150k or more,Completed Some HS,white,881,3.648300517263584e-4
+36-55,$150k or more,Completed Some HS,black/african american/negro,81,3.3542831089483574e-5
+36-55,$150k or more,Completed Some HS,american indian or alaska native,30,1.2423270773882806e-5
+36-55,$150k or more,Completed Some HS,asian or pacific islander,108,4.4723774785978103e-5
+36-55,$150k or more,Completed Some HS,"other race, nec",146,6.0459917766229657e-005
+36-55,$150k or more,Completed HS,white,18840,0.007801814045998403
+36-55,$150k or more,Completed HS,black/african american/negro,1461,6.050132866880927e-4
+36-55,$150k or more,Completed HS,american indian or alaska native,209,8.654878639138356e-5
+36-55,$150k or more,Completed HS,asian or pacific islander,1277,5.288172259416115e-4
+36-55,$150k or more,Completed HS,"other race, nec",1455,6.025286325333162e-4
+36-55,$150k or more,Participated in Higher Education,white,21655,0.008967530953614406
+36-55,$150k or more,Participated in Higher Education,black/african american/negro,1574,6.518076066030512e-4
+36-55,$150k or more,Participated in Higher Education,american indian or alaska native,191,7.909482392705386e-5
+36-55,$150k or more,Participated in Higher Education,asian or pacific islander,1718,7.114393063176887e-4
+36-55,$150k or more,Participated in Higher Education,"other race, nec",1245,5.155657371161364e-4
+36-55,$150k or more,Completed 1 Higher Education Degree,white,48866,0.02023585165455191
+36-55,$150k or more,Completed 1 Higher Education Degree,black/african american/negro,1964,8.133101266635277e-4
+36-55,$150k or more,Completed 1 Higher Education Degree,american indian or alaska native,147,6.087402679202575e-5
+36-55,$150k or more,Completed 1 Higher Education Degree,asian or pacific islander,6710,0.0027786715630917875
+36-55,$150k or more,Completed 1 Higher Education Degree,"other race, nec",1682,6.965313813890293e-4
+36-55,$150k or more,Completed 1 Higher Education Degree or more,white,43423,0.01798185622714377
+36-55,$150k or more,Completed 1 Higher Education Degree or more,black/african american/negro,2413,9.992450792459737e-4
+36-55,$150k or more,Completed 1 Higher Education Degree or more,american indian or alaska native,132,5.466239140508435e-5
+36-55,$150k or more,Completed 1 Higher Education Degree or more,asian or pacific islander,8958,0.003709588653081406
+36-55,$150k or more,Completed 1 Higher Education Degree or more,"other race, nec",1564,6.476665163450902e-4
+36-55,$25k or less,Less than HS,white,4871,0.0020171250646527717
+36-55,$25k or less,Less than HS,black/african american/negro,760,3.147228596050311e-4
+36-55,$25k or less,Less than HS,american indian or alaska native,136,5.631882750826872e-5
+36-55,$25k or less,Less than HS,asian or pacific islander,556,2.3024461834262802e-4
+36-55,$25k or less,Less than HS,"other race, nec",1959,8.112395815345472e-4
+36-55,$25k or less,Completed Some HS,white,5924,0.002453181868816058
+36-55,$25k or less,Completed Some HS,black/african american/negro,1701,7.043994528791552e-4
+36-55,$25k or less,Completed Some HS,american indian or alaska native,360,1.490792492865937e-4
+36-55,$25k or less,Completed Some HS,asian or pacific islander,205,8.489235028819918e-5
+36-55,$25k or less,Completed Some HS,"other race, nec",1048,4.33986259034306e-4
+36-55,$25k or less,Completed HS,white,27495,0.011385927664263593
+36-55,$25k or less,Completed HS,black/african american/negro,7763,0.003214728367255074
+36-55,$25k or less,Completed HS,american indian or alaska native,955,3.9547411963526934e-4
+36-55,$25k or less,Completed HS,asian or pacific islander,1265,5.238479176320584e-4
+36-55,$25k or less,Completed HS,"other race, nec",3244,0.0013433696796825276
+36-55,$25k or less,Participated in Higher Education,white,13081,0.0054169601664387
+36-55,$25k or less,Participated in Higher Education,black/african american/negro,3491,0.0014456546090541626
+36-55,$25k or less,Participated in Higher Education,american indian or alaska native,510,2.111956031560077e-4
+36-55,$25k or less,Participated in Higher Education,asian or pacific islander,690,2.8573522779930455e-4
+36-55,$25k or less,Participated in Higher Education,"other race, nec",1391,5.760256548823661e-4
+36-55,$25k or less,Completed 1 Higher Education Degree,white,6054,0.0025070160421695503
+36-55,$25k or less,Completed 1 Higher Education Degree,black/african american/negro,1022,4.232194243636076e-4
+36-55,$25k or less,Completed 1 Higher Education Degree,american indian or alaska native,87,3.602748524426014e-5
+36-55,$25k or less,Completed 1 Higher Education Degree,asian or pacific islander,852,3.528208899782717e-4
+36-55,$25k or less,Completed 1 Higher Education Degree,"other race, nec",559,2.314869454200163e-4
+36-55,$25k or less,Completed 1 Higher Education Degree or more,white,2440,0.0010104260229424683
+36-55,$25k or less,Completed 1 Higher Education Degree or more,black/african american/negro,432,1.7889509914391241e-4
+36-55,$25k or less,Completed 1 Higher Education Degree or more,american indian or alaska native,35,1.4493815902863273e-5
+36-55,$25k or less,Completed 1 Higher Education Degree or more,asian or pacific islander,549,2.2734585516205534e-4
+36-55,$25k or less,Completed 1 Higher Education Degree or more,"other race, nec",274,1.1346587306812963e-4
+36-55,$25k to $50k,Less than HS,white,4740,0.0019628767822734835
+36-55,$25k to $50k,Less than HS,black/african american/negro,431,1.784809901181163e-4
+36-55,$25k to $50k,Less than HS,american indian or alaska native,109,4.51378838117742e-5
+36-55,$25k to $50k,Less than HS,asian or pacific islander,709,2.9360329928943034e-4
+36-55,$25k to $50k,Less than HS,"other race, nec",2381,9.859935904204986e-4
+36-55,$25k to $50k,Completed Some HS,white,5456,0.0022593788447434864
+36-55,$25k to $50k,Completed Some HS,black/african american/negro,848,3.511644538750873e-4
+36-55,$25k to $50k,Completed Some HS,american indian or alaska native,205,8.489235028819918e-5
+36-55,$25k to $50k,Completed Some HS,asian or pacific islander,293,1.2133394455825541e-4
+36-55,$25k to $50k,Completed Some HS,"other race, nec",1200,4.969308309553123e-4
+36-55,$25k to $50k,Completed HS,white,37566,0.01555641966305605
+36-55,$25k to $50k,Completed HS,black/african american/negro,7224,0.0029915236023509797
+36-55,$25k to $50k,Completed HS,american indian or alaska native,848,3.511644538750873e-4
+36-55,$25k to $50k,Completed HS,asian or pacific islander,2064,8.547210292431371e-4
+36-55,$25k to $50k,Completed HS,"other race, nec",4388,0.0018171104051932585
+36-55,$25k to $50k,Participated in Higher Education,white,21341,0.008837500719514432
+36-55,$25k to $50k,Participated in Higher Education,black/african american/negro,4713,0.001951695838576989
+36-55,$25k to $50k,Participated in Higher Education,american indian or alaska native,554,2.2941640029103583e-4
+36-55,$25k to $50k,Participated in Higher Education,asian or pacific islander,1193,4.940320677747396e-4
+36-55,$25k to $50k,Participated in Higher Education,"other race, nec",2046,8.472670667788074e-4
+36-55,$25k to $50k,Completed 1 Higher Education Degree,white,11268,0.004666180502670382
+36-55,$25k to $50k,Completed 1 Higher Education Degree,black/african american/negro,1838,7.6113238941322e-4
+36-55,$25k to $50k,Completed 1 Higher Education Degree,american indian or alaska native,124,5.13495191987156e-5
+36-55,$25k to $50k,Completed 1 Higher Education Degree,asian or pacific islander,1336,5.53249658463581e-4
+36-55,$25k to $50k,Completed 1 Higher Education Degree,"other race, nec",888,3.6772881490693105e-4
+36-55,$25k to $50k,Completed 1 Higher Education Degree or more,white,4213,0.001744641325678942
+36-55,$25k to $50k,Completed 1 Higher Education Degree or more,black/african american/negro,815,3.374988560238162e-4
+36-55,$25k to $50k,Completed 1 Higher Education Degree or more,american indian or alaska native,57,2.3604214470377333e-5
+36-55,$25k to $50k,Completed 1 Higher Education Degree or more,asian or pacific islander,675,2.7952359241236314e-4
+36-55,$25k to $50k,Completed 1 Higher Education Degree or more,"other race, nec",321,1.3292899728054603e-4
+36-55,$50k to $75k,Less than HS,white,3243,0.0013429555706567313
+36-55,$50k to $75k,Less than HS,black/african american/negro,223,9.234631275252886e-5
+36-55,$50k to $75k,Less than HS,american indian or alaska native,82,3.395694011527967e-5
+36-55,$50k to $75k,Less than HS,asian or pacific islander,442,1.8303618940187334e-4
+36-55,$50k to $75k,Less than HS,"other race, nec",1456,6.029427415591122e-4
+36-55,$50k to $75k,Completed Some HS,white,3775,0.001563261572380253
+36-55,$50k to $75k,Completed Some HS,black/african american/negro,426,1.7641044498913584e-4
+36-55,$50k to $75k,Completed Some HS,american indian or alaska native,89,3.685570329585233e-5
+36-55,$50k to $75k,Completed Some HS,asian or pacific islander,217,8.98616585977523e-5
+36-55,$50k to $75k,Completed Some HS,"other race, nec",803,3.3252954771426313e-4
+36-55,$50k to $75k,Completed HS,white,36827,0.015250393092992738
+36-55,$50k to $75k,Completed HS,black/african american/negro,4867,0.0020154686285495872
+36-55,$50k to $75k,Completed HS,american indian or alaska native,624,2.5840403209676237e-4
+36-55,$50k to $75k,Completed HS,asian or pacific islander,1728,7.155803965756497e-4
+36-55,$50k to $75k,Completed HS,"other race, nec",3479,0.0014406853007446095
+36-55,$50k to $75k,Participated in Higher Education,white,24344,0.010081070123980101
+36-55,$50k to $75k,Participated in Higher Education,black/african american/negro,3767,0.0015599487001738844
+36-55,$50k to $75k,Participated in Higher Education,american indian or alaska native,444,1.8386440745346553e-4
+36-55,$50k to $75k,Participated in Higher Education,asian or pacific islander,1341,5.553202035925614e-4
+36-55,$50k to $75k,Participated in Higher Education,"other race, nec",1803,7.466385735103567e-4
+36-55,$50k to $75k,Completed 1 Higher Education Degree,white,16453,0.006813335801423127
+36-55,$50k to $75k,Completed 1 Higher Education Degree,black/african american/negro,2080,8.613467736558745e-4
+36-55,$50k to $75k,Completed 1 Higher Education Degree,american indian or alaska native,162,6.708566217896715e-5
+36-55,$50k to $75k,Completed 1 Higher Education Degree,asian or pacific islander,1687,6.986019265180099e-4
+36-55,$50k to $75k,Completed 1 Higher Education Degree,"other race, nec",1036,4.290169507247529e-4
+36-55,$50k to $75k,Completed 1 Higher Education Degree or more,white,8064,0.0033393751840196982
+36-55,$50k to $75k,Completed 1 Higher Education Degree or more,black/african american/negro,1327,5.495226772314161e-4
+36-55,$50k to $75k,Completed 1 Higher Education Degree or more,american indian or alaska native,67,2.774530472833827e-5
+36-55,$50k to $75k,Completed 1 Higher Education Degree or more,asian or pacific islander,952,3.942317925578811e-4
+36-55,$50k to $75k,Completed 1 Higher Education Degree or more,"other race, nec",483,2.000146594595132e-4
+36-55,$75k to $100k,Less than HS,white,1916,7.934328934253152e-4
+36-55,$75k to $100k,Less than HS,black/african american/negro,132,5.466239140508435e-5
+36-55,$75k to $100k,Less than HS,american indian or alaska native,39,1.6150252006047648e-5
+36-55,$75k to $100k,Less than HS,asian or pacific islander,268,1.1098121891335308e-4
+36-55,$75k to $100k,Less than HS,"other race, nec",841,3.4826569069451466e-4
+36-55,$75k to $100k,Completed Some HS,white,2135,8.841227700746597e-4
+36-55,$75k to $100k,Completed Some HS,black/african american/negro,220,9.110398567514057e-5
+36-55,$75k to $100k,Completed Some HS,american indian or alaska native,48,1.987723323821249e-5
+36-55,$75k to $100k,Completed Some HS,asian or pacific islander,121,5.010719212132732e-5
+36-55,$75k to $100k,Completed Some HS,"other race, nec",439,1.8179386232448506e-4
+36-55,$75k to $100k,Completed HS,white,29612,0.012262596471873922
+36-55,$75k to $100k,Completed HS,black/african american/negro,3049,0.0012626184196522891
+36-55,$75k to $100k,Completed HS,american indian or alaska native,382,1.5818964785410772e-4
+36-55,$75k to $100k,Completed HS,asian or pacific islander,1333,5.520073313861927e-4
+36-55,$75k to $100k,Completed HS,"other race, nec",2397,9.926193348332361e-4
+36-55,$75k to $100k,Participated in Higher Education,white,22851,0.009462805348466533
+36-55,$75k to $100k,Participated in Higher Education,black/african american/negro,2511,0.001039827763773991
+36-55,$75k to $100k,Participated in Higher Education,american indian or alaska native,308,1.275455799451968e-4
+36-55,$75k to $100k,Participated in Higher Education,asian or pacific islander,1213,5.023142482906615e-4
+36-55,$75k to $100k,Participated in Higher Education,"other race, nec",1434,5.938323429915981e-4
+36-55,$75k to $100k,Completed 1 Higher Education Degree,white,18269,0.007565357792268833
+36-55,$75k to $100k,Completed 1 Higher Education Degree,black/african american/negro,1689,6.99430144569602e-4
+36-55,$75k to $100k,Completed 1 Higher Education Degree,american indian or alaska native,129,5.342006432769607e-5
+36-55,$75k to $100k,Completed 1 Higher Education Degree,asian or pacific islander,2085,8.634173187848551e-4
+36-55,$75k to $100k,Completed 1 Higher Education Degree,"other race, nec",890,3.6855703295852327e-4
+36-55,$75k to $100k,Completed 1 Higher Education Degree or more,white,9932,0.004112930844206801
+36-55,$75k to $100k,Completed 1 Higher Education Degree or more,black/african american/negro,1203,4.981731580327005e-4
+36-55,$75k to $100k,Completed 1 Higher Education Degree or more,american indian or alaska native,60,2.484654154776561e-5
+36-55,$75k to $100k,Completed 1 Higher Education Degree or more,asian or pacific islander,1240,5.13495191987156e-4
+36-55,$75k to $100k,Completed 1 Higher Education Degree or more,"other race, nec",515,2.1326614828498817e-4
+56-75,$100k to $150k,Less than HS,white,1653,6.845222196409426e-4
+56-75,$100k to $150k,Less than HS,black/african american/negro,202,8.365002321081089e-5
+56-75,$100k to $150k,Less than HS,american indian or alaska native,25,1.035272564490234e-5
+56-75,$100k to $150k,Less than HS,asian or pacific islander,550,2.2775996418785145e-4
+56-75,$100k to $150k,Less than HS,"other race, nec",614,2.5426294183880145e-4
+56-75,$100k to $150k,Completed Some HS,white,1696,7.023289077501746e-4
+56-75,$100k to $150k,Completed Some HS,black/african american/negro,220,9.110398567514057e-5
+56-75,$100k to $150k,Completed Some HS,american indian or alaska native,39,1.6150252006047648e-5
+56-75,$100k to $150k,Completed Some HS,asian or pacific islander,134,5.549060945667654e-5
+56-75,$100k to $150k,Completed Some HS,"other race, nec",192,7.950893295284996e-5
+56-75,$100k to $150k,Completed HS,white,34038,0.014095443020047432
+56-75,$100k to $150k,Completed HS,black/african american/negro,2705,0.001120164914778433
+56-75,$100k to $150k,Completed HS,american indian or alaska native,265,1.0973889183596479e-4
+56-75,$100k to $150k,Completed HS,asian or pacific islander,1687,6.986019265180099e-4
+56-75,$100k to $150k,Completed HS,"other race, nec",1300,5.383417335349216e-4
+56-75,$100k to $150k,Participated in Higher Education,white,26352,0.010912601047778657
+56-75,$100k to $150k,Participated in Higher Education,black/african american/negro,2068,8.563774653463214e-4
+56-75,$100k to $150k,Participated in Higher Education,american indian or alaska native,222,9.193220372673276e-5
+56-75,$100k to $150k,Participated in Higher Education,asian or pacific islander,1202,4.977590490069044e-4
+56-75,$100k to $150k,Participated in Higher Education,"other race, nec",735,3.0437013396012873e-4
+56-75,$100k to $150k,Completed 1 Higher Education Degree,white,25063,0.010378814513527493
+56-75,$100k to $150k,Completed 1 Higher Education Degree,black/african american/negro,1544,6.393843358291684e-4
+56-75,$100k to $150k,Completed 1 Higher Education Degree,american indian or alaska native,97,4.016857550222107e-5
+56-75,$100k to $150k,Completed 1 Higher Education Degree,asian or pacific islander,1928,7.984022017348683e-4
+56-75,$100k to $150k,Completed 1 Higher Education Degree,"other race, nec",491,2.0332753166588192e-4
+56-75,$100k to $150k,Completed 1 Higher Education Degree or more,white,19232,0.00796414478411047
+56-75,$100k to $150k,Completed 1 Higher Education Degree or more,black/african american/negro,1324,5.482803501540279e-4
+56-75,$100k to $150k,Completed 1 Higher Education Degree or more,american indian or alaska native,72,2.9815849857318737e-5
+56-75,$100k to $150k,Completed 1 Higher Education Degree or more,asian or pacific islander,1206,4.994154851100888e-4
+56-75,$100k to $150k,Completed 1 Higher Education Degree or more,"other race, nec",323,1.3375721533213822e-4
+56-75,$150k or more,Less than HS,white,911,3.772533225002412e-4
+56-75,$150k or more,Less than HS,black/african american/negro,92,3.8098030373240605e-5
+56-75,$150k or more,Less than HS,american indian or alaska native,31,1.28373797996789e-5
+56-75,$150k or more,Less than HS,asian or pacific islander,533,2.2072011074931785e-4
+56-75,$150k or more,Less than HS,"other race, nec",337,1.3955474169328352e-4
+56-75,$150k or more,Completed Some HS,white,982,4.0665506333176384e-4
+56-75,$150k or more,Completed Some HS,black/african american/negro,138,5.714704555986091e-5
+56-75,$150k or more,Completed Some HS,american indian or alaska native,30,1.2423270773882806e-5
+56-75,$150k or more,Completed Some HS,asian or pacific islander,167,6.915620730794762e-5
+56-75,$150k or more,Completed Some HS,"other race, nec",104,4.306733868279373e-5
+56-75,$150k or more,Completed HS,white,21801,0.009027990871380636
+56-75,$150k or more,Completed HS,black/african american/negro,1556,6.443536441387216e-4
+56-75,$150k or more,Completed HS,american indian or alaska native,178,7.371140659170465e-5
+56-75,$150k or more,Completed HS,asian or pacific islander,1645,6.812093474345738e-4
+56-75,$150k or more,Completed HS,"other race, nec",796,3.296307845336905e-4
+56-75,$150k or more,Participated in Higher Education,white,20992,0.008692976669511595
+56-75,$150k or more,Participated in Higher Education,black/african american/negro,1268,5.250902447094466e-4
+56-75,$150k or more,Participated in Higher Education,american indian or alaska native,146,6.0459917766229657e-005
+56-75,$150k or more,Participated in Higher Education,asian or pacific islander,1335,5.528355494377849e-4
+56-75,$150k or more,Participated in Higher Education,"other race, nec",595,2.4639487034867566e-4
+56-75,$150k or more,Completed 1 Higher Education Degree,white,35624,0.014752219934960037
+56-75,$150k or more,Completed 1 Higher Education Degree,black/african american/negro,1324,5.482803501540279e-4
+56-75,$150k or more,Completed 1 Higher Education Degree,american indian or alaska native,78,3.2300504012095296e-5
+56-75,$150k or more,Completed 1 Higher Education Degree,asian or pacific islander,3025,0.001252679803033183
+56-75,$150k or more,Completed 1 Higher Education Degree,"other race, nec",572,2.3687036275536551e-4
+56-75,$150k or more,Completed 1 Higher Education Degree or more,white,36374,0.015062801704307106
+56-75,$150k or more,Completed 1 Higher Education Degree or more,black/african american/negro,1618,6.700284037380793e-4
+56-75,$150k or more,Completed 1 Higher Education Degree or more,american indian or alaska native,78,3.2300504012095296e-5
+56-75,$150k or more,Completed 1 Higher Education Degree or more,asian or pacific islander,3078,0.001274627581400376
+56-75,$150k or more,Completed 1 Higher Education Degree or more,"other race, nec",635,2.629592313805194e-4
+56-75,$25k or less,Less than HS,white,7390,0.0030602657006331313
+56-75,$25k or less,Less than HS,black/african american/negro,1461,6.050132866880927e-4
+56-75,$25k or less,Less than HS,american indian or alaska native,263,1.089106737843726e-4
+56-75,$25k or less,Less than HS,asian or pacific islander,974,4.0334219112539513e-4
+56-75,$25k or less,Less than HS,"other race, nec",1770,7.329729756590856e-4
+56-75,$25k or less,Completed Some HS,white,8302,0.003437933132159169
+56-75,$25k or less,Completed Some HS,black/african american/negro,2856,0.0011826953776736431
+56-75,$25k or less,Completed Some HS,american indian or alaska native,350,1.4493815902863274e-4
+56-75,$25k or less,Completed Some HS,asian or pacific islander,245,1.0145671132004292e-4
+56-75,$25k or less,Completed Some HS,"other race, nec",682,2.824223555929358e-4
+56-75,$25k or less,Completed HS,white,49661,0.0205650683300598
+56-75,$25k or less,Completed HS,black/african american/negro,9955,0.004122455351800111
+56-75,$25k or less,Completed HS,american indian or alaska native,962,3.98372882815842e-4
+56-75,$25k or less,Completed HS,asian or pacific islander,1584,6.559486968610122e-4
+56-75,$25k or less,Completed HS,"other race, nec",2383,9.868218084720908e-4
+56-75,$25k or less,Participated in Higher Education,white,21799,0.009027162653329044
+56-75,$25k or less,Participated in Higher Education,black/african american/negro,4314,0.0017864663372843476
+56-75,$25k or less,Participated in Higher Education,american indian or alaska native,510,2.111956031560077e-4
+56-75,$25k or less,Participated in Higher Education,asian or pacific islander,787,3.259038033015256e-4
+56-75,$25k or less,Participated in Higher Education,"other race, nec",1084,4.488941839629654e-4
+56-75,$25k or less,Completed 1 Higher Education Degree,white,11014,0.004560996810118174
+56-75,$25k or less,Completed 1 Higher Education Degree,black/african american/negro,1262,5.2260559055467e-4
+56-75,$25k or less,Completed 1 Higher Education Degree,american indian or alaska native,109,4.51378838117742e-5
+56-75,$25k or less,Completed 1 Higher Education Degree,asian or pacific islander,850,3.519926719266795e-4
+56-75,$25k or less,Completed 1 Higher Education Degree,"other race, nec",397,1.6440128324104913e-4
+56-75,$25k or less,Completed 1 Higher Education Degree or more,white,5605,0.0023210810895871042
+56-75,$25k or less,Completed 1 Higher Education Degree or more,black/african american/negro,659,2.728978479996256e-4
+56-75,$25k or less,Completed 1 Higher Education Degree or more,american indian or alaska native,73,3.0229958883114828e-005
+56-75,$25k or less,Completed 1 Higher Education Degree or more,asian or pacific islander,367,1.5197801246716634e-4
+56-75,$25k or less,Completed 1 Higher Education Degree or more,"other race, nec",212,8.779111346877183e-5
+56-75,$25k to $50k,Less than HS,white,5465,0.0022631058259756512
+56-75,$25k to $50k,Less than HS,black/african american/negro,715,2.960879534442069e-4
+56-75,$25k to $50k,Less than HS,american indian or alaska native,121,5.010719212132732e-5
+56-75,$25k to $50k,Less than HS,asian or pacific islander,856,3.5447732608145607e-4
+56-75,$25k to $50k,Less than HS,"other race, nec",1399,5.793385270887348e-4
+56-75,$25k to $50k,Completed Some HS,white,6768,0.002802689886587961
+56-75,$25k to $50k,Completed Some HS,black/african american/negro,1269,5.255043537352427e-4
+56-75,$25k to $50k,Completed Some HS,american indian or alaska native,173,7.164086146272418e-5
+56-75,$25k to $50k,Completed Some HS,asian or pacific islander,216,8.944754957195621e-5
+56-75,$25k to $50k,Completed Some HS,"other race, nec",462,1.913183699177952e-4
+56-75,$25k to $50k,Completed HS,white,66998,0.027744476510286675
+56-75,$25k to $50k,Completed HS,black/african american/negro,7866,0.003257381596912072
+56-75,$25k to $50k,Completed HS,american indian or alaska native,792,3.279743484305061e-4
+56-75,$25k to $50k,Completed HS,asian or pacific islander,1805,7.474667915619488e-4
+56-75,$25k to $50k,Completed HS,"other race, nec",2273,9.412698156345206e-4
+56-75,$25k to $50k,Participated in Higher Education,white,31787,0.013163283602980426
+56-75,$25k to $50k,Participated in Higher Education,black/african american/negro,4051,0.0016775556634999749
+56-75,$25k to $50k,Participated in Higher Education,american indian or alaska native,519,2.1492258438817255e-4
+56-75,$25k to $50k,Participated in Higher Education,asian or pacific islander,969,4.0127164599641465e-4
+56-75,$25k to $50k,Participated in Higher Education,"other race, nec",1081,4.476518568855771e-4
+56-75,$25k to $50k,Completed 1 Higher Education Degree,white,17191,0.007118948262460644
+56-75,$25k to $50k,Completed 1 Higher Education Degree,black/african american/negro,1532,6.344150275196153e-4
+56-75,$25k to $50k,Completed 1 Higher Education Degree,american indian or alaska native,129,5.342006432769607e-5
+56-75,$25k to $50k,Completed 1 Higher Education Degree,asian or pacific islander,1140,4.7208428940754665e-4
+56-75,$25k to $50k,Completed 1 Higher Education Degree,"other race, nec",446,1.8469262550505772e-4
+56-75,$25k to $50k,Completed 1 Higher Education Degree or more,white,9330,0.0038636372106775527
+56-75,$25k to $50k,Completed 1 Higher Education Degree or more,black/african american/negro,831,3.4412460043655374e-4
+56-75,$25k to $50k,Completed 1 Higher Education Degree or more,american indian or alaska native,60,2.484654154776561e-5
+56-75,$25k to $50k,Completed 1 Higher Education Degree or more,asian or pacific islander,526,2.178213475687452e-4
+56-75,$25k to $50k,Completed 1 Higher Education Degree or more,"other race, nec",250,1.0352725644902338e-4
+56-75,$50k to $75k,Less than HS,white,3224,0.0013350874991666056
+56-75,$50k to $75k,Less than HS,black/african american/negro,369,1.5280623051875853e-4
+56-75,$50k to $75k,Less than HS,american indian or alaska native,87,3.602748524426014e-5
+56-75,$50k to $75k,Less than HS,asian or pacific islander,657,2.7206962994803346e-4
+56-75,$50k to $75k,Less than HS,"other race, nec",1055,4.368850222148787e-4
+56-75,$50k to $75k,Completed Some HS,white,4074,0.001687080171093285
+56-75,$50k to $75k,Completed Some HS,black/african american/negro,635,2.629592313805194e-4
+56-75,$50k to $75k,Completed Some HS,american indian or alaska native,102,4.223912063120154e-5
+56-75,$50k to $75k,Completed Some HS,asian or pacific islander,143,5.921759068884138e-5
+56-75,$50k to $75k,Completed Some HS,"other race, nec",340,1.4079706877067182e-4
+56-75,$50k to $75k,Completed HS,white,55078,0.02280829692279724
+56-75,$50k to $75k,Completed HS,black/african american/negro,4891,0.0020254072451686934
+56-75,$50k to $75k,Completed HS,american indian or alaska native,534,2.2113421977511396e-4
+56-75,$50k to $75k,Completed HS,asian or pacific islander,1556,6.443536441387216e-4
+56-75,$50k to $75k,Completed HS,"other race, nec",1824,7.553348630520747e-4
+56-75,$50k to $75k,Participated in Higher Education,white,30502,0.012631153504832446
+56-75,$50k to $75k,Participated in Higher Education,black/african american/negro,3170,0.0013127256117736166
+56-75,$50k to $75k,Participated in Higher Education,american indian or alaska native,345,1.4286761389965228e-4
+56-75,$50k to $75k,Participated in Higher Education,asian or pacific islander,948,3.925753564546967e-4
+56-75,$50k to $75k,Participated in Higher Education,"other race, nec",912,3.7766743152603733e-4
+56-75,$50k to $75k,Completed 1 Higher Education Degree,white,19717,0.008164987661621577
+56-75,$50k to $75k,Completed 1 Higher Education Degree,black/african american/negro,1546,6.402125538807606e-4
+56-75,$50k to $75k,Completed 1 Higher Education Degree,american indian or alaska native,129,5.342006432769607e-5
+56-75,$50k to $75k,Completed 1 Higher Education Degree,asian or pacific islander,1222,5.060412295228264e-4
+56-75,$50k to $75k,Completed 1 Higher Education Degree,"other race, nec",444,1.8386440745346553e-4
+56-75,$50k to $75k,Completed 1 Higher Education Degree or more,white,12213,0.00505751353204769
+56-75,$50k to $75k,Completed 1 Higher Education Degree or more,black/african american/negro,989,4.095538265123365e-4
+56-75,$50k to $75k,Completed 1 Higher Education Degree or more,american indian or alaska native,76,3.1472285960503106e-5
+56-75,$50k to $75k,Completed 1 Higher Education Degree or more,asian or pacific islander,560,2.3190105444581238e-4
+56-75,$50k to $75k,Completed 1 Higher Education Degree or more,"other race, nec",241,9.980027521685854e-5
+56-75,$75k to $100k,Less than HS,white,1826,7.561630811036668e-4
+56-75,$75k to $100k,Less than HS,black/african american/negro,173,7.164086146272418e-5
+56-75,$75k to $100k,Less than HS,american indian or alaska native,43,1.780668810923202e-5
+56-75,$75k to $100k,Less than HS,asian or pacific islander,454,1.8800549771142648e-4
+56-75,$75k to $100k,Less than HS,"other race, nec",646,2.6751443066427643e-4
+56-75,$75k to $100k,Completed Some HS,white,2194,9.085552025966293e-4
+56-75,$75k to $100k,Completed Some HS,black/african american/negro,299,1.2381859871303196e-4
+56-75,$75k to $100k,Completed Some HS,american indian or alaska native,42,1.739257908343593e-5
+56-75,$75k to $100k,Completed Some HS,asian or pacific islander,144,5.9631699714637474e-5
+56-75,$75k to $100k,Completed Some HS,"other race, nec",218,9.02757676235484e-5
+56-75,$75k to $100k,Completed HS,white,35952,0.014888047695421154
+56-75,$75k to $100k,Completed HS,black/african american/negro,2973,0.0012311461336917862
+56-75,$75k to $100k,Completed HS,american indian or alaska native,307,1.2713147091940072e-4
+56-75,$75k to $100k,Completed HS,asian or pacific islander,1387,5.743692187791818e-4
+56-75,$75k to $100k,Completed HS,"other race, nec",1211,5.014860302390693e-4
+56-75,$75k to $100k,Participated in Higher Education,white,22946,0.009502145705917163
+56-75,$75k to $100k,Participated in Higher Education,black/african american/negro,2088,8.646596458622433e-4
+56-75,$75k to $100k,Participated in Higher Education,american indian or alaska native,245,1.0145671132004292e-4
+56-75,$75k to $100k,Participated in Higher Education,asian or pacific islander,837,3.466092545913303e-4
+56-75,$75k to $100k,Participated in Higher Education,"other race, nec",684,2.83250573644528e-4
+56-75,$75k to $100k,Completed 1 Higher Education Degree,white,17643,0.007306125542120478
+56-75,$75k to $100k,Completed 1 Higher Education Degree,black/african american/negro,1167,4.8326523310404114e-4
+56-75,$75k to $100k,Completed 1 Higher Education Degree,american indian or alaska native,83,3.4371049141075764e-5
+56-75,$75k to $100k,Completed 1 Higher Education Degree,asian or pacific islander,1160,4.803664699234685e-4
+56-75,$75k to $100k,Completed 1 Higher Education Degree,"other race, nec",361,1.4949335831238977e-4
+56-75,$75k to $100k,Completed 1 Higher Education Degree or more,white,12144,0.00502894000926776
+56-75,$75k to $100k,Completed 1 Higher Education Degree or more,black/african american/negro,916,3.793238676292217e-4
+56-75,$75k to $100k,Completed 1 Higher Education Degree or more,american indian or alaska native,54,2.2361887392989052e-5
+56-75,$75k to $100k,Completed 1 Higher Education Degree or more,asian or pacific islander,596,2.4680897937447177e-4
+56-75,$75k to $100k,Completed 1 Higher Education Degree or more,"other race, nec",227,9.400274885571324e-5
+76 or Older,$100k to $150k,Less than HS,white,770,3.1886394986299204e-4
+76 or Older,$100k to $150k,Less than HS,black/african american/negro,129,5.342006432769607e-5
+76 or Older,$100k to $150k,Less than HS,american indian or alaska native,12,4.969308309553122e-6
+76 or Older,$100k to $150k,Less than HS,asian or pacific islander,234,9.690151203628589e-5
+76 or Older,$100k to $150k,Less than HS,"other race, nec",169,6.998442535953981e-5
+76 or Older,$100k to $150k,Completed Some HS,white,560,2.3190105444581238e-4
+76 or Older,$100k to $150k,Completed Some HS,black/african american/negro,85,3.5199267192667954e-5
+76 or Older,$100k to $150k,Completed Some HS,american indian or alaska native,3,1.2423270773882806e-6
+76 or Older,$100k to $150k,Completed Some HS,asian or pacific islander,30,1.2423270773882806e-5
+76 or Older,$100k to $150k,Completed Some HS,"other race, nec",31,1.28373797996789e-5
+76 or Older,$100k to $150k,Completed HS,white,5893,0.002440344489016379
+76 or Older,$100k to $150k,Completed HS,black/african american/negro,438,1.8137975329868898e-4
+76 or Older,$100k to $150k,Completed HS,american indian or alaska native,26,1.0766834670698433e-5
+76 or Older,$100k to $150k,Completed HS,asian or pacific islander,350,1.4493815902863274e-4
+76 or Older,$100k to $150k,Completed HS,"other race, nec",142,5.8803481663045284e-5
+76 or Older,$100k to $150k,Participated in Higher Education,white,2915,0.0012071278101956128
+76 or Older,$100k to $150k,Participated in Higher Education,black/african american/negro,212,8.779111346877183e-5
+76 or Older,$100k to $150k,Participated in Higher Education,american indian or alaska native,24,9.938616619106244e-6
+76 or Older,$100k to $150k,Participated in Higher Education,asian or pacific islander,133,5.507650043088044e-5
+76 or Older,$100k to $150k,Participated in Higher Education,"other race, nec",51,2.111956031560077e-5
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree,white,3692,0.0015288905232391774
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree,black/african american/negro,150,6.211635386941404e-5
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree,american indian or alaska native,5,2.070545128980468e-6
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree,asian or pacific islander,250,1.0352725644902338e-4
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree,"other race, nec",48,1.987723323821249e-5
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree or more,white,3957,0.0016386294150751422
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree or more,black/african american/negro,213,8.820522249456792e-5
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree or more,american indian or alaska native,7,2.8987631805726548e-6
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree or more,asian or pacific islander,210,8.696289541717965e-5
+76 or Older,$100k to $150k,Completed 1 Higher Education Degree or more,"other race, nec",33,1.3665597851271087e-5
+76 or Older,$150k or more,Less than HS,white,550,2.2775996418785145e-4
+76 or Older,$150k or more,Less than HS,black/african american/negro,91,3.768392134744451e-5
+76 or Older,$150k or more,Less than HS,american indian or alaska native,6,2.484654154776561e-6
+76 or Older,$150k or more,Less than HS,asian or pacific islander,283,1.1719285430029447e-4
+76 or Older,$150k or more,Less than HS,"other race, nec",95,3.934035745062889e-5
+76 or Older,$150k or more,Completed Some HS,white,394,1.6315895616366086e-4
+76 or Older,$150k or more,Completed Some HS,black/african american/negro,56,2.3190105444581238e-5
+76 or Older,$150k or more,Completed Some HS,american indian or alaska native,7,2.8987631805726548e-6
+76 or Older,$150k or more,Completed Some HS,asian or pacific islander,61,2.5260650573561706e-5
+76 or Older,$150k or more,Completed Some HS,"other race, nec",17,7.03985343853359e-6
+76 or Older,$150k or more,Completed HS,white,4699,0.0019458983122158436
+76 or Older,$150k or more,Completed HS,black/african american/negro,311,1.287879070225851e-4
+76 or Older,$150k or more,Completed HS,american indian or alaska native,11,4.555199283757029e-6
+76 or Older,$150k or more,Completed HS,asian or pacific islander,404,1.6730004642162178e-4
+76 or Older,$150k or more,Completed HS,"other race, nec",111,4.596610186336638e-5
+76 or Older,$150k or more,Participated in Higher Education,white,2520,0.0010435547450061556
+76 or Older,$150k or more,Participated in Higher Education,black/african american/negro,155,6.41868989983945e-5
+76 or Older,$150k or more,Participated in Higher Education,american indian or alaska native,10,4.141090257960936e-6
+76 or Older,$150k or more,Participated in Higher Education,asian or pacific islander,182,7.536784269488902e-5
+76 or Older,$150k or more,Participated in Higher Education,"other race, nec",49,2.0291342264008584e-5
+76 or Older,$150k or more,Completed 1 Higher Education Degree,white,4153,0.0017197947841311764
+76 or Older,$150k or more,Completed 1 Higher Education Degree,black/african american/negro,116,4.803664699234685e-5
+76 or Older,$150k or more,Completed 1 Higher Education Degree,american indian or alaska native,8,3.3128722063687484e-6
+76 or Older,$150k or more,Completed 1 Higher Education Degree,asian or pacific islander,392,1.6233073811206867e-4
+76 or Older,$150k or more,Completed 1 Higher Education Degree,"other race, nec",51,2.111956031560077e-5
+76 or Older,$150k or more,Completed 1 Higher Education Degree or more,white,5468,0.0022643481530530397
+76 or Older,$150k or more,Completed 1 Higher Education Degree or more,black/african american/negro,201,8.32359141850148e-5
+76 or Older,$150k or more,Completed 1 Higher Education Degree or more,american indian or alaska native,9,3.726981232164842e-6
+76 or Older,$150k or more,Completed 1 Higher Education Degree or more,asian or pacific islander,412,1.7061291862799054e-4
+76 or Older,$150k or more,Completed 1 Higher Education Degree or more,"other race, nec",58,2.4018323496173425e-5
+76 or Older,$25k or less,Less than HS,white,6280,0.0026006046819994676
+76 or Older,$25k or less,Less than HS,black/african american/negro,1194,4.944461768005356e-4
+76 or Older,$25k or less,Less than HS,american indian or alaska native,233,9.64874030104898e-5
+76 or Older,$25k or less,Less than HS,asian or pacific islander,590,2.4432432521969517e-4
+76 or Older,$25k or less,Less than HS,"other race, nec",693,2.869775548766928e-4
+76 or Older,$25k or less,Completed Some HS,white,5231,0.0021662043139393655
+76 or Older,$25k or less,Completed Some HS,black/african american/negro,1177,4.874063233620021e-4
+76 or Older,$25k or less,Completed Some HS,american indian or alaska native,85,3.5199267192667954e-5
+76 or Older,$25k or less,Completed Some HS,asian or pacific islander,114,4.7208428940754666e-5
+76 or Older,$25k or less,Completed Some HS,"other race, nec",165,6.832798925635543e-5
+76 or Older,$25k or less,Completed HS,white,28689,0.011880373841064128
+76 or Older,$25k or less,Completed HS,black/african american/negro,2757,0.00114169858411983
+76 or Older,$25k or less,Completed HS,american indian or alaska native,209,8.654878639138356e-5
+76 or Older,$25k or less,Completed HS,asian or pacific islander,622,2.575758140451702e-4
+76 or Older,$25k or less,Completed HS,"other race, nec",518,2.1450847536237644e-4
+76 or Older,$25k or less,Participated in Higher Education,white,7877,0.003261936796195829
+76 or Older,$25k or less,Participated in Higher Education,black/african american/negro,783,3.2424736719834123e-4
+76 or Older,$25k or less,Participated in Higher Education,american indian or alaska native,77,3.18863949862992e-5
+76 or Older,$25k or less,Participated in Higher Education,asian or pacific islander,228,9.441685788150933e-5
+76 or Older,$25k or less,Participated in Higher Education,"other race, nec",156,6.460100802419059e-5
+76 or Older,$25k or less,Completed 1 Higher Education Degree,white,4096,0.0016961905696607992
+76 or Older,$25k or less,Completed 1 Higher Education Degree,black/african american/negro,283,1.1719285430029447e-4
+76 or Older,$25k or less,Completed 1 Higher Education Degree,american indian or alaska native,36,1.4907924928659368e-5
+76 or Older,$25k or less,Completed 1 Higher Education Degree,asian or pacific islander,343,1.420393958480601e-4
+76 or Older,$25k or less,Completed 1 Higher Education Degree,"other race, nec",67,2.774530472833827e-5
+76 or Older,$25k or less,Completed 1 Higher Education Degree or more,white,2482,0.0010278186020259042
+76 or Older,$25k or less,Completed 1 Higher Education Degree or more,black/african american/negro,204,8.447824126240308e-5
+76 or Older,$25k or less,Completed 1 Higher Education Degree or more,american indian or alaska native,18,7.453962464329684e-6
+76 or Older,$25k or less,Completed 1 Higher Education Degree or more,asian or pacific islander,146,6.0459917766229657e-005
+76 or Older,$25k or less,Completed 1 Higher Education Degree or more,"other race, nec",54,2.2361887392989052e-5
+76 or Older,$25k to $50k,Less than HS,white,3966,0.001642356396307307
+76 or Older,$25k to $50k,Less than HS,black/african american/negro,569,2.3562803567797722e-4
+76 or Older,$25k to $50k,Less than HS,american indian or alaska native,121,5.010719212132732e-5
+76 or Older,$25k to $50k,Less than HS,asian or pacific islander,279,1.1553641819711009e-4
+76 or Older,$25k to $50k,Less than HS,"other race, nec",369,1.5280623051875853e-4
+76 or Older,$25k to $50k,Completed Some HS,white,4115,0.001704058641150925
+76 or Older,$25k to $50k,Completed Some HS,black/african american/negro,540,2.236188739298905e-4
+76 or Older,$25k to $50k,Completed Some HS,american indian or alaska native,58,2.4018323496173425e-5
+76 or Older,$25k to $50k,Completed Some HS,asian or pacific islander,72,2.9815849857318737e-5
+76 or Older,$25k to $50k,Completed Some HS,"other race, nec",108,4.4723774785978103e-5
+76 or Older,$25k to $50k,Completed HS,white,32488,0.013453574030063488
+76 or Older,$25k to $50k,Completed HS,black/african american/negro,1899,7.863930399867816e-4
+76 or Older,$25k to $50k,Completed HS,american indian or alaska native,153,6.335868094680231e-5
+76 or Older,$25k to $50k,Completed HS,asian or pacific islander,479,1.983582233563288e-4
+76 or Older,$25k to $50k,Completed HS,"other race, nec",462,1.913183699177952e-4
+76 or Older,$25k to $50k,Participated in Higher Education,white,10743,0.004448773264127433
+76 or Older,$25k to $50k,Participated in Higher Education,black/african american/negro,723,2.9940082565057565e-4
+76 or Older,$25k to $50k,Participated in Higher Education,american indian or alaska native,78,3.2300504012095296e-5
+76 or Older,$25k to $50k,Participated in Higher Education,asian or pacific islander,230,9.524507593310151e-5
+76 or Older,$25k to $50k,Participated in Higher Education,"other race, nec",165,6.832798925635543e-5
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree,white,6734,0.002788610179710894
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree,black/african american/negro,300,1.2423270773882807e-4
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree,american indian or alaska native,20,8.282180515921872e-6
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree,asian or pacific islander,314,1.3003023409997337e-4
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree,"other race, nec",84,3.478515816687186e-5
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree or more,white,4331,0.0017935061907228811
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree or more,black/african american/negro,286,1.1843518137768276e-4
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree or more,american indian or alaska native,8,3.3128722063687484e-6
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree or more,asian or pacific islander,148,6.128813581782185e-5
+76 or Older,$25k to $50k,Completed 1 Higher Education Degree or more,"other race, nec",53,2.1947778367192957e-5
+76 or Older,$50k to $75k,Less than HS,white,1703,7.052276709307473e-4
+76 or Older,$50k to $75k,Less than HS,black/african american/negro,260,1.0766834670698432e-4
+76 or Older,$50k to $75k,Less than HS,american indian or alaska native,58,2.4018323496173425e-5
+76 or Older,$50k to $75k,Less than HS,asian or pacific islander,237,9.814383911367417e-5
+76 or Older,$50k to $75k,Less than HS,"other race, nec",237,9.814383911367417e-5
+76 or Older,$50k to $75k,Completed Some HS,white,1635,6.77068257176613e-4
+76 or Older,$50k to $75k,Completed Some HS,black/african american/negro,248,1.026990383974312e-4
+76 or Older,$50k to $75k,Completed Some HS,american indian or alaska native,22,9.110398567514058e-6
+76 or Older,$50k to $75k,Completed Some HS,asian or pacific islander,37,1.532203395445546e-5
+76 or Older,$50k to $75k,Completed Some HS,"other race, nec",46,1.9049015186620302e-5
+76 or Older,$50k to $75k,Completed HS,white,16378,0.00678227762448842
+76 or Older,$50k to $75k,Completed HS,black/african american/negro,971,4.020998640480068e-4
+76 or Older,$50k to $75k,Completed HS,american indian or alaska native,79,3.271461303789139e-5
+76 or Older,$50k to $75k,Completed HS,asian or pacific islander,349,1.4452405000283666e-4
+76 or Older,$50k to $75k,Completed HS,"other race, nec",253,1.0476958352641167e-4
+76 or Older,$50k to $75k,Participated in Higher Education,white,6770,0.002803518104639553
+76 or Older,$50k to $75k,Participated in Higher Education,black/african american/negro,397,1.6440128324104913e-4
+76 or Older,$50k to $75k,Participated in Higher Education,american indian or alaska native,36,1.4907924928659368e-5
+76 or Older,$50k to $75k,Participated in Higher Education,asian or pacific islander,139,5.7561154585657006e-5
+76 or Older,$50k to $75k,Participated in Higher Education,"other race, nec",110,4.5551992837570287e-5
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree,white,5632,0.002332262033283599
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree,black/african american/negro,229,9.483096690730543e-5
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree,american indian or alaska native,18,7.453962464329684e-6
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree,asian or pacific islander,230,9.524507593310151e-5
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree,"other race, nec",63,2.6088868625153893e-5
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree or more,white,4484,0.0018568648716696834
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree or more,black/african american/negro,254,1.0518369255220776e-4
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree or more,american indian or alaska native,13,5.383417335349216e-6
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree or more,asian or pacific islander,157,6.501511704998669e-5
+76 or Older,$50k to $75k,Completed 1 Higher Education Degree or more,"other race, nec",43,1.780668810923202e-5
+76 or Older,$75k to $100k,Less than HS,white,878,3.6358772464897013e-4
+76 or Older,$75k to $100k,Less than HS,black/african american/negro,117,4.8450756018142944e-5
+76 or Older,$75k to $100k,Less than HS,american indian or alaska native,12,4.969308309553122e-6
+76 or Older,$75k to $100k,Less than HS,asian or pacific islander,180,7.453962464329684e-5
+76 or Older,$75k to $100k,Less than HS,"other race, nec",134,5.549060945667654e-5
+76 or Older,$75k to $100k,Completed Some HS,white,670,0.00027745304728338265
+76 or Older,$75k to $100k,Completed Some HS,black/african american/negro,103,4.2653229656997636e-5
+76 or Older,$75k to $100k,Completed Some HS,american indian or alaska native,11,4.555199283757029e-6
+76 or Older,$75k to $100k,Completed Some HS,asian or pacific islander,24,9.938616619106244e-6
+76 or Older,$75k to $100k,Completed Some HS,"other race, nec",25,1.035272564490234e-5
+76 or Older,$75k to $100k,Completed HS,white,7517,0.003112857546909235
+76 or Older,$75k to $100k,Completed HS,black/african american/negro,580,2.4018323496173425e-4
+76 or Older,$75k to $100k,Completed HS,american indian or alaska native,32,1.3251488825474994e-5
+76 or Older,$75k to $100k,Completed HS,asian or pacific islander,207,8.572056833979137e-5
+76 or Older,$75k to $100k,Completed HS,"other race, nec",120,4.969308309553122e-5
+76 or Older,$75k to $100k,Participated in Higher Education,white,3628,0.0015023875455882274
+76 or Older,$75k to $100k,Participated in Higher Education,black/african american/negro,243,1.0062849326845073e-4
+76 or Older,$75k to $100k,Participated in Higher Education,american indian or alaska native,19,7.868071490125777e-6
+76 or Older,$75k to $100k,Participated in Higher Education,asian or pacific islander,107,4.430966576018201e-5
+76 or Older,$75k to $100k,Participated in Higher Education,"other race, nec",52,2.1533669341396865e-5
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree,white,3805,0.0015756848431541359
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree,black/african american/negro,178,7.371140659170465e-5
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree,american indian or alaska native,17,7.03985343853359e-6
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree,asian or pacific islander,207,8.572056833979137e-5
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree,"other race, nec",42,1.739257908343593e-5
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree or more,white,3497,0.0014481392632089392
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree or more,black/african american/negro,172,7.122675243692808e-5
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree or more,american indian or alaska native,4,1.6564361031843742e-6
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree or more,asian or pacific islander,155,6.41868989983945e-5
+76 or Older,$75k to $100k,Completed 1 Higher Education Degree or more,"other race, nec",35,1.4493815902863273e-5
