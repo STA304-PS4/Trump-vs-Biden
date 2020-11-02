@@ -32,6 +32,17 @@ In this report, we will be forecasting the winner of the upcoming US Presidentia
 
 # Introduction
 
+The US 2020 Election is considered by many to be one of the most crucial elections in recent history. American voters will be deciding to elect Democratic Leader, Joe Biden or Republican leader, Donald Trump. In this report, we will be forecasting the results of the US 2020 election using multi-level regression with post stratification. 
+
+We are interested in finding out who will win the overall popular vote in the US 2020 election between Donald Trump and Joe Biden. To begin, we started by cleaning the dataset provided by Nationscape. The data we are using was collected from June 25th, 2020 to July 1st, 2020. Using the dataset, we plan to closely analyze the following variables to use them as predictors in predicting the results of the 2020 US election:
+-	X
+-	X
+-	X
+-	X
+After using multi-level regression with post stratification, we determined that Joe Biden will be the winner of the US 2020 Election. Predicting the results of the US 2020 election is important because it helps give those residing in the USA certainty about who their next president will be. Information about the winner of the election is highly sought after because it can be used to predict upcoming policy. This is useful for individuals and organizations when planning their lives and can have a large impact on the rights of some individuals.  Additionally, collecting information related to the election allows us to analyze different demographic groups and determine how they are voting to further identify areas they find important; this information is important from a policy design perspective and also to analyze how society is interacting. 
+
+In this report, we will begin by ____ [Outline Structure of report].  
+
 
 # Data
 
