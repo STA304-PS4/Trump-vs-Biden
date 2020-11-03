@@ -241,6 +241,25 @@ $75k < income < 100k$ & $-0.31$ & $0.11$ & $0.01$ \\ \hline
 \end{tabular}
 \end{center}
 
+The logistic regression with levels allows us to compare levels for each variable at a comparable level. The estimates for $\beta_{age}$ compare other groups to age from 18 to 35; the estimates for $\beta_{race}$ compares different levels to American Indian or Alaska native, and the estimates for $\beta_{income}$ compare other income levels to income level from 100k to 125k. For optimal display purposes, we do not state the estimated logistic regression formula. You can interpret this as subbing each$\beta$ in \@ref(eq:logistic).
+
+Using $\alpha = 0.05, H_0: \hat{\beta} = 0, \hat{\beta} \neq0$, we can determine if a certain variable (or its levels) have statistically significant influence towards the response variable. The p-value indicates the probability of having a more or equally extreme observation than the observed one, given that the null hypothesis is true. Naturally, a smaller p-value makes our estimate more statistically significant. We define “small” by setting $\alpha = 0.05$. A variable is said to be significantly influential to the response variable if it has a p-value smaller than 0.05. Therefore we can reject $H_0$ and $\beta_1 \neq 0$. Recall that we are finding out whether a respondent would vote for Trump in the presidential election. 
+
+Observing table 1, the p-value indicates weak evidence that being white is related to one’s voting intentions(0.68 > 0.05). Having a family income of greater than 150k a year influences whether the respondent shall vote for Trump, but not as much compared to the other variables. The following levels have p-value very close to 0:
+Age > 76;
+Being Asian or Pacific Islander;
+Being NEC;
+Having a family income smaller than 25k;
+Having a family income between 25k and 50k;
+Having a family income between 75k and 100k.
+This means that these variables have a statistically significant relationship with whether the respondent shall vote for Trump.
+
+Among these variables, we notice an obvious pattern among racial groups, where respondents from a minor race are much less likely to vote for Trump. This makes sense because of the history behind the Republican party and the `xenophobic` image Trump makes. Specifically, he made many discriminatory comments against the minorities, and his travel bans from third world countries emphasize this image once again. 
+
+Younger respondents(18 to 35) are less likely to vote for Trump than all age groups, while the oldest age group(more aged than 76) goes furthest in intending to vote for Trump. This is reasonable since older people who can potentially be more patriotic in a traditional way might harmonize Trump’s political opinions better than the young. The ban of TikTok certainly does not make his more likable among youth either.  
+
+Respondents with less income have less incentive to vote for Trump, while this incentive roughly increases across increased income levels. As a capitalist himself, it is not surprising that Trump does not gain generous support among groups more towards the working class.
+
 # Discussion
 
 ```{r}
@@ -250,15 +269,6 @@ post_strat_cellcount_2 <- read_csv("post_strat_cellcount-2.csv")
 post_strat_cellcount_2$estimate <-
   mod %>%
   predict(newdata = post_strat_cellcount_2, allow.new.level = TRUE, type="response")
-```
-
-```{r}
-post_strat_cellcount_2 %>%
-  mutate(president_predict_prop = estimate*prop) %>%
-  group_by(education_grouped) %>%
-  summarise(president_predict = sum(president_predict_prop)) %>% 
-  as.data.frame() %>% 
-  knitr::kable()
 ```
 
 ```{r, fig.cap='95% Prediction Intervals for forcasting the Chances that Donald Trump wins the election'}
