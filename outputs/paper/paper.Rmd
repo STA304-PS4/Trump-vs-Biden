@@ -43,7 +43,6 @@ After using multi-level regression with post stratification, we determined that 
 
 In this report, we will begin by discussing the data and then modeling our results. Lastly, we will discuss the results of our analysis and include an appendix. 
 
-
 # Data
 
 In this analysis, we collected data from the Nationscape dataset — a collaboration between the Democracy Fund Voter Study Group and UCLA Political Scientists. The Nationscape dataset that we will be analyzing was collected from June 25th, 2020 to July 1st, 2020. Using the data from Nationscape, we would like the predict the overall popular vote of the 2020 American presidential election using multilevel regression with post-stratification.  
@@ -83,7 +82,7 @@ The variables that we used in our dataset are as follow:
      o	“If the general election for president of the United States was a contest between Joe Biden and Donald Trump, who        would you support? “ 
      o	Options are either ‘Joe Biden’, ‘Donald Trump’, or ‘Don’t Know’ 
 
-We created an additional variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. Since some variables had an extensive list of options (e.g. age, household income), we grouped the responses so that they are simpler and easier to analyze. 
+We created an additional variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. Since some variables had an extensive list of options (e.g. age, household income), we grouped the responses for those variables so that they are simpler and easier to analyze. 
 
 The first few rows of the cleaned dataset can be viewed below: 
 ```{r}
@@ -118,7 +117,7 @@ racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) +
       theme_void() +
       ylab("") + xlab("") + 
      labs(title = "", fill="What is your race?") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4) +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 3) +
      theme(text = element_text(size=13))
 racegraph
 ```
@@ -155,7 +154,7 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
 agegraph
 ```
 
-The dataset that we used contains many key features. For one, a lot of the variables contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election. Another key feature is 
+The dataset that we used contains many key features. Many of the variables in the dataset contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election, making our analysis meaningful. Another key feature is the fact that the data was collected over a short period of time— from June 25th, 2020 to July 1st, 2020. This significantly reduces the negative time based effects that may have affected the data ensuring that all respondents are responding on a similar ground and no one's opinion dramatically differed due to the survey taking place over a large period of time. 
 
 The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the united states (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
 
