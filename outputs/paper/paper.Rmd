@@ -1,11 +1,11 @@
 ---
-title: "TBD"
-subtitle: "TBD"
+title: "Biden Forcested To Win the Election"
+subtitle: "Based on US Demographics of Age, Education, Household Income and Race"
 author: "Arjun Dhatt, Benjamin Draskovic, Yiqu Ding, Gantavya Gupta"
 thanks: "Code and data are available at: https://github.com/STA304-PS4/Trump-vs-Biden."
 date: "`r format(Sys.time(), '%d %B %Y')`"
 abstract: |
-  | First sentence. Second sentence. Third sentence. Fourth sentence. 
+  | In this report, we will be forecasting the winner of the upcoming US Presidential Elections 2020 between incumbent Donald Trump of the Republican Party and Joe Biden of the Democratic Party, by looking at different factors that affect a citizen’s voting intentions leading to Election Day. We cleaned the Nationscape dataset and chose the variables age, education, race, family income, geographic region, and mask-wearing decision which will form the basis of our Elections prediction. Then we used an MRP model (a combination of multilevel logistic regression and post-stratification) to analyse the factors and it also helps us in achieving a much narrower confidence interval for our prediction. After our analysis, we concluded that Joe Biden will win the overall popular vote of the 2020 American presidential election.  
 output:
   bookdown::pdf_document2:
     fig_caption: yes        
@@ -27,9 +27,6 @@ library(merTools)
 library(readr)
 library(knitr)
 ```
-# Abstract
-
-In this report, we will be forecasting the winner of the upcoming US Presidential Elections 2020 between incumbent Donald Trump of the Republican Party and Joe Biden of the Democratic Party, by looking at different factors that affect a citizen’s voting intentions leading to Election Day. We cleaned the Nationscape dataset and chose the variables age, education, race, family income, geographic region, and mask-wearing decision which will form the basis of our Elections prediction. Then we used an MRP model (a combination of multilevel logistic regression and post-stratification) to analyse the factors and it also helps us in achieving a much narrower confidence interval for our prediction. After our analysis, we concluded that Joe Biden will win the overall popular vote of the 2020 American presidential election. 
 
 # Introduction
 
