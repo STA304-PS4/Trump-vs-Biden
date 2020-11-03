@@ -155,7 +155,7 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
 agegraph
 ```
 
-Key features of data? 
+The dataset that we used contains many key features. For one, a lot of the variables contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election. Another key feature is 
 
 The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the united states (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
 
