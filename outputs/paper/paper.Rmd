@@ -1,9 +1,11 @@
 ---
-title: "TBD"
-subtitle: "TBD"
+title: "Biden Forcested To Win the Election"
+subtitle: "Based on US Demographics of Age, Education, Household Income and Race"
 author: "Arjun Dhatt, Benjamin Draskovic, Yiqu Ding, Gantavya Gupta"
 thanks: "Code and data are available at: https://github.com/STA304-PS4/Trump-vs-Biden."
 date: "`r format(Sys.time(), '%d %B %Y')`"
+abstract: |
+  | In this report, we will be forecasting the winner of the upcoming US Presidential Elections 2020 between incumbent Donald Trump of the Republican Party and Joe Biden of the Democratic Party, by looking at different factors that affect a citizen’s voting intentions leading to Election Day. We cleaned the Nationscape dataset and chose the variables age, education, race, family income, geographic region, and mask-wearing decision which will form the basis of our Elections prediction. Then we used an MRP model (a combination of multilevel logistic regression and post-stratification) to analyse the factors and it also helps us in achieving a much narrower confidence interval for our prediction. After our analysis, we concluded that Joe Biden will win the overall popular vote of the 2020 American presidential election.  
 output:
   bookdown::pdf_document2:
     fig_caption: yes        
@@ -24,34 +26,20 @@ library(lme4)
 library(merTools)
 library(readr)
 library(knitr)
-library(haven)
 ```
-# Abstract
-
-In this report, we will be forecasting the winner of the upcoming US Presidential Elections 2020 between incumbent Donald Trump of the Republican Party and Joe Biden of the Democratic Party, by looking at different factors that affect a citizen’s voting intentions leading to Election Day. We cleaned the Nationscape dataset and closely examine the variables age, race, household income, and vote which will form the basis of our election prediction. Then we used an MRP model (a combination of multilevel logistic regression and post-stratification) to analyse the factors and it also helps us in achieving a much narrower confidence interval for our prediction. After our analysis, we concluded that Joe Biden will win the overall popular vote of the 2020 American presidential election. 
-
-# Keywords
-- Forecasting
-- US 2020 Election
-- Multi-level Regression with Post-Stratification
-- Trump
-- Biden 
 
 # Introduction
 
-The United States 2020 Presidential Election is considered by many to be one of the most crucial elections in recent history. American voters will be deciding to elect Democratic Leader, Joe Biden or Republican leader, Donald Trump. In this report, we will be forecasting the results of the US 2020 election using multi-level regression with post stratification. 
+The US 2020 Election is considered by many to be one of the most crucial elections in recent history. American voters will be deciding to elect Democratic Leader, Joe Biden or Republican leader, Donald Trump. In this report, we will be forecasting the results of the US 2020 election using multi-level regression with post stratification. 
 
 We are interested in finding out who will win the overall popular vote in the US 2020 election between Donald Trump and Joe Biden. To begin, we started by cleaning the dataset provided by Nationscape. The data we are using was collected from June 25th, 2020 to July 1st, 2020. Using the dataset, we plan to closely analyze the following variables to use them as predictors in predicting the results of the 2020 US election:
-
--	age (discloses age of respondent)
--	race_ethnicity (discloses race of respondent)
--	household_income (discloses household income of respondent)
--	trump_biden (discloses who the respondent will vote for in the 2020 election)
-
+-	X
+-	X
+-	X
+-	X
 After using multi-level regression with post stratification, we determined that Joe Biden will be the winner of the US 2020 Election. Predicting the results of the US 2020 election is important because it helps give those residing in the USA certainty about who their next president will be. Information about the winner of the election is highly sought after because it can be used to predict upcoming policy. This is useful for individuals and organizations when planning their lives and can have a large impact on the rights of some individuals.  Additionally, collecting information related to the election allows us to analyze different demographic groups and determine how they are voting to further identify areas they find important; this information is important from a policy design perspective and also to analyze how society is interacting. 
 
-In this report, we will begin by discussing with a detailed look at the dataset we are analyzing, followed by a look at the modeling of our results. Lastly, we will discuss the results of our analysis and also include an appendix to display any extraneous information.  
-
+In this report, we will begin by discussing the data and then modeling our results. Lastly, we will discuss the results of our analysis and include an appendix. 
 
 # Data
 
@@ -66,31 +54,37 @@ The data is collected using a convenience sample selected based on a set of demo
 The respondents of the survey are found through Lucid, which “runs an online exchange for survey respondents”. The respondents from the survey on Lucid are sent to the online Nationscape survey where they are prompted to complete the survey. Respondents who complete the survey not choose not to disclose their household income; this results in a large number of non-respondents because they may not be comfortable providing sensitive information. In an effort to account for the respondents who choose not to provide income, non-respondents are not weighed for income.  
 
 The variables that we used in our dataset are as follow: 
-
-- age
-     o	Asks the question “What is your age?”
-     o	It provides an integer value greater than or equal to 18 
-- household_income
-     o	Asks the question “What is your current annual household income before taxes?" 
-     o	Provides an extensive list of options beginning with $5,000 increments and then increases to $25,000 increments. We         later grouped the options into larger bins making it simpler to understand and easier to analyze
-     o	This is the variable in our dataset that many people did not feel comfortable answering and was left as N/A. When           cleaning the dataset, we removed all responses that left this answer as N/A  
-- race_ethnicity
-     o	Asks the question “What is your race?”
-     o	An extensive list of options are provided for the respondent to disclose their race. Because the list is very               extensive, we decided to group the options into larger bins making to simpler to understand and easier to analyze. 
-- trump_biden
-     o	Asks the question “If the general election for president of the United States was a contest between Joe Biden and           Donald Trump, who would you support? “ 
+-	age
+     o	“What is your age”
+     o	It provides an integer value greater than or equal to 18
+-	education
+     o	“What is the highest level of education you have completed?” 
+     o	An extensive list of options are provided
+-	Hispanic
+     o	“Are you of Hispanic, Latino, or Spanish origin?” 
+     o	An extensive list of options are provided 
+-	household_income
+     o	“What is your current annual household income before taxes?" 
+     o	Provides an extensive list of options beginning with $5,000 increments and then increases to $25,000 increments
+     o	This is the variable in our dataset that many people did not feel comfortable answering and was left as N/A. When        cleaning the dataset, we removed all responses that left this answer as N/A  
+-	race_ethnicity
+     o	“What is your race”
+     o	An extensive list of options are provided. 
+-	extra_covid_worn_mask
+     o	“Have you done any of the following in the past week? - Worn a mask when going out in public” 
+     o	Yes or No options are available for the respondent to fill out 
+-	state
+     o	“Respondent’s state, as a two-character postal abbreviation. Calculated based on entered ZIP code.” 
+     o	Manually filled out by respondent 
+-	trump_biden
+     o	“If the general election for president of the United States was a contest between Joe Biden and Donald Trump, who        would you support? “ 
      o	Options are either ‘Joe Biden’, ‘Donald Trump’, or ‘Don’t Know’ 
 
-We created an additional variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. Since some variables had an extensive list of options (e.g. age, household income, race), we grouped the responses for those variables so that they are simpler and easier to analyze. 
+We created an additional variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. Since some variables had an extensive list of options (e.g. age, household income), we grouped the responses for those variables so that they are simpler and easier to analyze. 
 
-To develop a sense of familiarity with the dataset, we will closely examine some of the variables we will be analyzing in the dataset. 
-
-The first few rows of the cleaned dataset can be viewed in Table 1 below:
-### Table 1 
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
-# Read in the data 
+The first few rows of the cleaned dataset can be viewed below: 
+```{r}
 tbdata <- read.csv("clean-survey-2.csv")
-# Create shortened data set  
 tbdatashort <- tbdata %>% 
   dplyr::select(
     age_group, race_ethnicity, household_income_grouped, trump_biden
@@ -100,13 +94,13 @@ Table1 <- tbdatashort %>%
   kable(align = "c",
         format = "simple",
         col.names = c("Age Group", "Race", "Household Income", "Presidential choice")
-        ) 
+        ) %>% 
+  kable_styling(font_size = 5)
 Table1
 ```
 
-In Figure 1 below, we will examine the variable 'household_income' and we can see that our data is largely skewed towards households with income less than $50,000:
-### Figure 1 
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+In Figure [] below, we can see that the distribution is largely skewed towards families with income less than $50,000:
+```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 # Graph the pie chart using ggplot; Set colour scheme, font, etc. 
@@ -121,11 +115,11 @@ incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_inco
      theme(text = element_text(size=15))
 incomegraph
 ```
-Clearly, those with income less than $50,000 are overrepresented in the dataset as they take up 50% of the responses, therefore it is appropriate to use post stratification on our dataset. 
+Because of the skewed distribution of income, we can justify using post stratification. Clearly, those with income less than $50,000 are overrepresented in the dataset as they take up 50% of the responses, therefore it is appropriate to use post stratification. 
 
-We can see a similar skewed distribution with variable 'race' in Figure 2 below:
-### Figure 2
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+
+We can see a similar skewed distribution in Figure [] below: 
+```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 raceinfo <- tbdata %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 # Graph the pie chart using ggplot; Set colour scheme, font, etc. 
@@ -140,11 +134,11 @@ racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) +
      theme(text = element_text(size=13))
 racegraph
 ```
-It is obvious that the respondents of our survey are primarily white and there is very little representation of minorities. 
+Looking at the distribution of race, we can see that 75% of the respondants from the survey are white. Since the distribution does not represent minorities, we can justify using post stratification. 
 
-Lastly, by examining the variable age in Figure 3 below, we can see how very little the population 76+ is represented in our dataset. 
-### Figure 3
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+
+Lastly, in Figure [] below, we can see how the population aged older than 76 are barely represented: 
+```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 ageinfo <- tbdata %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 # Graph the pie chart using ggplot; Set colour scheme, font, etc. 
@@ -159,15 +153,15 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
      theme(text = element_text(size=13))
 agegraph
 ```
-The fact that those age 76+ make up only 3% of the data could be a product of the fact that the survey was completed online. Clearly, the survey doesn't accurately represent those aged older than 76/ This poses the question — does our data represent the United States?  By looking at the figure above, the answer is no. To adjust for the fact that the population aged 76+, we will use post stratification.  
+The fact that those age 76+ make up only a 3% of the data could be a product of the fact that the survey was completed online. Clearly, the survey doesn't accurately represent those aged older than 76 posing the question — does our data represent the United States? The answer is no. To adjust for the fact that the population aged 76+, we will use post stratification. 
 
-The dataset that we used contains many key features. Many of the variables in the dataset contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election, making our analysis meaningful. Another key feature is the fact that the data was collected over a short period of time— from June 25th, 2020 to July 1st, 2020. This significantly reduces the negative time-based effects that may have affected the data ensuring that all respondents are responding on a similar ground and no one's opinion dramatically differed due to the survey taking place over a large period of time. 
+The dataset that we used contains many key features. Many of the variables in the dataset contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election, making our analysis meaningful. Another key feature is the fact that the data was collected over a short period of time— from June 25th, 2020 to July 1st, 2020. This significantly reduces the negative time based effects that may have affected the data ensuring that all respondents are responding on a similar ground and no one's opinion dramatically differed due to the survey taking place over a large period of time. 
 
-The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the United States (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
+The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the united states (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
 
-Another weakness of the data comes from the fact that we use convenience-based sampling which inherently contains bias. Because the sampling method is based on convenience, we may be unlucky when sampling and get a sample group that inaccurately represents the population of the US making our results meaningless. A potential solution to this is to use a random sampling-based method to reduce bias as much as possible. 
+Another weakness of the data comes from the fact that we use convenience-based sampling which inherently contains bias. Because the sampling method is based on convenience, we may be unlucky when sampling and get a sample group that inaccurately represents the population of the US making our results meaningless. 
 
-Lastly another weakness of our dataset is due to the fact that the survey data we are analyzing is collected from June 25th, 2020 to July 1st, 2020. Between July and November (the month of the election), many voters may not have an informed vote and their opinions may still be swayed after watching crucial debates and hearing what the leaders have to say; our data doesn’t take into consideration the people whose votes may change in the most crucial months of the election. A solution to this weakness can be to analyze data that may have occurred closer to the actual election (e.g. September or October) so that the participants have an informed vote.
+Lastly another weakness of our dataset is due to the fact that the survey data we are analyzing is collected from June 25th, 2020 to July 1st, 2020. Between July and November (the month of the election), many voters may not have an informed vote and their opinions may still be swayed after watching crucial debates and hearing what the leaders have to say; our data doesn’t take into consideration the people whose votes may change in the most crucial months of the election. A solution to this weakness can be to analyze data that may have occurred closer to the actual election so that the participants have an informed vote. 
 
 # Model
 
@@ -244,6 +238,25 @@ $75k < income < 100k$ & $-0.31$ & $0.11$ & $0.01$ \\ \hline
 \end{tabular}
 \end{center}
 
+The logistic regression with levels allows us to compare levels for each variable at a comparable level. The estimates for $\beta_{age}$ compare other groups to age from 18 to 35; the estimates for $\beta_{race}$ compares different levels to American Indian or Alaska native, and the estimates for $\beta_{income}$ compare other income levels to income level from 100k to 125k. For optimal display purposes, we do not state the estimated logistic regression formula. You can interpret this as subbing each$\beta$ in \@ref(eq:logistic).
+
+Using $\alpha = 0.05, H_0: \hat{\beta} = 0, \hat{\beta} \neq0$, we can determine if a certain variable (or its levels) have statistically significant influence towards the response variable. The p-value indicates the probability of having a more or equally extreme observation than the observed one, given that the null hypothesis is true. Naturally, a smaller p-value makes our estimate more statistically significant. We define “small” by setting $\alpha = 0.05$. A variable is said to be significantly influential to the response variable if it has a p-value smaller than 0.05. Therefore we can reject $H_0$ and $\beta_1 \neq 0$. Recall that we are finding out whether a respondent would vote for Trump in the presidential election. 
+
+Observing table 1, the p-value indicates weak evidence that being white is related to one’s voting intentions(0.68 > 0.05). Having a family income of greater than 150k a year influences whether the respondent shall vote for Trump, but not as much compared to the other variables. The following levels have p-value very close to 0:
+Age > 76;
+Being Asian or Pacific Islander;
+Being NEC;
+Having a family income smaller than 25k;
+Having a family income between 25k and 50k;
+Having a family income between 75k and 100k.
+This means that these variables have a statistically significant relationship with whether the respondent shall vote for Trump.
+
+Among these variables, we notice an obvious pattern among racial groups, where respondents from a minor race are much less likely to vote for Trump. This makes sense because of the history behind the Republican party and the `xenophobic` image Trump makes. Specifically, he made many discriminatory comments against the minorities, and his travel bans from third world countries emphasize this image once again. 
+
+Younger respondents(18 to 35) are less likely to vote for Trump than all age groups, while the oldest age group(more aged than 76) goes furthest in intending to vote for Trump. This is reasonable since older people who can potentially be more patriotic in a traditional way might harmonize Trump’s political opinions better than the young. The ban of TikTok certainly does not make his more likable among youth either.  
+
+Respondents with less income have less incentive to vote for Trump, while this incentive roughly increases across increased income levels. As a capitalist himself, it is not surprising that Trump does not gain generous support among groups more towards the working class.
+
 # Discussion
 
 ```{r}
@@ -255,17 +268,7 @@ post_strat_cellcount_2$estimate <-
   predict(newdata = post_strat_cellcount_2, allow.new.level = TRUE, type="response")
 ```
 
-```{r}
-post_strat_cellcount_2 %>%
-  mutate(president_predict_prop = estimate*prop) %>%
-  group_by(education_grouped) %>%
-  summarise(president_predict = sum(president_predict_prop)) %>% 
-  as.data.frame() %>% 
-  knitr::kable()
-```
-
-### Table 2 
-```{r, fig.cap='95% Prediction Intervals for forcasting the Chances that Donald Trump wins the election', tidytidy =FALSE, echo =FALSE, warning= FALSE}
+```{r, fig.cap='95% Prediction Intervals for forcasting the Chances that Donald Trump wins the election'}
 PI <- predictInterval(merMod = mod, newdata = post_strat_cellcount_2,                         
                       level = 0.95, n.sims = 1000,                         
                       stat = "median", type= "probability",                      
@@ -288,25 +291,16 @@ For more information on the ACS the user guide can be found in the input folder 
 However, to continue this discussion let’s begin the comparison. 
 
 Looking at the income break down of our data it is clear when comparing Figure 1 and Figure 4 that the surveyed population tended towards a lower income on average. This is an interesting occurrence and may have to do with the tech literacy having a larger survey biasing effect than literacy and tech access. On average older individuals have higher incomes so it could be that the data is skewing younger and that is what is causing this. 
-## Figure 4
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+## Figure 1
+```{r}
 incomegraph
 ```
 
-<<<<<<< HEAD
 ## Figure 4
 ```{r}
-# read in data
-=======
-## Figure 5
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
->>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 acs <- read_dta("post_strat_data-2.dta")
-# label the data as it is a dta
 acs <- labelled::to_factor(acs)
-#create a tibble that includes counts and proportions based on groups
 incomeinfoacs <- acs %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-#Graph this tibble in a pie graph
 incomegraphacs <- incomeinfoacs %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -323,21 +317,14 @@ incomegraphacs
 
 Examining the age group, we see that this could certainly be the case. As the Surveyed population is significantly younger than the general population. Most likely playing into the effects of tech literacy among older generations. This can be clearly seen in Figure 2 and 5, where 18-35-year-old respondents are greatly overestimated and 76 and older respondents greatly under-represented. 
 
-## Figure 6
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+## Figure 2
+```{r}
 agegraph
 ```
 
-<<<<<<< HEAD
 ## Figure 5
 ```{r}
-#create a tibble that includes counts and proportions based on groups
-=======
-## Figure 7
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
->>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 ageinfoacs <- acs %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-#Graph this tibble
 agegraphacs <- ageinfoacs %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -353,21 +340,14 @@ agegraphacs
 
 Finally, when looking in to the ethnic and racial breakdown of the survey data African American are underrepresented and White Americans overrepresented. This is displayed in Figure 3 and 6. This could be for a myriad of reasons, but it could be linked to tech access as a higher portion of African Americans experience poverty when compared to their White counterparts. 
 
-## Figure 8
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+## Figure 3
+```{r}
 racegraph
 ```
 
-<<<<<<< HEAD
 ## Figure 6
 ```{r}
-#create a tibble that includes counts and proportions based on groups
-=======
-## Figure 9
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
->>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 raceinfoacs <- acs %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-#Graph this tibble in a pie graph
 racegraphacs <- raceinfoacs %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -383,14 +363,8 @@ racegraphacs
 
 By separating all respondents of the ACS into subgroups based upon our independent variables we can then create proportions. This allows for the weighting of data through the model and adjusts our sample in order to account for the skewed demographics. An example of these proportions is displayed below.
 
-<<<<<<< HEAD
 ## Table 6
 ```{r}
-#Generate a table that displays the first couple responses from the cell count that was generated for weighting 
-=======
-## Table 3
-```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
->>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 Table6 <- post_strat_cellcount_2 %>% 
   dplyr::select(
     age_group, race_ethnicity, household_income_grouped, n, prop
@@ -400,7 +374,8 @@ Table6 <- post_strat_cellcount_2 %>%
         format = "simple",
         col.names = c("Age Group", "Race", "Household Income", "Number of Repondents", "Proportion of Responses"),
         digits = 6
-        ) 
+        ) %>% 
+  kable_styling(font_size = 5)
 Table6
 ```
 
@@ -413,10 +388,8 @@ Significantly though the data of this analysis shows a few key demographic group
 Firstly, race was a highly significant factor in voting behavior for non-white Americans.  White Americans were not significantly influenced by there race and tended to vote based on other factors. But individuals who described themselves as Black, Asian, a Pacific Islander, or another race all were significantly more likely to vote for Joe Biden than Donald Trump. The largest of these effects was among African Americans. Compared even to Asian Americans their coefficient was twice as large, meaning they were affected by racial effects twice as much. 
 
 ```{r include=FALSE}
-#Get general percentage of people voting for Trump by Race
 aggregate(tbdata[8], list(tbdata$race_ethnicity), mean)
-#get overal percentage of people voting for Trump
-mean(tbdata$binary)  
+  
 ```
 
 Only 12.5% of Black respondents intended to vote for trump. 
@@ -436,274 +409,17 @@ There are tow interesting trends in this data. First the uptick at $75k is inter
 
 ## Weaknesses and next steps
 
-In conclusion, the findings of this paper suggest that the Biden will win the popular vote and that this is largely due to his appeal among lower income individuals and how he has note ostracized the non-white voter base. This is despite that fact that he is less popular among older individuals who are more likely to vote. 
+### 1: Nested Bayesian Model
 
-It also suggests that there are important demographic differences between voters that fall along race, class, and age lines. Distinctions that would be important to pick apart in further in depth studies where the reasons for these differences could be further understood now that they have been identified.
-
-However, as always, this analysis could be improved. Looking at popular vote is not the most accurate measure of presidential election in the U.S. One simply has to look to Hilary Clintons loss in 2016 Despite having won the popular vote 48% to Trump’s 45.9% (NY Times 2016). The elections in the United states are decided by the electoral college.
-
-This is a system that assigns each state a certain number of electoral votes 2 for each state and then an additional number of votes based on the population of the state (NCSL 2020). But what does that mean? That the proportion of votes ends up skewed towards smaller states. For example California the most populace state has a population of 39.51 million and 55 electoral college votes. Whereas Wyoming has a population of 578.7 thousand and 3 electoral college votes (NCSL 2020). This means that 1 electoral college vote in California represents 718.4 thousand Californians. While 1 electoral college vote in Wyoming represents 192.9 thousand Wyomingites. 
-
-Furthermore, how each state casts their votes also differ some cast the totality of their ballots based upon the popular vote in their state. While others cast ballots based upon how many congressional districts each candidate can win in a first past the post election. 
-
-What this means is that for the best forecasting accuracy it would be integral to have a more regional model that can track how electoral college votes would be cast in each state. Based upon each state’s electoral college system. 
-
-Another area of improvement is that the independent variables for this study were selected based upon researcher assumption as to what demographic variables would be likely to influence the election. This introduces a lot of bias to the analysis process and could be improved. 
-
-Future studies could take a pre-analysis step where a brief Anova is run across all the possible independent variables included in the Nation Scape Data Set. That way if there are less obvious variables that have more significant predictive effects they could be found and included in the analysis. Or if there are variables that would go against the researchers biases they would be easier to identify.
-
-This helps to remove the researcher from the selection process so that the data is able to speak for itself.
-
-Having a collection of follow up studies that could dig deep into; the lower significance higher income plays in political decision making, what factors are leading the extremely significant and strong racial effects of this election, and why there is an uptick in Biden support with in the age range of 56-75 could yield interesting results. Furthermore, having an overarching study that used pre-analysis, a Nested Bayes model, and adjusted for the effects of the electoral college could identify further voter groups of interest. 
-
+### 2: Pre-analysis
 
 \newpage
 
 # Appendix {-}
 
-## Git Repository 
-
-The link to the Git Repository is:
-
-## Code 
-
-Below you will also find the R code used in this analysis: 
-
-
-### Preamble- Setting Up Libraries and Clean Data 
-
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(tidyverse)
-library(dplyr)
-library(lme4)
-library(merTools)
-library(readr)
-library(knitr)
-library(haven)
-```
-
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-clean_survey_2 <- read_csv("clean-survey-2.csv")
-mod <- glmer(binary ~ age_group + (1|education_grouped) + race_ethnicity + household_income_grouped,
-           data = clean_survey_2,
-           family = binomial()
-           )
-```
-
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-# Read in the csv file for post stratification
-post_strat_cellcount_2 <- read_csv("post_strat_cellcount-2.csv")
-# get post stratification estimates using predict()
-post_strat_cellcount_2$estimate <-
-  mod %>%
-  predict(newdata = post_strat_cellcount_2, allow.new.level = TRUE, type="response")
-```
-
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-aggregate(tbdata[8], list(tbdata$race_ethnicity), mean)
-  
-```
-
-### Code for tables and figures used in analysis 
-
-### Table 1 
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-# Read in the data 
-tbdata <- read.csv("clean-survey-2.csv")
-# Create shortened data set  
-tbdatashort <- tbdata %>% 
-  dplyr::select(
-    age_group, race_ethnicity, household_income_grouped, trump_biden
-  )
-Table1 <- tbdatashort %>% 
-  head() %>% 
-  kable(align = "c",
-        format = "simple",
-        col.names = c("Age Group", "Race", "Household Income", "Presidential choice")
-        ) 
-Table1
-```
-
-### Figure 1 
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
-incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
-incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Accent") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "Survey Distribution of Household Income", fill="Household Income") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
-     theme(text = element_text(size=15))
-incomegraph
-```
-
-### Figure 2
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
-raceinfo <- tbdata %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
-racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Set3") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "Survey Distribution of Respondent Race", fill="What is your race?") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4) +
-     theme(text = element_text(size=13))
-racegraph
-```
-
-### Figure 3
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
-ageinfo <- tbdata %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
-agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Set3") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "Survey Distribution of Respondent Age", fill="Age Groups") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4)+
-     theme(text = element_text(size=13))
-agegraph
-```
-
-### Table 2 
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-PI <- predictInterval(merMod = mod, newdata = post_strat_cellcount_2,                         
-                      level = 0.95, n.sims = 1000,                         
-                      stat = "median", type= "probability",                      
-                      include.resid.var = TRUE)
-
-ggplot(aes(x=1:30, y=fit, ymin=lwr, ymax=upr), data=PI[1:30,]) +   
-  geom_point() +   geom_linerange() +   
-  labs(x="Index", y="Prediction w/ 95% PI") + 
-  theme_bw()
-```
-
-## Figure 4
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-incomegraph
-```
-
-## Figure 5
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-acs <- read_dta("post_strat_data-2.dta")
-acs <- labelled::to_factor(acs)
-incomeinfoacs <- acs %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-incomegraphacs <- incomeinfoacs %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Accent") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "ACS Distribution of Household Income", fill="Household Income") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
-     theme(text = element_text(size=15))
-
-incomegraphacs
-```
-
-## Figure 6
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-agegraph
-```
-
-## Figure 7
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-ageinfoacs <- acs %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-agegraphacs <- ageinfoacs %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Accent") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "ACS Distribution of Respondent Age", fill="Household Income") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
-     theme(text = element_text(size=15))
-
-agegraphacs
-```
-
-## Figure 8
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-racegraph
-```
-
-## Figure 9
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-raceinfoacs <- acs %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-racegraphacs <- raceinfoacs %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Accent") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "ACS Distribution of Respondent Race", fill="Household Income") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
-     theme(text = element_text(size=15))
-
-racegraphacs
-```
-
-
-## Table 3
-```{r, echo=TRUE, results = "hide", warning= FALSE}
-Table6 <- post_strat_cellcount_2 %>% 
-  dplyr::select(
-    age_group, race_ethnicity, household_income_grouped, n, prop
-  ) %>% 
-  head() %>% 
-  kable(align = "c",
-        format = "simple",
-        col.names = c("Age Group", "Race", "Household Income", "Number of Repondents", "Proportion of Responses"),
-        digits = 6
-        ) 
-Table6
-```
-
-
 \newpage
 
 
 # References
-- R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna,
-  Austria. URL https://www.R-project.org/.
-- Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686, https://doi.org/10.21105/joss.01686
-- Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2020). dplyr: A Grammar of Data Manipulation. R package version
-  1.0.2. https://CRAN.R-project.org/package=dplyr
-- Douglas Bates, Martin Maechler, Ben Bolker, Steve Walker (2015). Fitting Linear Mixed-Effects Models Using lme4. Journal of
-  Statistical Software, 67(1), 1-48. doi:10.18637/jss.v067.i01.
-- Jared E. Knowles and Carl Frederick (2020). merTools: Tools for Analyzing Mixed Effect Regression Models. R package version 0.5.2.
-  https://CRAN.R-project.org/package=merTools
-- Hadley Wickham, Jim Hester and Romain Francois (2018). readr: Read Rectangular Text Data. R package version 1.3.1.
-  https://CRAN.R-project.org/package=readr
-- Yihui Xie (2020). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.29.
-- Yihui Xie (2015) Dynamic Documents with R and knitr. 2nd edition. Chapman and Hall/CRC. ISBN 978-1498716963
-- Yihui Xie (2014) knitr: A Comprehensive Tool for Reproducible Research in R. In Victoria Stodden, Friedrich Leisch and Roger D.
-  Peng, editors, Implementing Reproducible Computational Research. Chapman and Hall/CRC. ISBN 978-1466561595
-- Hadley Wickham and Evan Miller (2020). haven: Import and Export 'SPSS', 'Stata' and 'SAS' Files. R package version 2.3.1.
-  https://CRAN.R-project.org/package=haven
-- JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and Aron Atkins and Hadley Wickham and Joe Cheng
-  and Winston Chang and Richard Iannone (2020). rmarkdown: Dynamic Documents for R. R package version 2.3. URL
-  https://rmarkdown.rstudio.com.
-- Yihui Xie and J.J. Allaire and Garrett Grolemund (2018). R Markdown: The Definitive Guide. Chapman and Hall/CRC. ISBN 9781138359338.
-  URL https://bookdown.org/yihui/rmarkdown.
-- Monica Alexander. (2019, September 07). Analyzing name changes after marriage using a non-representative survey. Retrieved from https://www.monicaalexander.com/posts/2019-08-07-mrp/
-- The New York Times. (n.d.). 2016 Presidential Election Results: Donald J. Trump Wins. Retrieved from https://www.nytimes.com/elections/2016/results/president
-- US Census Bureau. (2020, October 16). Population. Retrieved from https://www.census.gov/topics/population.html
-- NCSL. (2020). The Electoral College. Retrieved from https://www.ncsl.org/research/elections-and-campaigns/the-electoral-college.aspx
-- Financial Times. (2020, October 30). Biden vs Trump: US presidential election poll tracker. Retrieved from https://ig.ft.com/us-election-2020/
-- Survey Systems (2020). “Sample Size Calculator.” Sample Size Calculator - Confidence Level, Confidence Interval, Sample Size, Population Size, Relevant Population - Creative Research Systems, 2020, www.surveysystem.com/sscalc.htm.
-- Amy Sorkin, John Cassidy, & Jonathan Blitzer. (2018). Donald Trump Compounds His "Shithole Countries" Bigotry with Lies. Retrieved from https://www.newyorker.com/news/daily-comment/donald-trump-compounds-his-shithole-countries-bigotry-with-lies
-- Philip Bump. (2020, September 30). Analysis | Donald Trump doesn't really care about the white supremacist threat, and you're not going to make him. Retrieved from https://www.washingtonpost.com/politics/2020/09/30/donald-trump-doesnt-really-care-about-white-supremacy-youre-not-going-make-him/
-- Kevin Liptak, & Kristen Holmes. (2020, July 01). Trump calls Black Lives Matter a 'symbol of hate' as he digs in on race. Retrieved from https://www.cnn.com/2020/07/01/politics/donald-trump-black-lives-matter-confederate-race/index.html
+
 
