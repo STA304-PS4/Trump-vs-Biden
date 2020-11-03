@@ -102,7 +102,7 @@ incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_inco
       theme_void() +
       ylab("") + xlab("") + 
      labs(title = "", fill="Household Income") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 4.7) +
      theme(text = element_text(size=13))
 incomegraph
 ```
@@ -134,7 +134,7 @@ educationgraph <- educationinfo %>% ggplot(aes(x = "", y = prop, fill = educatio
       theme_void() +
       ylab("") + xlab("") + 
      labs(title = "", fill="Education") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4) +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 4) +
      theme(text = element_text(size=13))
 educationgraph
 ```
@@ -150,7 +150,7 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
       theme_void() +
       ylab("") + xlab("") + 
      labs(title = "", fill="Age Groups") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4)+
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 4)+
      theme(text = element_text(size=13))
 agegraph
 ```
