@@ -5,9 +5,11 @@
 # included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win 
 # the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those 
 # willing to vote for Donald Trump or Joe Biden. We also added another variable that was not originally included in the
-# dataset to make vote a binary variable. A problem we encountered with the raw dataset was that a lot of the values were 
-# shown as N/A; to address this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row 
-# in the dataset, every column has a meaningful value.
+# dataset to make vote a binary variable. To adress issues with some variables containing an excessive amount of options 
+# (e.g. age, education etc.) we created additional variables that would group the values of the variable so that they are 
+# easier to analyze A problem we encountered with the raw dataset was that a lot of the values were shown as N/A; to address
+# this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row in the dataset, every column 
+# has a meaningful value.
 # Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
 # Data: 2 November 2020
 # Contact: arjun.dhatt@mail.utoronto.ca 
@@ -54,7 +56,7 @@ tbdata <-
 # NA value. 
 tbdata <- na.omit(tbdata)
 
-#Group all of the Asian and PAcific Islander Ethnicity options in to 3 categories
+#Group all of the Asian and Pacific Islander Ethnicity options in to 3 categories to make it easier to analyze
 recode_key_race <- c(  
   "Asian (Asian Indian)" = "asian or pacific islander",
   "Asian (Chinese)" = "asian or pacific islander",
@@ -76,7 +78,7 @@ recode_key_race <- c(
 # After the key is made use the recode function to create a new string based on the collumn being changed 
 race_ethnicity0 <- recode(tbdata$race_ethnicity, !!!recode_key_race)
 
-#Group the incomes in to groups that are easier to display
+#Group income so that it is easier to analyze. 
 recode_key_income <- c(  
   "Less than $14,999" = "$25k or less",
   "$15,000 to $19,999" = "$25k or less",
@@ -172,14 +174,7 @@ tbdata <- tbdata %>%
 
 write_csv(tbdata, "outputs/clean-survey.csv")
 
-
-#### What else???? ####
-# Maybe make some as.numeric(age)-groups?
-# Maybe check the values?
-# Is vote a binary? If not, what are you going to do?
-
-
-# The vote is not a binary variable, it contains 758 "Don't Know", 2626 "Donald Trump", 3075 "Joe Biden" and 20 NAs. 
+# Vote is not a binary variable in our data. It contains 758 "Don't Know", 2626 "Donald Trump", 3075 "Joe Biden" and 20 NAs. 
 # We resolved this by deleting the "Don't know" and NA responses, since it was a relatively small (12%) part of our
-# data set.
+# data set. This makes the dataset much simpler and easier to analyze. 
 
