@@ -87,15 +87,19 @@ We created an additional variable called ‘binary’ which outputs the result o
 
 The first few rows of the cleaned dataset can be viewed below: 
 ```{r}
-Table1 <- tbdata %>% 
-  select(age_group, household_income_grouped, race_ethnicity, trump_biden) %>% 
+tbdata <- read.csv("clean-survey-2.csv")
+tbdatashort <- tbdata %>% 
+  dplyr::select(
+    age_group, race_ethnicity, household_income_grouped, trump_biden
+  )
+Table1 <- tbdatashort %>% 
   head() %>% 
   kable(align = "c",
         format = "simple",
-        col.names = c("Age", "Sex", "Have Children", "Age", 
-                      "Family Income", "Education Level", "Urban / Rural"),
+        col.names = c("Age Group", "Race", "Household Income", "Presidential choice")
         ) %>% 
   kable_styling(font_size = 5)
+Table1
 ```
 
 
@@ -109,9 +113,9 @@ incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_inco
       scale_fill_brewer(palette = "Accent") +
       theme_void() +
       ylab("") + xlab("") + 
-     labs(title = "", fill="Household Income") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 4.7) +
-     theme(text = element_text(size=13))
+     labs(title = "Survey Distribution of Household Income", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
 incomegraph
 ```
 
@@ -125,27 +129,12 @@ racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) +
       scale_fill_brewer(palette = "Set3") +
       theme_void() +
       ylab("") + xlab("") + 
-     labs(title = "", fill="What is your race?") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 3) +
+     labs(title = "Survey Distribution of Respondent Race", fill="What is your race?") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4) +
      theme(text = element_text(size=13))
 racegraph
 ```
 
-```{r}
-# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
-educationinfo <- tbdata %>% group_by(education_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
-educationgraph <- educationinfo %>% ggplot(aes(x = "", y = prop, fill = education_grouped)) + 
-      geom_bar(width = 1, stat = "identity") + 
-      coord_polar("y", start = 0) +
-      scale_fill_brewer(palette = "Set2") +
-      theme_void() +
-      ylab("") + xlab("") + 
-     labs(title = "", fill="Education") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 4) +
-     theme(text = element_text(size=13))
-educationgraph
-```
 
 ```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
@@ -157,8 +146,8 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
       scale_fill_brewer(palette = "Set3") +
       theme_void() +
       ylab("") + xlab("") + 
-     labs(title = "", fill="Age Groups") +
-     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=0, size = 4)+
+     labs(title = "Survey Distribution of Respondent Age", fill="Age Groups") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4)+
      theme(text = element_text(size=13))
 agegraph
 ```
@@ -250,7 +239,7 @@ $75k < income < 100k$ & $-0.31$ & $0.11$ & $0.01$ \\ \hline
 
 ```{r}
 # Read in the csv file for post stratification
-post_strat_cellcount_2 <- read_csv("~/STA304/Trump-vs-Biden/outputs/post_strat_cellcount-2.csv")
+post_strat_cellcount_2 <- read_csv("post_strat_cellcount-2.csv")
 # get post stratification estimates using predict()
 post_strat_cellcount_2$estimate <-
   mod %>%
@@ -278,13 +267,132 @@ ggplot(aes(x=1:30, y=fit, ymin=lwr, ymax=upr), data=PI[1:30,]) +
   theme_bw()
 ```
 
-## First discussion point
+Weighing the model is important due to the survey collection weakness listed earlier in this paper. Survey weaknesses such as voluntary biases, which could see only those who can afford to spend time on a survey filling it out. Also, survey access, which would be affected by tech access, tech literacy, and literacy in general as the survey was only written and distributed via online ads. 
 
-If my paper were 10 pages, then should be be at least 2.5 pages. The discussion is a chance to show off what you know and what you learnt from all this. 
+This can be seen in how our demographic values compared to estimated national demographic values.
 
-## Second discussion point
+Before comparing those numbers how, was this analysis weighted? The method used for this was MRP or Multi-level Regression with Post-Stratification.  This methodology was discussed in further detail above. But of note the data used for this weighting process was received through the IPUMS USA service. Specifically, their repository of American Community Surveys collected by the U.S. Census Bureau. The data was from the 2018 ACS. This survey is a 1-100 national random sampling survey of all U.S. addresses within communities of 65,000 people or more. It is run over the full 12-month period of the year and received 3.214 million responses for the year of 2018 (U.S. Census Bureau 2019). While there are some sampling errors in the data they have been weighted across multiple years and the immense sample size helps to keep the risk of error low. Looking at a Confidence Interval calculation based on the sample size of 3.214 million and the U.S. population in 2018 of 327.2 million if looking at a confidence level of 99% the Confidence Interval is only 0.45 of a percent (CRS 2020). Meaning that there is a 99% certainty that the predicted percentage values of the ACS is with in 0.45% of the population value.  
 
-## Third discussion point
+For more information on the ACS the user guide can be found in the input folder of the attached git repository. 
+
+However, to continue this discussion let’s begin the comparison. 
+
+Looking at the income break down of our data it is clear when comparing Figure 1 and Figure 4 that the surveyed population tended towards a lower income on average. This is an interesting occurrence and may have to do with the tech literacy having a larger survey biasing effect than literacy and tech access. On average older individuals have higher incomes so it could be that the data is skewing younger and that is what is causing this. 
+## Figure 1
+```{r}
+incomegraph
+```
+
+## Figure 4
+```{r}
+acs <- read_dta("post_strat_data-2.dta")
+acs <- labelled::to_factor(acs)
+incomeinfoacs <- acs %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+incomegraphacs <- incomeinfoacs %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "ACS Distribution of Household Income", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+
+incomegraphacs
+```
+
+
+Examining the age group, we see that this could certainly be the case. As the Surveyed population is significantly younger than the general population. Most likely playing into the effects of tech literacy among older generations. This can be clearly seen in Figure 2 and 5, where 18-35-year-old respondents are greatly overestimated and 76 and older respondents greatly under-represented. 
+
+## Figure 2
+```{r}
+agegraph
+```
+
+## Figure 5
+```{r}
+ageinfoacs <- acs %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+agegraphacs <- ageinfoacs %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "ACS Distribution of Respondent Age", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+
+agegraphacs
+```
+
+Finally, when looking in to the ethnic and racial breakdown of the survey data African American are underrepresented and White Americans overrepresented. This is displayed in Figure 3 and 6. This could be for a myriad of reasons, but it could be linked to tech access as a higher portion of African Americans experience poverty when compared to their White counterparts. 
+
+## Figure 3
+```{r}
+racegraph
+```
+
+## Figure 6
+```{r}
+raceinfoacs <- acs %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+racegraphacs <- raceinfoacs %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "ACS Distribution of Respondent Race", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+
+racegraphacs
+```
+
+By separating all respondents of the ACS into subgroups based upon our independent variables we can then create proportions. This allows for the weighting of data through the model and adjusts our sample in order to account for the skewed demographics. An example of these proportions is displayed below.
+
+## Table 6
+```{r}
+Table6 <- post_strat_cellcount_2 %>% 
+  dplyr::select(
+    age_group, race_ethnicity, household_income_grouped, n, prop
+  ) %>% 
+  head() %>% 
+  kable(align = "c",
+        format = "simple",
+        col.names = c("Age Group", "Race", "Household Income", "Number of Repondents", "Proportion of Responses"),
+        digits = 6
+        ) %>% 
+  kable_styling(font_size = 5)
+Table6
+```
+
+Once the data is adjusted what are the findings? 
+
+Based on adjusted values Biden is projected to win the popular vote by a significant margin, ……… This holds true and follows other surveys conducted in this time period (Financial times 2020). 
+
+Significantly though the data of this analysis shows a few key demographic group differences in voting patterns. 
+
+Firstly, race was a highly significant factor in voting behavior for non-white Americans.  White Americans were not significantly influenced by there race and tended to vote based on other factors. But individuals who described themselves as Black, Asian, a Pacific Islander, or another race all were significantly more likely to vote for Joe Biden than Donald Trump. The largest of these effects was among African Americans. Compared even to Asian Americans their coefficient was twice as large, meaning they were affected by racial effects twice as much. 
+
+```{r include=FALSE}
+aggregate(tbdata[8], list(tbdata$race_ethnicity), mean)
+  
+```
+
+Only 12.5% of Black respondents intended to vote for trump. 
+
+This aversion from non-white voters makes sense and may not necessarily be tied to a difference in policy opinion. Trump has time and time again been caught in racially charged situations where he has displayed disrespect to non-white communities. Either in calling African Nations “Shithole Countries” (Sorkin 2018), being resistant to denouncing white supremacist groups that endanger non-white Americans (Bump 2020), or in his reaction the Black Lives Matter movement (Liptak 2020). 
+
+So, it is no surprise that race has become a powerful factor on voting for people of color who may feel more strongly threatened than in other Presidential elections. 
+
+Secondly, age plays a significant effect. It is an oft said adage that the old are more conservative than the young. “If it ain’t broke don’t fix it.” This adage appears to hold true for this presidential election as it has for many before it. The eldest in the population are far more likely than the young to vote for Trump than Biden. However, something of note is those aged 36-55 are slightly more likely to vote trump than those aged 56-75. 
+
+This is an interesting trend that is not often a part of election data and deserves further investigation. Some possible effects that could be hidden in this data is a worry for retirement as those approaching retirement age worry about whether retirement programs will still exist in the same capacity as they age into them. Or it could represent the effect the Covid pandemic is having on this election. Those who are older are at higher risk and will on average no more people who are at higher risk. So, it could be that people in the 56-75 age range are more worried about Trump’s response to Covid which has been widely criticized. So, their age is playing less of a role than their opinion on health care. 
+
+Thirdly, income plays a significant effect on voting until an individual begins making over $150k. Then the effect begins to weaken. Looking at the data there is a clear trend that lower income individuals tend to prefer Biden to Trump. With a very linear relationship up until looking at individuals who live in households that make $75k to $100k. Where there is a sudden uptick in Biden support before it drops back down. And those making $100k and more tend to lean more towards Trump. 
+
+There are tow interesting trends in this data. First the uptick at $75k is interesting. Could this be an uptick from the confounding variable of Education as college educated individuals tend to be more liberal? Or is there another confounding variable that is affecting this uptick in Biden support like certain policies aimed at benefiting the middle class? Second the significance of the effect income has is strongest at lower incomes but weakens at higher income. Could this represent the general need for government support those with lower income experience? Meaning that those at lower income are more invested in policies that effect their incomes, than those with higher income. Or is this based on confounding variables that begin to exist at higher levels of income like education?
+
 
 ## Weaknesses and next steps
 
