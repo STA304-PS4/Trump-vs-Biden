@@ -400,9 +400,26 @@ There are tow interesting trends in this data. First the uptick at $75k is inter
 
 ## Weaknesses and next steps
 
-### 1: Nested Bayesian Model
+In conclusion, the findings of this paper suggest that the Biden will win the popular vote and that this is largely due to his appeal among lower income individuals and how he has note ostracized the non-white voter base. This is despite that fact that he is less popular among older individuals who are more likely to vote. 
 
-### 2: Pre-analysis
+It also suggests that there are important demographic differences between voters that fall along race, class, and age lines. Distinctions that would be important to pick apart in further in depth studies where the reasons for these differences could be further understood now that they have been identified.
+
+However, as always, this analysis could be improved. Looking at popular vote is not the most accurate measure of presidential election in the U.S. One simply has to look to Hilary Clintons loss in 2016 Despite having won the popular vote 48% to Trump’s 45.9% (NY Times 2016). The elections in the United states are decided by the electoral college.
+
+This is a system that assigns each state a certain number of electoral votes 2 for each state and then an additional number of votes based on the population of the state (NCSL 2020). But what does that mean? That the proportion of votes ends up skewed towards smaller states. For example California the most populace state has a population of 39.51 million and 55 electoral college votes. Whereas Wyoming has a population of 578.7 thousand and 3 electoral college votes (NCSL 2020). This means that 1 electoral college vote in California represents 718.4 thousand Californians. While 1 electoral college vote in Wyoming represents 192.9 thousand Wyomingites. 
+
+Furthermore, how each state casts their votes also differ some cast the totality of their ballots based upon the popular vote in their state. While others cast ballots based upon how many congressional districts each candidate can win in a first past the post election. 
+
+What this means is that for the best forecasting accuracy it would be integral to have a more regional model that can track how electoral college votes would be cast in each state. Based upon each state’s electoral college system. 
+
+Another area of improvement is that the independent variables for this study were selected based upon researcher assumption as to what demographic variables would be likely to influence the election. This introduces a lot of bias to the analysis process and could be improved. 
+
+Future studies could take a pre-analysis step where a brief Anova is run across all the possible independent variables included in the Nation Scape Data Set. That way if there are less obvious variables that have more significant predictive effects they could be found and included in the analysis. Or if there are variables that would go against the researchers biases they would be easier to identify.
+
+This helps to remove the researcher from the selection process so that the data is able to speak for itself.
+
+Having a collection of follow up studies that could dig deep into; the lower significance higher income plays in political decision making, what factors are leading the extremely significant and strong racial effects of this election, and why there is an uptick in Biden support with in the age range of 56-75 could yield interesting results. Furthermore, having an overarching study that used pre-analysis, a Nested Bayes model, and adjusted for the effects of the electoral college could identify further voter groups of interest. 
+
 
 \newpage
 
