@@ -21,6 +21,7 @@ header-includes:
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
+library(dplyr)
 library(lme4)
 library(merTools)
 library(readr)
@@ -76,7 +77,15 @@ We also created another variable called ‘binary’ which outputs the result of
 
 The first 6 rows of the dataset can be viewed below: 
 ```{r}
-head(tbdata)
+Table1 <- tbdata %>% 
+  select(age_group, household_income_grouped, race_ethnicity, trump_biden) %>% 
+  head() %>% 
+  kable(align = "c",
+        format = "simple",
+        col.names = c("Age", "Sex", "Have Children", "Age", 
+                      "Family Income", "Education Level", "Urban / Rural"),
+        ) %>% 
+  kable_styling(font_size = 5)
 ```
 
 ```{r}
