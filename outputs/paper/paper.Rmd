@@ -83,17 +83,18 @@ The variables that we used in our dataset are as follow:
      o	“If the general election for president of the United States was a contest between Joe Biden and Donald Trump, who        would you support? “ 
      o	Options are either ‘Joe Biden’, ‘Donald Trump’, or ‘Don’t Know’ 
 
-We also created another variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. [ADD INFORMATOIN ABOUT OTHER MUTATIONS WE CREATED]
+We created an additional variable called ‘binary’ which outputs the result of the variable ‘trump_biden’ as a 1 or a 0 making it binary, therefore easier to analyze. Since some variables had an extensive list of options (e.g. age, household income), we grouped the responses so that they are simpler and easier to analyze. 
 
-The first 6 rows of the dataset can be viewed below: 
+The first few rows of the cleaned dataset can be viewed below: 
 ```{r}
 head(tbdata)
 ```
 
+
 ```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
-# Graph the pie chart using ggplot; Set colour scheme; font, etc. 
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
 incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -102,12 +103,14 @@ incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_inco
       ylab("") + xlab("") + 
      labs(title = "", fill="Household Income") +
      geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
-     theme(text = element_text(size=15))
+     theme(text = element_text(size=13))
 incomegraph
 ```
 
 ```{r}
+# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 raceinfo <- tbdata %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
 racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -121,7 +124,9 @@ racegraph
 ```
 
 ```{r}
+# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 educationinfo <- tbdata %>% group_by(education_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
 educationgraph <- educationinfo %>% ggplot(aes(x = "", y = prop, fill = education_grouped)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -130,12 +135,14 @@ educationgraph <- educationinfo %>% ggplot(aes(x = "", y = prop, fill = educatio
       ylab("") + xlab("") + 
      labs(title = "", fill="Education") +
      geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4) +
-     theme(text = element_text(size=15))
+     theme(text = element_text(size=13))
 educationgraph
 ```
 
 ```{r}
+# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 ageinfo <- tbdata %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
 agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -147,11 +154,8 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
      theme(text = element_text(size=13))
 agegraph
 ```
-Key features of data? 
 
-```{r}
-head(tbdata)
-```
+Key features of data? 
 
 The dataset we used contains many strengths and weaknesses. One of the strengths is due to the fact that the survey is distributed online. In today’s age where most things are online, this ensures that we can reach a wide part of the United States. At the same time, this can also be viewed as a weakness because certain age groups of the United States may not be tech-savvy enough to complete an online survey. The older population of the united states (e.g. 75+) may not be able to complete the survey because it is online which means that our data may not accurately reflect the older populations views regarding the 2020 election. A potential solution to this weakness is to use administer multiple forms of the survey to ensure that all people can access the survey.  
 
