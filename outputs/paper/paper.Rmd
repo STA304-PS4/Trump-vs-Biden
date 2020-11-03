@@ -89,7 +89,7 @@ The first few rows of the cleaned dataset can be viewed below:
 head(tbdata)
 ```
 
-
+In Figure [] below, we can see that the distribution is largely skewed towards families with income less than $50,000:
 ```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
@@ -105,7 +105,10 @@ incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_inco
      theme(text = element_text(size=13))
 incomegraph
 ```
+Because of the skewed distribution of income, we can justify using post stratification. Clearly, those with income less than $50,000 are overrepresented in the dataset as they take up 50% of the responses, therefore it is appropriate to use post stratification. 
 
+
+We can see a similar skewed distribution in Figure [] below: 
 ```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 raceinfo <- tbdata %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
@@ -121,6 +124,7 @@ racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) +
      theme(text = element_text(size=13))
 racegraph
 ```
+Looking at the distribution of race, we can see that 75% of the respondants from the survey are white. Since the distribution does not represent minorities, we can justify using post stratification. 
 
 ```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
@@ -138,6 +142,7 @@ educationgraph <- educationinfo %>% ggplot(aes(x = "", y = prop, fill = educatio
 educationgraph
 ```
 
+Lastly, in Figure [] below, we can see how the population aged older than 76 are barely represented: 
 ```{r}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 ageinfo <- tbdata %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
@@ -153,6 +158,7 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
      theme(text = element_text(size=13))
 agegraph
 ```
+The fact that those age 76+ make up only a 3% of the data could be a product of the fact that the survey was completed online. Clearly, the survey doesn't accurately represent those aged older than 76 posing the question — does our data represent the United States? The answer is no. To adjust for the fact that the population aged 76+, we will use post stratification. 
 
 The dataset that we used contains many key features. Many of the variables in the dataset contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election, making our analysis meaningful. Another key feature is the fact that the data was collected over a short period of time— from June 25th, 2020 to July 1st, 2020. This significantly reduces the negative time based effects that may have affected the data ensuring that all respondents are responding on a similar ground and no one's opinion dramatically differed due to the survey taking place over a large period of time. 
 
