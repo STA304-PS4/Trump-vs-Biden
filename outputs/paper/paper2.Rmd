@@ -86,6 +86,7 @@ We created an additional variable called ‘binary’ which outputs the result o
 To develop a sense of familiarity with the dataset, we will closely examine some of the variables we will be analyzing in the dataset. 
 
 The first few rows of the cleaned dataset can be viewed in Table 1 below:
+
 ### Table 1 
 ```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Read in the data 
@@ -105,6 +106,7 @@ Table1
 ```
 
 In Figure 1 below, we will examine the variable 'household_income' and we can see that our data is largely skewed towards households with income less than $50,000:
+
 ### Figure 1 
 ```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
@@ -124,6 +126,7 @@ incomegraph
 Clearly, those with income less than $50,000 are overrepresented in the dataset as they take up 50% of the responses, therefore it is appropriate to use post stratification on our dataset. 
 
 We can see a similar skewed distribution with variable 'race' in Figure 2 below:
+
 ### Figure 2
 ```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
@@ -142,7 +145,8 @@ racegraph
 ```
 It is obvious that the respondents of our survey are primarily white and there is very little representation of minorities. 
 
-Lastly, by examining the variable age in Figure 3 below, we can see how very little the population 76+ is represented in our dataset. 
+Lastly, by examining the variable age in Figure 3 below, we can see how very little the population 76+ is represented in our dataset.
+
 ### Figure 3
 ```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
@@ -159,6 +163,7 @@ agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) +
      theme(text = element_text(size=13))
 agegraph
 ```
+
 The fact that those age 76+ make up only 3% of the data could be a product of the fact that the survey was completed online. Clearly, the survey doesn't accurately represent those aged older than 76/ This poses the question — does our data represent the United States?  By looking at the figure above, the answer is no. To adjust for the fact that the population aged 76+, we will use post stratification.  
 
 The dataset that we used contains many key features. Many of the variables in the dataset contain an extensive list of options assuring us that the data represents the participant's view accurately. Despite the fact that we cleaned the dataset to make it simpler to view, we still believe that the detailed responses that the participants provided accurately reflect their views on the 2020 election, making our analysis meaningful. Another key feature is the fact that the data was collected over a short period of time— from June 25th, 2020 to July 1st, 2020. This significantly reduces the negative time-based effects that may have affected the data ensuring that all respondents are responding on a similar ground and no one's opinion dramatically differed due to the survey taking place over a large period of time. 
@@ -223,6 +228,7 @@ mod <- glmer(binary ~ age_group + (1|education_grouped) + race_ethnicity + house
 ```
 
 ### Table 2
+
 ### Summary Table
 \begin{center}
 \captionof{table}{statistics summary for logistic regression}
@@ -279,6 +285,7 @@ For more information on the ACS the user guide can be found in the input folder 
 However, to continue this discussion let’s begin the comparison. 
 
 Looking at the income break down of our data it is clear when comparing Figure 1 and Figure 4 that the surveyed population tended towards a lower income on average. This is an interesting occurrence and may have to do with the tech literacy having a larger survey biasing effect than literacy and tech access. On average older individuals have higher incomes so it could be that the data is skewing younger and that is what is causing this. 
+
 ### Figure 1
 ```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 incomegraph
