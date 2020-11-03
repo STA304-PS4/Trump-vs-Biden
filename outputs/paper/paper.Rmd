@@ -21,7 +21,7 @@ knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
 library(tidyverse)
 library(dplyr)
 library(lme4)
-library(merTools)
+# library(merTools)
 library(readr)
 library(knitr)
 library(haven)
@@ -85,8 +85,9 @@ We created an additional variable called ‘binary’ which outputs the result o
 
 To develop a sense of familiarity with the dataset, we will closely examine some of the variables we will be analyzing in the dataset. 
 
-The first few rows of the cleaned dataset can be viewed below:
-```{r}
+The first few rows of the cleaned dataset can be viewed in Table 1 below:
+### Table 1 
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Read in the data 
 tbdata <- read.csv("clean-survey-2.csv")
 # Create shortened data set  
@@ -103,8 +104,9 @@ Table1 <- tbdatashort %>%
 Table1
 ```
 
-In Figure [] below, we will examine the variable 'household_income' and we can see that our data is largely skewed towards households with income less than $50,000:
-```{r}
+In Figure 1 below, we will examine the variable 'household_income' and we can see that our data is largely skewed towards households with income less than $50,000:
+### Figure 1 
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 # Graph the pie chart using ggplot; Set colour scheme, font, etc. 
@@ -121,8 +123,9 @@ incomegraph
 ```
 Clearly, those with income less than $50,000 are overrepresented in the dataset as they take up 50% of the responses, therefore it is appropriate to use post stratification on our dataset. 
 
-We can see a similar skewed distribution with variable 'race' in Figure [] below:
-```{r}
+We can see a similar skewed distribution with variable 'race' in Figure 2 below:
+### Figure 2
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 raceinfo <- tbdata %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 # Graph the pie chart using ggplot; Set colour scheme, font, etc. 
@@ -139,8 +142,9 @@ racegraph
 ```
 It is obvious that the respondents of our survey are primarily white and there is very little representation of minorities. 
 
-Lastly, by examining the variable age in Figure [] below, we can see how very little the population 76+ is represented in our dataset. 
-```{r}
+Lastly, by examining the variable age in Figure 3 below, we can see how very little the population 76+ is represented in our dataset. 
+### Figure 3
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 # Setup data for the pie chart and mutate a variable that details proportions for various responses. 
 ageinfo <- tbdata %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 # Graph the pie chart using ggplot; Set colour scheme, font, etc. 
@@ -260,7 +264,8 @@ post_strat_cellcount_2 %>%
   knitr::kable()
 ```
 
-```{r, fig.cap='95% Prediction Intervals for forcasting the Chances that Donald Trump wins the election'}
+### Table 2 
+```{r, fig.cap='95% Prediction Intervals for forcasting the Chances that Donald Trump wins the election', tidytidy =FALSE, echo =FALSE, warning= FALSE}
 PI <- predictInterval(merMod = mod, newdata = post_strat_cellcount_2,                         
                       level = 0.95, n.sims = 1000,                         
                       stat = "median", type= "probability",                      
@@ -283,14 +288,19 @@ For more information on the ACS the user guide can be found in the input folder 
 However, to continue this discussion let’s begin the comparison. 
 
 Looking at the income break down of our data it is clear when comparing Figure 1 and Figure 4 that the surveyed population tended towards a lower income on average. This is an interesting occurrence and may have to do with the tech literacy having a larger survey biasing effect than literacy and tech access. On average older individuals have higher incomes so it could be that the data is skewing younger and that is what is causing this. 
-## Figure 1
-```{r}
+## Figure 4
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 incomegraph
 ```
 
+<<<<<<< HEAD
 ## Figure 4
 ```{r}
 # read in data
+=======
+## Figure 5
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+>>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 acs <- read_dta("post_strat_data-2.dta")
 # label the data as it is a dta
 acs <- labelled::to_factor(acs)
@@ -313,14 +323,19 @@ incomegraphacs
 
 Examining the age group, we see that this could certainly be the case. As the Surveyed population is significantly younger than the general population. Most likely playing into the effects of tech literacy among older generations. This can be clearly seen in Figure 2 and 5, where 18-35-year-old respondents are greatly overestimated and 76 and older respondents greatly under-represented. 
 
-## Figure 2
-```{r}
+## Figure 6
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 agegraph
 ```
 
+<<<<<<< HEAD
 ## Figure 5
 ```{r}
 #create a tibble that includes counts and proportions based on groups
+=======
+## Figure 7
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+>>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 ageinfoacs <- acs %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 #Graph this tibble
 agegraphacs <- ageinfoacs %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
@@ -338,14 +353,19 @@ agegraphacs
 
 Finally, when looking in to the ethnic and racial breakdown of the survey data African American are underrepresented and White Americans overrepresented. This is displayed in Figure 3 and 6. This could be for a myriad of reasons, but it could be linked to tech access as a higher portion of African Americans experience poverty when compared to their White counterparts. 
 
-## Figure 3
-```{r}
+## Figure 8
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
 racegraph
 ```
 
+<<<<<<< HEAD
 ## Figure 6
 ```{r}
 #create a tibble that includes counts and proportions based on groups
+=======
+## Figure 9
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+>>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 raceinfoacs <- acs %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
 #Graph this tibble in a pie graph
 racegraphacs <- raceinfoacs %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
@@ -363,9 +383,14 @@ racegraphacs
 
 By separating all respondents of the ACS into subgroups based upon our independent variables we can then create proportions. This allows for the weighting of data through the model and adjusts our sample in order to account for the skewed demographics. An example of these proportions is displayed below.
 
+<<<<<<< HEAD
 ## Table 6
 ```{r}
 #Generate a table that displays the first couple responses from the cell count that was generated for weighting 
+=======
+## Table 3
+```{r, tidy =FALSE, echo =FALSE, warning= FALSE}
+>>>>>>> 9a3f8b2e18e6ae4f6108c9827810520780584620
 Table6 <- post_strat_cellcount_2 %>% 
   dplyr::select(
     age_group, race_ethnicity, household_income_grouped, n, prop
@@ -435,6 +460,216 @@ Having a collection of follow up studies that could dig deep into; the lower sig
 \newpage
 
 # Appendix {-}
+
+## Git Repository 
+
+The link to the Git Repository is:
+
+## Code 
+
+Below you will also find the R code used in this analysis: 
+
+
+### Preamble- Setting Up Libraries and Clean Data 
+
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(tidyverse)
+library(dplyr)
+library(lme4)
+library(merTools)
+library(readr)
+library(knitr)
+library(haven)
+```
+
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+clean_survey_2 <- read_csv("clean-survey-2.csv")
+mod <- glmer(binary ~ age_group + (1|education_grouped) + race_ethnicity + household_income_grouped,
+           data = clean_survey_2,
+           family = binomial()
+           )
+```
+
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+# Read in the csv file for post stratification
+post_strat_cellcount_2 <- read_csv("post_strat_cellcount-2.csv")
+# get post stratification estimates using predict()
+post_strat_cellcount_2$estimate <-
+  mod %>%
+  predict(newdata = post_strat_cellcount_2, allow.new.level = TRUE, type="response")
+```
+
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+aggregate(tbdata[8], list(tbdata$race_ethnicity), mean)
+  
+```
+
+### Code for tables and figures used in analysis 
+
+### Table 1 
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+# Read in the data 
+tbdata <- read.csv("clean-survey-2.csv")
+# Create shortened data set  
+tbdatashort <- tbdata %>% 
+  dplyr::select(
+    age_group, race_ethnicity, household_income_grouped, trump_biden
+  )
+Table1 <- tbdatashort %>% 
+  head() %>% 
+  kable(align = "c",
+        format = "simple",
+        col.names = c("Age Group", "Race", "Household Income", "Presidential choice")
+        ) 
+Table1
+```
+
+### Figure 1 
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
+incomeinfo <- tbdata %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
+incomegraph <- incomeinfo %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "Survey Distribution of Household Income", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+incomegraph
+```
+
+### Figure 2
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
+raceinfo <- tbdata %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
+racegraph <- raceinfo %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Set3") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "Survey Distribution of Respondent Race", fill="What is your race?") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4) +
+     theme(text = element_text(size=13))
+racegraph
+```
+
+### Figure 3
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+# Setup data for the pie chart and mutate a variable that details proportions for various responses. 
+ageinfo <- tbdata %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+# Graph the pie chart using ggplot; Set colour scheme, font, etc. 
+agegraph <- ageinfo %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Set3") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "Survey Distribution of Respondent Age", fill="Age Groups") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4)+
+     theme(text = element_text(size=13))
+agegraph
+```
+
+### Table 2 
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+PI <- predictInterval(merMod = mod, newdata = post_strat_cellcount_2,                         
+                      level = 0.95, n.sims = 1000,                         
+                      stat = "median", type= "probability",                      
+                      include.resid.var = TRUE)
+
+ggplot(aes(x=1:30, y=fit, ymin=lwr, ymax=upr), data=PI[1:30,]) +   
+  geom_point() +   geom_linerange() +   
+  labs(x="Index", y="Prediction w/ 95% PI") + 
+  theme_bw()
+```
+
+## Figure 4
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+incomegraph
+```
+
+## Figure 5
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+acs <- read_dta("post_strat_data-2.dta")
+acs <- labelled::to_factor(acs)
+incomeinfoacs <- acs %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+incomegraphacs <- incomeinfoacs %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "ACS Distribution of Household Income", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+
+incomegraphacs
+```
+
+## Figure 6
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+agegraph
+```
+
+## Figure 7
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+ageinfoacs <- acs %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+agegraphacs <- ageinfoacs %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "ACS Distribution of Respondent Age", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+
+agegraphacs
+```
+
+## Figure 8
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+racegraph
+```
+
+## Figure 9
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+raceinfoacs <- acs %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+racegraphacs <- raceinfoacs %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
+      geom_bar(width = 1, stat = "identity") + 
+      coord_polar("y", start = 0) +
+      scale_fill_brewer(palette = "Accent") +
+      theme_void() +
+      ylab("") + xlab("") + 
+     labs(title = "ACS Distribution of Respondent Race", fill="Household Income") +
+     geom_text(aes(label = paste0(round(prop), "%")), position = position_stack(vjust = 0.5), angle=45, size = 4.7) +
+     theme(text = element_text(size=15))
+
+racegraphacs
+```
+
+
+## Table 3
+```{r, echo=TRUE, results = "hide", warning= FALSE}
+Table6 <- post_strat_cellcount_2 %>% 
+  dplyr::select(
+    age_group, race_ethnicity, household_income_grouped, n, prop
+  ) %>% 
+  head() %>% 
+  kable(align = "c",
+        format = "simple",
+        col.names = c("Age Group", "Race", "Household Income", "Number of Repondents", "Proportion of Responses"),
+        digits = 6
+        ) 
+Table6
+```
+
 
 \newpage
 
