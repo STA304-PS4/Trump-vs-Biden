@@ -290,9 +290,13 @@ incomegraph
 
 ## Figure 4
 ```{r}
+# read in data
 acs <- read_dta("post_strat_data-2.dta")
+# label the data as it is a dta
 acs <- labelled::to_factor(acs)
+#create a tibble that includes counts and proportions based on groups
 incomeinfoacs <- acs %>% group_by(household_income_grouped) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+#Graph this tibble in a pie graph
 incomegraphacs <- incomeinfoacs %>% ggplot(aes(x = "", y = prop, fill = household_income_grouped)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -316,7 +320,9 @@ agegraph
 
 ## Figure 5
 ```{r}
+#create a tibble that includes counts and proportions based on groups
 ageinfoacs <- acs %>% group_by(age_group) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+#Graph this tibble
 agegraphacs <- ageinfoacs %>% ggplot(aes(x = "", y = prop, fill = age_group)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -339,7 +345,9 @@ racegraph
 
 ## Figure 6
 ```{r}
+#create a tibble that includes counts and proportions based on groups
 raceinfoacs <- acs %>% group_by(race_ethnicity) %>% summarise(n=n()) %>% mutate(prop = 100*(n/sum(n)))
+#Graph this tibble in a pie graph
 racegraphacs <- raceinfoacs %>% ggplot(aes(x = "", y = prop, fill = race_ethnicity)) + 
       geom_bar(width = 1, stat = "identity") + 
       coord_polar("y", start = 0) +
@@ -357,6 +365,7 @@ By separating all respondents of the ACS into subgroups based upon our independe
 
 ## Table 6
 ```{r}
+#Generate a table that displays the first couple responses from the cell count that was generated for weighting 
 Table6 <- post_strat_cellcount_2 %>% 
   dplyr::select(
     age_group, race_ethnicity, household_income_grouped, n, prop
@@ -379,8 +388,10 @@ Significantly though the data of this analysis shows a few key demographic group
 Firstly, race was a highly significant factor in voting behavior for non-white Americans.  White Americans were not significantly influenced by there race and tended to vote based on other factors. But individuals who described themselves as Black, Asian, a Pacific Islander, or another race all were significantly more likely to vote for Joe Biden than Donald Trump. The largest of these effects was among African Americans. Compared even to Asian Americans their coefficient was twice as large, meaning they were affected by racial effects twice as much. 
 
 ```{r include=FALSE}
+#Get general percentage of people voting for Trump by Race
 aggregate(tbdata[8], list(tbdata$race_ethnicity), mean)
-  
+#get overal percentage of people voting for Trump
+mean(tbdata$binary)  
 ```
 
 Only 12.5% of Black respondents intended to vote for trump. 
@@ -429,5 +440,35 @@ Having a collection of follow up studies that could dig deep into; the lower sig
 
 
 # References
-
+- R Core Team (2020). R: A language and environment for statistical computing. R Foundation for Statistical Computing, Vienna,
+  Austria. URL https://www.R-project.org/.
+- Wickham et al., (2019). Welcome to the tidyverse. Journal of Open Source Software, 4(43), 1686, https://doi.org/10.21105/joss.01686
+- Hadley Wickham, Romain François, Lionel Henry and Kirill Müller (2020). dplyr: A Grammar of Data Manipulation. R package version
+  1.0.2. https://CRAN.R-project.org/package=dplyr
+- Douglas Bates, Martin Maechler, Ben Bolker, Steve Walker (2015). Fitting Linear Mixed-Effects Models Using lme4. Journal of
+  Statistical Software, 67(1), 1-48. doi:10.18637/jss.v067.i01.
+- Jared E. Knowles and Carl Frederick (2020). merTools: Tools for Analyzing Mixed Effect Regression Models. R package version 0.5.2.
+  https://CRAN.R-project.org/package=merTools
+- Hadley Wickham, Jim Hester and Romain Francois (2018). readr: Read Rectangular Text Data. R package version 1.3.1.
+  https://CRAN.R-project.org/package=readr
+- Yihui Xie (2020). knitr: A General-Purpose Package for Dynamic Report Generation in R. R package version 1.29.
+- Yihui Xie (2015) Dynamic Documents with R and knitr. 2nd edition. Chapman and Hall/CRC. ISBN 978-1498716963
+- Yihui Xie (2014) knitr: A Comprehensive Tool for Reproducible Research in R. In Victoria Stodden, Friedrich Leisch and Roger D.
+  Peng, editors, Implementing Reproducible Computational Research. Chapman and Hall/CRC. ISBN 978-1466561595
+- Hadley Wickham and Evan Miller (2020). haven: Import and Export 'SPSS', 'Stata' and 'SAS' Files. R package version 2.3.1.
+  https://CRAN.R-project.org/package=haven
+- JJ Allaire and Yihui Xie and Jonathan McPherson and Javier Luraschi and Kevin Ushey and Aron Atkins and Hadley Wickham and Joe Cheng
+  and Winston Chang and Richard Iannone (2020). rmarkdown: Dynamic Documents for R. R package version 2.3. URL
+  https://rmarkdown.rstudio.com.
+- Yihui Xie and J.J. Allaire and Garrett Grolemund (2018). R Markdown: The Definitive Guide. Chapman and Hall/CRC. ISBN 9781138359338.
+  URL https://bookdown.org/yihui/rmarkdown.
+- Monica Alexander. (2019, September 07). Analyzing name changes after marriage using a non-representative survey. Retrieved from https://www.monicaalexander.com/posts/2019-08-07-mrp/
+- The New York Times. (n.d.). 2016 Presidential Election Results: Donald J. Trump Wins. Retrieved from https://www.nytimes.com/elections/2016/results/president
+- US Census Bureau. (2020, October 16). Population. Retrieved from https://www.census.gov/topics/population.html
+- NCSL. (2020). The Electoral College. Retrieved from https://www.ncsl.org/research/elections-and-campaigns/the-electoral-college.aspx
+- Financial Times. (2020, October 30). Biden vs Trump: US presidential election poll tracker. Retrieved from https://ig.ft.com/us-election-2020/
+- Survey Systems (2020). “Sample Size Calculator.” Sample Size Calculator - Confidence Level, Confidence Interval, Sample Size, Population Size, Relevant Population - Creative Research Systems, 2020, www.surveysystem.com/sscalc.htm.
+- Amy Sorkin, John Cassidy, & Jonathan Blitzer. (2018). Donald Trump Compounds His "Shithole Countries" Bigotry with Lies. Retrieved from https://www.newyorker.com/news/daily-comment/donald-trump-compounds-his-shithole-countries-bigotry-with-lies
+- Philip Bump. (2020, September 30). Analysis | Donald Trump doesn't really care about the white supremacist threat, and you're not going to make him. Retrieved from https://www.washingtonpost.com/politics/2020/09/30/donald-trump-doesnt-really-care-about-white-supremacy-youre-not-going-make-him/
+- Kevin Liptak, & Kristen Holmes. (2020, July 01). Trump calls Black Lives Matter a 'symbol of hate' as he digs in on race. Retrieved from https://www.cnn.com/2020/07/01/politics/donald-trump-black-lives-matter-confederate-race/index.html
 
