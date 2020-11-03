@@ -5,9 +5,11 @@
 # included the variables that we are interested in. Also, in our analysis, we will only be looking at who is going to win 
 # the popular vote between Donald Trump and Joe Biden, therefore we cleaned the results so that they only showcase those 
 # willing to vote for Donald Trump or Joe Biden. We also added another variable that was not originally included in the
-# dataset to make vote a binary variable. A problem we encountered with the raw dataset was that a lot of the values were 
-# shown as N/A; to address this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row 
-# in the dataset, every column has a meaningful value.
+# dataset to make vote a binary variable. To adress issues with some variables containing an excessive amount of options 
+# (e.g. age, education etc.) we created additional variables that would group the values of the variable so that they are 
+# easier to analyze A problem we encountered with the raw dataset was that a lot of the values were shown as N/A; to address
+# this issue, we also cleaned the dataset so that it removed all N/A values meaning for each row in the dataset, every column 
+# has a meaningful value.
 # Author: Arjun Dhatt, Ben Draskovic, Gantavya Gupta, Yiqu Ding 
 # Data: 2 November 2020
 # Contact: arjun.dhatt@mail.utoronto.ca 
@@ -177,6 +179,7 @@ write_csv(tbdata, "outputs/clean-survey.csv")
 # Maybe make some as.numeric(age)-groups?
 # Maybe check the values?
 # Is vote a binary? If not, what are you going to do?
+
 
 
 # The vote is not a binary variable, it contains 758 "Don't Know", 2626 "Donald Trump", 3075 "Joe Biden" and 20 NAs. 
